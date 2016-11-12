@@ -10,7 +10,7 @@ The course is intended for academic researchers at Canadian institutions in West
     + For a Westgrid Account, register by following these [instructions](https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/).  Realize that the process can take several days!  
   + GitHub Account 
     + It's free, and you can sign up [here](https://github.com/) 
-  + For mac/linux users, only need native terminal which comes with the operating system 
+  + For mac/linux users, only need native terminal which comes with the operating system.  You can access it in the Applications section for Mac users.
   + For PC users, download and install [MobaXterm](http://mobaxterm.mobatek.net/) 
     + [Advanced MobaXterm usage](https://www.youtube.com/watch?v=Gkl8LD1rwlU) 
   + IGV installed on local machine 
