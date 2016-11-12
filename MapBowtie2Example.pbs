@@ -1,0 +1,26 @@
+#!/bin/bash
+#PBS -S /bin/bash
+
+## I want 1 processor only
+#PBS -l procs=1
+
+## How much RAM does each processor need?
+#PBS -l pmem=2000mb
+
+## The maximum walltime that will be used for my job 
+#PBS -l walltime=00:15:00
+
+## I want email sent when the job begins, ends and aborts (bea)
+#PBS -m bea
+
+## Where I want the email to be sent
+#PBS -M prichmond@cmmt.ubc.ca
+
+
+#Environmental variable defined by the batch system
+cd $PBS_O_WORKDIR
+
+
+/global/scratch/WRC/Tools/bowtie2-2.2.9/bowtie2 --rg-id "lambda" --rg "lambda_virus" -p 1 --very-sensitive -x /global/scratch/WRC/Genomes/reference/lambda_virus_Bowtie2_Index -1 /global/scratch/WRC/Data/reads/reads_1.fq -2 /global/scratch/WRC/Data/reads/reads_2.fq -S /global/scratch/WRC/Data/lambda_Bowtie2_fromqueue.sam
+
+
