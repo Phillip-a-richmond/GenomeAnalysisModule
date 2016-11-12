@@ -5,14 +5,14 @@
 ## General Course Information & Prerequisites
 The course is intended for academic researchers at Canadian institutions in Western Canada, that have access to nationally supported Research Computing through Compute Canada, specifically the WestGrid branch.  
 + **Prerequisites**
-  + WestGrid access is required, and is different for a PI vs. a student
+  + WestGrid access is required
     + Westgrid Account information [here](https://www.westgrid.ca/support/accounts/getting_account)
     + For a Westgrid Account, register by following these [instructions](https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/).  Realize that the process can take several days!  
-  + GitHub Account 
-    + It's free, and you can sign up [here](https://github.com/) 
+    + If you're a temporary user, follow these instructions [here]()
   + For mac/linux users, only need native terminal which comes with the operating system.  You can access it in the Applications section for Mac users.
   + For PC users, download and install [MobaXterm](http://mobaxterm.mobatek.net/) 
     + [Advanced MobaXterm usage](https://www.youtube.com/watch?v=Gkl8LD1rwlU) 
+  + Initial experience in Linux Shell.  If you have NO experience in Linux, please visit another course of mine and go through modules 1-4 before coming to class. [Website](http://phillip-a-richmond.github.io/Bioinformatics-Introductory-Analysis-Course/)
   + IGV installed on local machine 
     + [IGV install](https://www.broadinstitute.org/software/igv/log-in) 
 + **Resources**
