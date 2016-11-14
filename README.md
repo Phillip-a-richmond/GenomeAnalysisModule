@@ -31,6 +31,13 @@ The course is intended for academic researchers at Canadian institutions in West
       + [Software available](https://www.westgrid.ca/support/software/) 
       
 
+### To-Do before Wednesday November 23rd, 2016
+1. Get your login information for WestGrid, and log-in to the orcinus compute server.
+ssh \<username\>@orcinus.westgrid.ca
+example:
+ssh richmonp@orcinus.westgrid.ca
+
+2. Complete the Pre-class Quiz found [Here](
 
 
 
