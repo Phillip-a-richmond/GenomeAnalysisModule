@@ -42,8 +42,8 @@ ssh richmonp@orcinus.westgrid.ca
 
 
 ## Tutorial Sessions
-+ Session 1: Introduction to Next Generation Sequencing Analysis: Short-read Mapping and Visualization
-  + Slides
+### Session 1: Introduction to Next Generation Sequencing Analysis: Short-read Mapping and Visualization
+  + [Slides](https://docs.google.com/presentation/d/1vaHO9tewJhnpn3CQkIADKnJka4SrKCFb2_zOMTOi7yc/edit#slide=id.p)
   + **Learning Goals** 
     + Explore command-line usage of popular Bioinformatics tools (BWA, Samtools)
     + Learn about file formats
