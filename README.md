@@ -44,4 +44,13 @@ ssh richmonp@orcinus.westgrid.ca
 ## Tutorial Sessions
 + Session 1: Introduction to Next Generation Sequencing Analysis: Short-read Mapping and Visualization
   + Slides
-  + Scripts
+  + **Learning Goals** 
+    + Explore command-line usage of popular Bioinformatics tools (BWA, Samtools)
+    + Learn about file formats
+    + Visualize mapped reads using IGV
+    + Learn to interact with WestGrid compute environment and queuing system
+    + Get a taste of bioinformatics analysis 
+
+
+
+
