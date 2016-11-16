@@ -9,6 +9,12 @@
 
 3. Read the Instructions.txt file.
 
+4. Once completed, please email: 
+
+phillip.a.richmond@gmail.com 
+
+With your completed quiz file.  
+
 
 
 
