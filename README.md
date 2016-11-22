@@ -5,16 +5,16 @@
 ## General Course Information & Prerequisites
 The course is intended for academic researchers at Canadian institutions in Western Canada, that have access to nationally supported Research Computing through Compute Canada, specifically the WestGrid branch.  
 + **Prerequisites**
-  + WestGrid access is required
-    + Westgrid Account information [here](https://www.westgrid.ca/support/accounts/getting_account)
-    + For a Westgrid Account, register by following these [instructions](https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/).  Realize that the process can take several days!  
-    + If you're a temporary user, follow these instructions [here]()
+  + Install Vidyo, Instructions [Here](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Vidyo_instructions.md)
+  + If you're a temporary user, refer to the email with instructions to log-in
   + For mac/linux users, only need native terminal which comes with the operating system.  You can access it in the Applications section for Mac users.  You also need to have X windows installed [Link](https://www.xquartz.org/)
   + For PC users, download and install [MobaXterm](http://mobaxterm.mobatek.net/) 
     + [Advanced MobaXterm usage](https://www.youtube.com/watch?v=Gkl8LD1rwlU) 
   + Initial experience in Linux Shell.  If you have NO experience in Linux, please visit another course of mine and go through modules 1-4 before coming to class. [Website](http://phillip-a-richmond.github.io/Bioinformatics-Introductory-Analysis-Course/)
   + IGV installed on local machine 
     + [IGV install](https://www.broadinstitute.org/software/igv/log-in) 
+  + Filezilla installed on local machine
+    + [FileZilla](https://filezilla-project.org/)
 + **Resources**
     + [Linux/Unix Cheatsheet](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/UnixCheatSheet.pdf) 
     + [Linux/Unix online tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/) 
@@ -39,11 +39,11 @@ ssh richmonp@orcinus.westgrid.ca
 
 2. Complete the Pre-class Quiz found [Here](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
 
-
+3. Install Vidyo, IGV, FileZilla
 
 ## Tutorial Sessions
 ### Session 1: Introduction to Next Generation Sequencing Analysis: Short-read Mapping and Visualization
-  + [Slides](https://docs.google.com/presentation/d/1vaHO9tewJhnpn3CQkIADKnJka4SrKCFb2_zOMTOi7yc/edit#slide=id.p)
+  + [Slides](https://docs.google.com/presentation/d/1vaHO9tewJhnpn3CQkIADKnJka4SrKCFb2_zOMTOi7yc/edit?usp=sharing)
   + **Learning Goals** 
     + Explore command-line usage of popular Bioinformatics tools (BWA, Samtools)
     + Learn about file formats
