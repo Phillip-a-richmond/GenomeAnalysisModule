@@ -61,28 +61,27 @@ ssh richmonp@orcinus.westgrid.ca
 ### Session 2: Linux/Bioinformatics:
 + Tuesday, June 6th, 10:00-12:00
 + Linux - Shell scripts, interacting with the queue
-+ Commands: 
-  + sh, qsub, qstat, qdel, emacs, 
+  + Commands: sh, qsub, qstat, qdel, emacs, 
 + Bioinformatics  
-+ File formats: FASTQ, FASTQ.GZ 
-+ Tools used: FastQC 
-+ Resources needed: ~1 core/person for 2 hour block  
+  + File formats: FASTQ, FASTQ.GZ 
+  + Tools used: FastQC 
+  + Resources needed: ~1 core/person for 2 hour block  
 
 ### Session 3 (Short read mapping and visualization) (This is the piece I already taught)
 + Wednesday, June 7th, 10:00-12:00
 + Bioinformatics  
-+ File formats: SAM, BAM, CRAM, BAI, sorted.BAM,
-+ Tools used: BWA (with different options), samtools, IGV (downloaded on their own computer)
-+ Datasets: DNA-sequencing (Human)
-+ Resources needed: ~4 cores/person for 2 hour block  
+  + File formats: SAM, BAM, CRAM, BAI, sorted.BAM,
+  + Tools used: BWA (with different options), samtools, IGV (downloaded on their own computer)
+  + Datasets: DNA-sequencing (Human)
+  +  Resources needed: ~4 cores/person for 2 hour block  
 
 ### Session 4: Variant Calling - Small variants
 + Thursday, June 8th, 10:00-12:00
-+ *Bioinformatics*  
-+ File formats: VCF
-+ Tools used: Picard, GATK, Platypus, Freebayes, Samtools mpileup
-+ Datasets: DNA-sequencing (Human)
-+ Resources needed: ~4 cores/person for 2 hour block  
+  + *Bioinformatics*  
+  + File formats: VCF
+  + Tools used: Picard, GATK, Platypus, Freebayes, Samtools mpileup
+  + Datasets: DNA-sequencing (Human)
+  + Resources needed: ~4 cores/person for 2 hour block  
 
 
 ### Mid-series quiz
@@ -91,24 +90,24 @@ ssh richmonp@orcinus.westgrid.ca
 
 ### Session 5: Variant Annotation
 + Monday, June 12th, 10:00-12:00    
-+ Bioinformatics
-+ File formats: VCF, BEDPE
-+ Tools used: GEMINI
-+ Datasets: DNA-sequencing (Human)
-+ Resources needed: ~4 cores/person for 2 hour block  
+  + Bioinformatics
+  + File formats: VCF, BEDPE
+  + Tools used: GEMINI
+  + Datasets: DNA-sequencing (Human)
+  + Resources needed: ~4 cores/person for 2 hour block  
 
 ### Session 6: RNA-seq
 + Tuesday, June 13th, 10:00-12:00
-+ Bioinformatics
-+ File formats: GTF review, 
-+ Tools used: Tophat, cufflinks, cuffdiff (or updated version of tuxedo suite)
-+ Datasets: RNA-sequencing (Mouse?, Human?, Worm, Fly)
-+ Resources needed: ~4 cores/person for 2 hour block  
+  + Bioinformatics
+  + File formats: GTF review, 
+  + Tools used: Tophat, cufflinks, cuffdiff (or updated version of tuxedo suite)
+  + Datasets: RNA-sequencing (Mouse?, Human?, Worm, Fly)
+  + Resources needed: ~4 cores/person for 2 hour block  
 
 ### Session 7: RNA-seq II
 + Wednesday, June 14th, 10:00-12:00
-+ Bioinformatics
-+ HTSeq → DESeq  
+  + Bioinformatics
+  + HTSeq → DESeq  
 
 
 
