@@ -2,7 +2,7 @@ title: Arc-bioinformatics-training
 description: "This is the website for the UBC Advanced Research Computing Bioinformatics Training Initiative "
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-cayman
+theme: jekyll-theme-merlot
 
 gems:
   - jekyll-mentions
