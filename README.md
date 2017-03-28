@@ -24,7 +24,6 @@ The course is intended for academic researchers at Canadian institutions in West
   + For mac/linux users, only need native terminal which comes with the operating system.  You can access it in the Applications section for Mac users.  You also need to have X windows installed [Link](https://www.xquartz.org/)
   + For PC users, download and install [MobaXterm](http://mobaxterm.mobatek.net/) 
     + [Advanced MobaXterm usage](https://www.youtube.com/watch?v=Gkl8LD1rwlU) 
-  + Initial experience in Linux Shell.  If you have NO experience in Linux, please visit another course of mine and go through modules 1-4 before coming to class. [Website](http://phillip-a-richmond.github.io/Bioinformatics-Introductory-Analysis-Course/)
   + IGV installed on local machine 
     + [IGV install](https://www.broadinstitute.org/software/igv/log-in) 
   + Filezilla installed on local machine
