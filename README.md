@@ -79,7 +79,7 @@ ssh richmonp@orcinus.westgrid.ca
   + Tools used: FastQC 
   + Resources needed: ~1 core/person for 2 hour block  
 
-### Session 3 (Short read mapping and visualization) (This is the piece I already taught)
+### Session 3 (Short read mapping and visualization)
 > Wednesday, June 7th, 10:00-12:00
 
 + Bioinformatics  
@@ -100,7 +100,7 @@ ssh richmonp@orcinus.westgrid.ca
 
 
 ### Mid-series quiz
-+ Friday, June 9th
+> Friday, June 9th
 
 
 ### Session 5: Variant Annotation
@@ -111,10 +111,10 @@ ssh richmonp@orcinus.westgrid.ca
   + Datasets: DNA-sequencing (Human)
   + Resources needed: ~4 cores/person for 2 hour block  
 
-### Session 6: RNA-seq
+### Session 6: RNA-seq Read Mapping
 > Tuesday, June 13th, 10:00-12:00
 + Bioinformatics
-  + File formats: GTF review, 
+  + File formats: GTF review
   + Tools used: Tophat, cufflinks, cuffdiff (or updated version of tuxedo suite)
   + Datasets: RNA-sequencing (Mouse?, Human?, Worm, Fly)
   + Resources needed: ~4 cores/person for 2 hour block  
