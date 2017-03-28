@@ -1,6 +1,11 @@
-# ARC-Bioinformatics-Training
-> This is the website for the UBC Advanced Research Computing Bioinformatics Training Initiative.  Our mission is to teach bioinformatics analysis and bring compute resources to researchers at UBC and across Canada.
+# Introduction to Genomic Analysis Workshop Series
+> This is the website for the UBC Advanced Research Computing Genomic Analysis Workshop Series.  Our mission is to teach genomic analysis and connect compute resources to researchers at UBC and across Canada. 
 
+## Course Outline
+
+
+
+Why? Well the 
 
 ## General Course Information & Prerequisites
 The course is intended for academic researchers at Canadian institutions in Western Canada, that have access to nationally supported Research Computing through Compute Canada, specifically the WestGrid branch.  
@@ -31,7 +36,7 @@ The course is intended for academic researchers at Canadian institutions in West
       + [Software available](https://www.westgrid.ca/support/software/) 
       
 
-### To-Do before Wednesday November 23rd, 2016
+### To-Do before the first class
 1. Get your login information for WestGrid, and log-in to the orcinus compute server.
 ssh \<username\>@orcinus.westgrid.ca
 example:
@@ -41,15 +46,70 @@ ssh richmonp@orcinus.westgrid.ca
 
 3. Install Vidyo, IGV, FileZilla
 
-## Tutorial Sessions
-### Session 1: Introduction to Next Generation Sequencing Analysis: Short-read Mapping and Visualization
-  + [Slides](https://docs.google.com/presentation/d/1vaHO9tewJhnpn3CQkIADKnJka4SrKCFb2_zOMTOi7yc/edit?usp=sharing)
-  + **Learning Goals** 
-    + Explore command-line usage of popular Bioinformatics tools (BWA, Samtools)
-    + Learn about file formats
-    + Visualize mapped reads using IGV
-    + Learn to interact with WestGrid compute environment and queuing system
-    + Get a taste of bioinformatics analysis 
+## Course Details
+### Session 1: Linux/Bioinformatics :
+    Monday, June 5th, 10:00-12:00
+    Linux - Logging in, filesystem, moving around, file editing, downloading files
+    Commands:
+cp, ls, mv, cut, mkdir, rm, scp, wget
+System tools: 
+FTP/SCP client, terminal/shell
+Bioinformatics  
+File formats: BED, GFF, GTF, FASTA, DICT
+Databases accessed: UCSC
+  
+### Session 2: Linux/Bioinformatics:
+Tuesday, June 6th, 10:00-12:00
+Linux - Shell scripts, interacting with the queue
+Commands: 
+sh, qsub, qstat, qdel, emacs, 
+Bioinformatics  
+File formats: FASTQ, FASTQ.GZ 
+Tools used: FastQC 
+Resources needed: ~1 core/person for 2 hour block  
+
+### Session 3 (Short read mapping and visualization) (This is the piece I already taught)
+Wednesday, June 7th, 10:00-12:00
+Bioinformatics  
+File formats: SAM, BAM, CRAM, BAI, sorted.BAM,
+Tools used: BWA (with different options), samtools, IGV (downloaded on their own computer)
+Datasets: DNA-sequencing (Human)
+Resources needed: ~4 cores/person for 2 hour block  
+
+### Session 4: Variant Calling - Small variants
+Thursday, June 8th, 10:00-12:00
+Bioinformatics  
+File formats: VCF
+Tools used: Picard, GATK, Platypus, Freebayes, Samtools mpileup
+Datasets: DNA-sequencing (Human)
+Resources needed: ~4 cores/person for 2 hour block  
+
+
+### Mid-series quiz
+Friday, June 9th
+
+
+### Session 5: Variant Annotation
+Monday, June 12th, 10:00-12:00    
+Bioinformatics
+File formats: VCF, BEDPE
+Tools used: GEMINI
+Datasets: DNA-sequencing (Human)
+Resources needed: ~4 cores/person for 2 hour block  
+
+### Session 6: RNA-seq
+Tuesday, June 13th, 10:00-12:00
+~Bioinformatics~
+File formats: GTF review, 
+Tools used: Tophat, cufflinks, cuffdiff (or updated version of tuxedo suite)
+Datasets: RNA-sequencing (Mouse?, Human?, Worm, Fly)
+Resources needed: ~4 cores/person for 2 hour block  
+
+### Session 7: RNA-seq II
+Wednesday, June 14th, 10:00-12:00
+Bioinformatics
+HTSeq → DESeq  
+
 
 
 
