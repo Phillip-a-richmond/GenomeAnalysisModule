@@ -4,7 +4,6 @@
 ## General Course Information & Prerequisites
 ### Course Format
 > The course is intended for academic researchers at Canadian institutions in Western Canada, that have access to nationally supported Research Computing through Compute Canada, specifically the WestGrid branch.  
-
 + 2 hour workshops:
   + 45 minute lecture
   + 15 minute Q&A
@@ -16,7 +15,6 @@
   + *Example 2*: Familiar with short read sequencing analysis and visualization, but want to learn about variant calling, do the quiz for Session 3 and show up to Session 4.
 + Each workshop will have local environment, hosted at BC Children's Hospital with refreshments provided
 + Each workshop will also have a virtual environment, hosted through Vidyo (See details on Vidyo [below](#General-Course-Information-&-Prerequisites))
-  
 ### Prerequisites
 + Install Vidyo, Instructions [Here](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Vidyo_instructions.md)
 + If you're a temporary user, refer to the email with instructions to log-in
@@ -55,7 +53,6 @@ ssh richmonp@orcinus.westgrid.ca
 ## Course Details
 ### Session 1: Linux/Bioinformatics :
 > Monday, June 5th, 10:00-12:00
-
 + *Linux* 
   + Logging in, filesystem, moving around, file editing, downloading files
   + Commands:
@@ -68,7 +65,6 @@ ssh richmonp@orcinus.westgrid.ca
   
 ### Session 2: Linux/Bioinformatics:
 > Tuesday, June 6th, 10:00-12:00
-
 + *Linux* 
   + Shell scripts, interacting with the queue
   + Commands: sh, qsub, qstat, qdel, emacs, 
@@ -79,27 +75,22 @@ ssh richmonp@orcinus.westgrid.ca
 
 ### Session 3: Short read mapping and visualization
 > Wednesday, June 7th, 10:00-12:00
-
 + *Bioinformatics*  
   + File formats: SAM, BAM, CRAM, BAI, sorted.BAM,
   + Tools used: BWA (with different options), samtools, IGV (downloaded on own computer)
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block
 
-
 ### Session 4: Variant Calling - Small variants
 > Thursday, June 8th, 10:00-12:00
-
 + *Bioinformatics*  
   + File formats: VCF
   + Tools used: Picard, GATK, Platypus, Freebayes, Samtools mpileup
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block  
 
-
 ### Mid-series quiz
 > Friday, June 9th
-
 
 ### Session 5: Variant Annotation
 > Monday, June 12th, 10:00-12:00    
@@ -119,6 +110,7 @@ ssh richmonp@orcinus.westgrid.ca
 
 ### Session 7: RNA-seq II
 > Wednesday, June 14th, 10:00-12:00
++ [Pre-Quiz Session 7]()
 + *Bioinformatics*
   + HTSeq → DESeq  
 
