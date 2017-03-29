@@ -12,8 +12,8 @@
   + 15 wrap up
 + Each workshop has a prerequisite "quiz".  The problemset from the preceding workshop is the "quiz"
 + If you're familiar with a given subject, you just need to be able to complete the entry quiz instead of attending that subject
-  + Example 1: Familiar with Linux, but want to learn about short read mapping, do the quiz for Session 2, and show up for Session 3. 
-  + Example 2: Familiar with short read sequencing analysis and visualization, but want to learn about variant calling, do the quiz for Session 3 and show up to Session 4.
+  + *Example 1*: Familiar with Linux, but want to learn about short read mapping, do the quiz for Session 2, and show up for Session 3. 
+  + *Example 2*: Familiar with short read sequencing analysis and visualization, but want to learn about variant calling, do the quiz for Session 3 and show up to Session 4.
 + Each workshop will have local environment, hosted at BC Children's Hospital with refreshments provided
 + Each workshop will also have a virtual environment, hosted through Vidyo (See details on Vidyo [below](#General-Course-Information-&-Prerequisites))
   
@@ -42,7 +42,6 @@
   + [Running jobs](https://www.westgrid.ca/support/running_jobs) 
   + [Software available](https://www.westgrid.ca/support/software/) 
       
-
 ### To-Do before the first class
 1. Get your login information for WestGrid, and log-in to the orcinus compute server.
 ssh \<username\>@orcinus.westgrid.ca
@@ -76,7 +75,7 @@ ssh richmonp@orcinus.westgrid.ca
   + Tools used: FastQC 
   + HPC Resources needed: ~1 core/person for 2 hour block  
 
-### Session 3 (Short read mapping and visualization)
+### Session 3: Short read mapping and visualization
 > Wednesday, June 7th, 10:00-12:00
 
 + Bioinformatics  
