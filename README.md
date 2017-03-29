@@ -1,7 +1,10 @@
 # Introduction to Genomic Analysis Workshop Series
 > This is the website for the UBC Advanced Research Computing (ARC) Genomic Analysis Workshop Series.  Our mission is to teach genomic analysis and connect compute resources to researchers at UBC and across Canada. 
 
-## Course Format
+## General Course Information & Prerequisites
+### Course Format
+> The course is intended for academic researchers at Canadian institutions in Western Canada, that have access to nationally supported Research Computing through Compute Canada, specifically the WestGrid branch.  
+
 + 2 hour workshops:
   + 45 minute lecture
   + 15 minute Q&A
@@ -14,34 +17,30 @@
 + Each workshop will have local environment, hosted at BC Children's Hospital with refreshments provided
 + Each workshop will also have a virtual environment, hosted through Vidyo (See details on Vidyo [below](#General-Course-Information-&-Prerequisites))
   
-
-
-## General Course Information & Prerequisites
-The course is intended for academic researchers at Canadian institutions in Western Canada, that have access to nationally supported Research Computing through Compute Canada, specifically the WestGrid branch.  
-+ **Prerequisites**
-  + Install Vidyo, Instructions [Here](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Vidyo_instructions.md)
-  + If you're a temporary user, refer to the email with instructions to log-in
-  + For mac/linux users, only need native terminal which comes with the operating system.  You can access it in the Applications section for Mac users.  You also need to have X windows installed [Link](https://www.xquartz.org/)
-  + For PC users, download and install [MobaXterm](http://mobaxterm.mobatek.net/) 
-    + [Advanced MobaXterm usage](https://www.youtube.com/watch?v=Gkl8LD1rwlU) 
-  + IGV installed on local machine 
-    + [IGV install](https://www.broadinstitute.org/software/igv/log-in) 
-  + Filezilla installed on local machine
-    + [FileZilla](https://filezilla-project.org/)
-+ **Resources**
-    + [Linux/Unix Cheatsheet](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/UnixCheatSheet.pdf) 
-    + [Linux/Unix online tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/) 
-    + Editor cheat sheets 
-      + [Emacs cheet sheet](http://www.rgrjr.com/emacs/emacs_cheat.html) 
-      + [vi cheat sheet](http://www.lagmonster.org/docs/vi.html) 
-      + [nano cheat sheet](http://www.codexpedia.com/text-editor/nano-text-editor-command-cheatsheet/) 
-    + File transfer programs  
-      + [FileZilla](https://filezilla-project.org/)
-      + [WinSCP](https://winscp.net/eng/download.php) 
-    + WestGrid resources 
-      + [WestGrid website](https://www.westgrid.ca/) 
-      + [Running jobs](https://www.westgrid.ca/support/running_jobs) 
-      + [Software available](https://www.westgrid.ca/support/software/) 
+### Prerequisites
++ Install Vidyo, Instructions [Here](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Vidyo_instructions.md)
++ If you're a temporary user, refer to the email with instructions to log-in
++ For mac/linux users, only need native terminal which comes with the operating system.  You can access it in the Applications section for Mac users.  You also need to have X windows installed [Link](https://www.xquartz.org/)
++ For PC users, download and install [MobaXterm](http://mobaxterm.mobatek.net/) 
+  + [Advanced MobaXterm usage](https://www.youtube.com/watch?v=Gkl8LD1rwlU) 
++ IGV installed on local machine 
+  + [IGV install](https://www.broadinstitute.org/software/igv/log-in) 
++ Filezilla (or other file transfer client) installed on local machine
+  + [FileZilla](https://filezilla-project.org/)
+### Resources
++ [Linux/Unix Cheatsheet](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/UnixCheatSheet.pdf) 
++ [Linux/Unix online tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/) 
++ Editor cheat sheets 
+  + [Emacs cheet sheet](http://www.rgrjr.com/emacs/emacs_cheat.html) 
+  + [vi cheat sheet](http://www.lagmonster.org/docs/vi.html) 
+  + [nano cheat sheet](http://www.codexpedia.com/text-editor/nano-text-editor-command-cheatsheet/) 
++ File transfer programs  
+  + [FileZilla](https://filezilla-project.org/)
+  + [WinSCP](https://winscp.net/eng/download.php) 
++ WestGrid resources 
+  + [WestGrid website](https://www.westgrid.ca/) 
+  + [Running jobs](https://www.westgrid.ca/support/running_jobs) 
+  + [Software available](https://www.westgrid.ca/support/software/) 
       
 
 ### To-Do before the first class
@@ -75,7 +74,7 @@ ssh richmonp@orcinus.westgrid.ca
 + Bioinformatics  
   + File formats: FASTQ, FASTQ.GZ 
   + Tools used: FastQC 
-  + Resources needed: ~1 core/person for 2 hour block  
+  + HPC Resources needed: ~1 core/person for 2 hour block  
 
 ### Session 3 (Short read mapping and visualization)
 > Wednesday, June 7th, 10:00-12:00
@@ -84,7 +83,7 @@ ssh richmonp@orcinus.westgrid.ca
   + File formats: SAM, BAM, CRAM, BAI, sorted.BAM,
   + Tools used: BWA (with different options), samtools, IGV (downloaded on own computer)
   + Datasets: DNA-sequencing (Human)
-  + Resources needed: ~4 cores/person for 2 hour block
+  + HPC Resources needed: ~4 cores/person for 2 hour block
 
 
 ### Session 4: Variant Calling - Small variants
@@ -94,7 +93,7 @@ ssh richmonp@orcinus.westgrid.ca
   + File formats: VCF
   + Tools used: Picard, GATK, Platypus, Freebayes, Samtools mpileup
   + Datasets: DNA-sequencing (Human)
-  + Resources needed: ~4 cores/person for 2 hour block  
+  + HPC Resources needed: ~4 cores/person for 2 hour block  
 
 
 ### Mid-series quiz
@@ -107,7 +106,7 @@ ssh richmonp@orcinus.westgrid.ca
   + File formats: VCF, BEDPE
   + Tools used: GEMINI
   + Datasets: DNA-sequencing (Human)
-  + Resources needed: ~4 cores/person for 2 hour block  
+  + HPC Resources needed: ~4 cores/person for 2 hour block  
 
 ### Session 6: RNA-seq Read Mapping
 > Tuesday, June 13th, 10:00-12:00
@@ -115,7 +114,7 @@ ssh richmonp@orcinus.westgrid.ca
   + File formats: GTF review
   + Tools used: Tophat, cufflinks, cuffdiff (or updated version of tuxedo suite)
   + Datasets: RNA-sequencing (Mouse?, Human?, Worm, Fly)
-  + Resources needed: ~4 cores/person for 2 hour block  
+  + HPC Resources needed: ~4 cores/person for 2 hour block  
 
 ### Session 7: RNA-seq II
 > Wednesday, June 14th, 10:00-12:00
