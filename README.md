@@ -1,6 +1,8 @@
 # Introduction to Genomic Analysis Workshop Series
 > This is the website for the UBC Advanced Research Computing (ARC) Genomic Analysis Workshop Series.  Our mission is to teach genomic analysis and connect compute resources to researchers at UBC and across Canada. 
 
+---
+
 ## General Course Information & Prerequisites
 ### Course Format
 > The course is intended for academic researchers at Canadian institutions in Western Canada, that have access to nationally supported Research Computing through Compute Canada, specifically the WestGrid branch.  
@@ -50,6 +52,8 @@ ssh richmonp@orcinus.westgrid.ca
 
 3. Install Vidyo, IGV, FileZilla
 
+---
+
 ## Course Details
 ### Session 1: Linux/Bioinformatics :
 > Monday, June 5th, 10:00-12:00
@@ -65,7 +69,9 @@ ssh richmonp@orcinus.westgrid.ca
   + File formats: BED, GFF, GTF, FASTA, DICT
   + Databases accessed: UCSC
 + [Session 1 ProblemSet]()
-  
+
+---
+
 ### Session 2: Linux/Bioinformatics:
 > Tuesday, June 6th, 10:00-12:00
 + [Session 2 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
@@ -79,6 +85,8 @@ ssh richmonp@orcinus.westgrid.ca
   + HPC Resources needed: ~1 core/person for 2 hour block  
 + [Session 2 ProblemSet]()
 
+---
+
 ### Session 3: Short read mapping and visualization
 > Wednesday, June 7th, 10:00-12:00
 + [Session 3 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
@@ -89,6 +97,8 @@ ssh richmonp@orcinus.westgrid.ca
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block
 + [Session 3 ProblemSet]()
+
+---
 
 ### Session 4: Variant Calling - Small variants
 > Thursday, June 8th, 10:00-12:00
@@ -101,9 +111,13 @@ ssh richmonp@orcinus.westgrid.ca
   + HPC Resources needed: ~4 cores/person for 2 hour block  
 + [Session 4 ProblemSet]()
 
+---
+
 ### Mid-series Exam
 > Friday, June 9th
 + [Mid-Series Exam]()
+
+---
 
 ### Session 5: Variant Annotation
 > Monday, June 12th, 10:00-12:00    
@@ -116,6 +130,8 @@ ssh richmonp@orcinus.westgrid.ca
   + HPC Resources needed: ~4 cores/person for 2 hour block  
 + [Session 5 ProblemSet]()
 
+---
+
 ### Session 6: RNA-seq Read Mapping
 > Tuesday, June 13th, 10:00-12:00
 + [Session 6 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
@@ -126,6 +142,8 @@ ssh richmonp@orcinus.westgrid.ca
   + Datasets: RNA-sequencing (Mouse?, Human?, Worm, Fly)
   + HPC Resources needed: ~4 cores/person for 2 hour block  
 + [Session 6 ProblemSet]()
+
+---
 
 ### Session 7: RNA-seq II
 > Wednesday, June 14th, 10:00-12:00
