@@ -56,21 +56,23 @@ ssh richmonp@orcinus.westgrid.ca
 ### Session 1: Linux/Bioinformatics :
 > Monday, June 5th, 10:00-12:00
 
-+ Linux - Logging in, filesystem, moving around, file editing, downloading files
++ *Linux* 
+  + Logging in, filesystem, moving around, file editing, downloading files
   + Commands:
   + cp, ls, mv, cut, mkdir, rm, scp, wget
-+ System tools: 
++ *System tools*: 
   + FTP/SCP client, terminal/shell
-+ Bioinformatics  
++ *Bioinformatics*  
   + File formats: BED, GFF, GTF, FASTA, DICT
   + Databases accessed: UCSC
   
 ### Session 2: Linux/Bioinformatics:
 > Tuesday, June 6th, 10:00-12:00
 
-+ Linux - Shell scripts, interacting with the queue
++ *Linux* 
+  + Shell scripts, interacting with the queue
   + Commands: sh, qsub, qstat, qdel, emacs, 
-+ Bioinformatics  
++ *Bioinformatics* 
   + File formats: FASTQ, FASTQ.GZ 
   + Tools used: FastQC 
   + HPC Resources needed: ~1 core/person for 2 hour block  
@@ -78,7 +80,7 @@ ssh richmonp@orcinus.westgrid.ca
 ### Session 3: Short read mapping and visualization
 > Wednesday, June 7th, 10:00-12:00
 
-+ Bioinformatics  
++ *Bioinformatics*  
   + File formats: SAM, BAM, CRAM, BAI, sorted.BAM,
   + Tools used: BWA (with different options), samtools, IGV (downloaded on own computer)
   + Datasets: DNA-sequencing (Human)
@@ -101,7 +103,7 @@ ssh richmonp@orcinus.westgrid.ca
 
 ### Session 5: Variant Annotation
 > Monday, June 12th, 10:00-12:00    
-+ Bioinformatics
++ *Bioinformatics*
   + File formats: VCF, BEDPE
   + Tools used: GEMINI
   + Datasets: DNA-sequencing (Human)
@@ -109,7 +111,7 @@ ssh richmonp@orcinus.westgrid.ca
 
 ### Session 6: RNA-seq Read Mapping
 > Tuesday, June 13th, 10:00-12:00
-+ Bioinformatics
++ *Bioinformatics*
   + File formats: GTF review
   + Tools used: Tophat, cufflinks, cuffdiff (or updated version of tuxedo suite)
   + Datasets: RNA-sequencing (Mouse?, Human?, Worm, Fly)
@@ -117,7 +119,7 @@ ssh richmonp@orcinus.westgrid.ca
 
 ### Session 7: RNA-seq II
 > Wednesday, June 14th, 10:00-12:00
-+ Bioinformatics
++ *Bioinformatics*
   + HTSeq → DESeq  
 
 
