@@ -53,6 +53,8 @@ ssh richmonp@orcinus.westgrid.ca
 ## Course Details
 ### Session 1: Linux/Bioinformatics :
 > Monday, June 5th, 10:00-12:00
++ [Session 1 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
++ [Session 1 Slides]()
 + *Linux* 
   + Logging in, filesystem, moving around, file editing, downloading files
   + Commands:
@@ -62,9 +64,12 @@ ssh richmonp@orcinus.westgrid.ca
 + *Bioinformatics*  
   + File formats: BED, GFF, GTF, FASTA, DICT
   + Databases accessed: UCSC
++ [Session 1 ProblemSet]()
   
 ### Session 2: Linux/Bioinformatics:
 > Tuesday, June 6th, 10:00-12:00
++ [Session 2 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
++ [Session 2 Slides]()
 + *Linux* 
   + Shell scripts, interacting with the queue
   + Commands: sh, qsub, qstat, qdel, emacs, 
@@ -72,48 +77,63 @@ ssh richmonp@orcinus.westgrid.ca
   + File formats: FASTQ, FASTQ.GZ 
   + Tools used: FastQC 
   + HPC Resources needed: ~1 core/person for 2 hour block  
++ [Session 2 ProblemSet]()
 
 ### Session 3: Short read mapping and visualization
 > Wednesday, June 7th, 10:00-12:00
++ [Session 3 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
++ [Session 3 Slides]()
 + *Bioinformatics*  
   + File formats: SAM, BAM, CRAM, BAI, sorted.BAM,
   + Tools used: BWA (with different options), samtools, IGV (downloaded on own computer)
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block
++ [Session 3 ProblemSet]()
 
 ### Session 4: Variant Calling - Small variants
 > Thursday, June 8th, 10:00-12:00
++ [Session 4 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
++ [Session 4 Slides]()
 + *Bioinformatics*  
   + File formats: VCF
   + Tools used: Picard, GATK, Platypus, Freebayes, Samtools mpileup
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block  
++ [Session 4 ProblemSet]()
 
-### Mid-series quiz
+### Mid-series Exam
 > Friday, June 9th
++ [Mid-Series Exam]()
 
 ### Session 5: Variant Annotation
 > Monday, June 12th, 10:00-12:00    
++ [Session 5 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
++ [Session 5 Slides]()
 + *Bioinformatics*
   + File formats: VCF, BEDPE
   + Tools used: GEMINI
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block  
++ [Session 5 ProblemSet]()
 
 ### Session 6: RNA-seq Read Mapping
 > Tuesday, June 13th, 10:00-12:00
++ [Session 6 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
++ [Session 6 Slides]()
 + *Bioinformatics*
   + File formats: GTF review
   + Tools used: Tophat, cufflinks, cuffdiff (or updated version of tuxedo suite)
   + Datasets: RNA-sequencing (Mouse?, Human?, Worm, Fly)
   + HPC Resources needed: ~4 cores/person for 2 hour block  
++ [Session 6 ProblemSet]()
 
 ### Session 7: RNA-seq II
 > Wednesday, June 14th, 10:00-12:00
-+ [Pre-Quiz Session 7]()
++ [Session 7 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
++ [Session 6 Slides]()
 + *Bioinformatics*
   + HTSeq → DESeq  
-
++ [Session 7 ProblemSet]()
 
 
 
