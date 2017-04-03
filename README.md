@@ -1,5 +1,5 @@
 # Introduction to Genomic Analysis Workshop Series
-> This is the website for the UBC Advanced Research Computing (ARC) Genomic Analysis Workshop Series.  Our mission is to teach genomic analysis and connect compute resources to researchers at UBC and across Canada. 
+> This is the website for the Genomic Analysis Workshop Series hosted by UBC Advanced Research Computing (ARC), Compute Canada's WestGrid division, and BC Children's Hospital Evidence 2 Innovation Consortium.  Our mission is to teach genomic analysis and connect compute resources to researchers at UBC and across Canada. 
 
 ---
 
@@ -18,11 +18,17 @@
 + Each workshop will have local environment, hosted at BC Children's Hospital with refreshments provided
 + Each workshop will also have a virtual environment, hosted through Vidyo (See details on Vidyo [below](#General-Course-Information-&-Prerequisites))
 ### Prerequisites
-+ Install Vidyo, Instructions [Here](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Vidyo_instructions.md)
+#### Getting a Compute Canada WestGrid Account
++ Follow the instructions [here](https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/)
 + If you're a temporary user, refer to the email with instructions to log-in
+#### Getting a temporary Compute Canada WestGrid Account
++ IF YOU ARE UNABLE TO DO THE ABOVE!!!
++ Then email ____ to receive your temporary account
+#### Software Installs
++ Install Vidyo, Instructions [Here](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Vidyo_instructions.md)
 + For mac/linux users, only need native terminal which comes with the operating system.  You can access it in the Applications section for Mac users.  You also need to have X windows installed [Link](https://www.xquartz.org/)
 + For PC users, download and install [MobaXterm](http://mobaxterm.mobatek.net/) 
-  + [Advanced MobaXterm usage](https://www.youtube.com/watch?v=Gkl8LD1rwlU) 
+  + [Advanced MobaXterm usage](https://www.youtube.com/watch?v=Gkl8LD1rwlU)  
 + IGV installed on local machine 
   + [IGV install](https://www.broadinstitute.org/software/igv/log-in) 
 + Filezilla (or other file transfer client) installed on local machine
