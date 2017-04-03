@@ -4,8 +4,11 @@
 ---
 
 ## General Course Information & Prerequisites
+
 ### Course Format
+
 > The course is intended for academic researchers at Canadian institutions in Western Canada, that have access to nationally supported Research Computing through Compute Canada, specifically the WestGrid branch.  
+
 + 2 hour workshops:
   + 45 minute lecture
   + 15 minute Q&A
@@ -17,6 +20,7 @@
   + *Example 2*: Familiar with short read sequencing analysis and visualization, but want to learn about variant calling, do the quiz for Session 3 and show up to Session 4.
 + Each workshop will have local environment, hosted at BC Children's Hospital with refreshments provided
 + Each workshop will also have a virtual environment, hosted through Vidyo (See details on Vidyo [below](#General-Course-Information-&-Prerequisites))
+
 ### Prerequisites
 #### Getting a Compute Canada WestGrid Account
 + Follow the instructions [here](https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/)
