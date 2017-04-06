@@ -65,7 +65,7 @@ ssh richmonp@orcinus.westgrid.ca
 ---
 
 ## Course Details
-### Session 1: Linux/Bioinformatics :
+### Session 1: Introduction to Linux I, Bioinformatics File Formats
 > Monday, June 5th, 10:00-12:00
 + [Session 1 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
 + [Session 1 Slides]()
@@ -82,7 +82,7 @@ ssh richmonp@orcinus.westgrid.ca
 
 ---
 
-### Session 2: Linux/Bioinformatics:
+### Session 2: Introduction to Linux II, Interacting with the Queue
 > Tuesday, June 6th, 10:00-12:00
 + [Session 2 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
 + [Session 2 Slides]()
@@ -142,7 +142,7 @@ ssh richmonp@orcinus.westgrid.ca
 
 ---
 
-### Session 6: RNA-seq Read Mapping
+### Session 6: RNA-seq I, Read Mapping
 > Tuesday, June 13th, 10:00-12:00
 + [Session 6 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
 + [Session 6 Slides]()
@@ -155,7 +155,7 @@ ssh richmonp@orcinus.westgrid.ca
 
 ---
 
-### Session 7: RNA-seq II
+### Session 7: RNA-seq II, Differential Expression
 > Wednesday, June 14th, 10:00-12:00
 + [Session 7 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
 + [Session 6 Slides]()
