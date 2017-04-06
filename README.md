@@ -1,5 +1,7 @@
 # Introduction to Genomic Analysis Workshop Series
-> This course is intended for Canadian researchers interested in learning the basic steps of genomic analysis using high performance computing. Using the computing resources of Compute Canada, specifically the WestGrid region, participants will work through practical exercises in the workshop sessions and receive a certificate of completion at the end of the series.  The workshop series is sponsored by WestGrid, Compute Canada, UBC Advanced Research Computing, and BC Children's Hospital Evidence2Innovation Consortium.
+> This course is intended for Canadian researchers interested in learning the basic steps of genomic analysis using high performance computing. Using the computing resources of Compute Canada, specifically the WestGrid region, participants will work through practical exercises in the workshop sessions and receive a certificate of completion at the end of the series.  
+
+> The workshop series is sponsored by WestGrid, Compute Canada, UBC Advanced Research Computing, and BC Children's Hospital Evidence 2 Innovation Consortium.
 
 ---
 
@@ -72,7 +74,7 @@ ssh richmonp@orcinus.westgrid.ca
 
 ## Course Details  
 
-### Session 1: Introduction to Linux I, Bioinformatics File Formats
+### Session 1: Introduction to Linux I, Basic Command Line
 > Monday, June 5th, 10:00-12:00
 + [Session 1 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
 + [Session 1 Slides]()
