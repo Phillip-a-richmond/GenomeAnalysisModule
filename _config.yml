@@ -2,7 +2,7 @@ title: Introduction To Genomic Analysis
 description: "This is the website for the Introduction to Genomic Analysis Workshop Series"
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-slate
+theme: jekyll-theme-cayman
 
 gems:
   - jekyll-mentions
