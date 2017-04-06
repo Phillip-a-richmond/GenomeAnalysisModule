@@ -1,7 +1,7 @@
 # Introduction to Genomic Analysis Workshop Series
 > This course is intended for Canadian researchers interested in learning the basic steps of genomic analysis using high performance computing. Using the computing resources of Compute Canada, specifically the WestGrid region, participants will work through practical exercises in the workshop sessions and receive a certificate of completion at the end of the series.  
 
-> The workshop series is sponsored by WestGrid, Compute Canada, UBC Advanced Research Computing, and BC Children's Hospital Evidence 2 Innovation Consortium.
+
 
 ---
 
@@ -171,6 +171,15 @@ ssh richmonp@orcinus.westgrid.ca
 + *Bioinformatics*
   + HTSeq → DESeq  
 + [Session 7 ProblemSet]()
+
+
+
+## Proudly Supported By:
++ University of British Columbia Advanced Research Computing
++ BC Children's Hospital Evidence 2 Innovation
++ Compute Canada WestGrid
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 
 
