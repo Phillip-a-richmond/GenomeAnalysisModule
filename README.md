@@ -179,7 +179,9 @@ ssh richmonp@orcinus.westgrid.ca
 + BC Children's Hospital Evidence 2 Innovation
 + Compute Canada WestGrid
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![BCCH Logo](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/bcch_logo1.png)
+![WestGrid Logo](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/wesgrid_logo_2016.png)
+
 
 
 
