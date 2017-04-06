@@ -40,8 +40,8 @@
   + [IGV install](https://www.broadinstitute.org/software/igv/log-in) 
 + Filezilla (or other file transfer client) installed on local machine
   + [FileZilla](https://filezilla-project.org/)
-
-### Resources  
+  
+  ### Resources  
 + [Linux/Unix Cheatsheet](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/UnixCheatSheet.pdf) 
 + [Linux/Unix online tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/) 
 + Editor cheat sheets 
