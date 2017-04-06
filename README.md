@@ -1,9 +1,11 @@
 # Introduction to Genomic Analysis Workshop Series
-> This is the website for the Genomic Analysis Workshop Series hosted by UBC Advanced Research Computing (ARC), Compute Canada's WestGrid division, and BC Children's Hospital Evidence 2 Innovation Consortium.  Our mission is to teach genomic analysis and connect compute resources to researchers at UBC and across Canada. 
+> This course is intended for Canadian researchers interested in learning the basic steps of genomic analysis using high performance computing. Using the computing resources of Compute Canada, specifically the WestGrid region, participants will work through practical exercises in the workshop sessions and receive a certificate of completion at the end of the series.  The workshop series is sponsored by WestGrid, Compute Canada, UBC Advanced Research Computing, and BC Children's Hospital Evidence2Innovation Consortium.
 
 ---
 
 ## General Course Information & Prerequisites
+### Registering for the course
+Please register for the course using our EventBrite Link [here](https://www.eventbrite.ca/e/introduction-to-genomic-analysis-workshop-series-registration-33475860199)
 
 ### Course Format
 
@@ -19,7 +21,7 @@
   + *Example 1*: Familiar with Linux, but want to learn about short read mapping, do the quiz for Session 2, and show up for Session 3. 
   + *Example 2*: Familiar with short read sequencing analysis and visualization, but want to learn about variant calling, do the quiz for Session 3 and show up to Session 4.
 + Each workshop will have local environment, hosted at BC Children's Hospital with refreshments provided
-+ Each workshop will also have a virtual environment, hosted through Vidyo (See details on Vidyo [below](#General-Course-Information-&-Prerequisites))
++ Each workshop will also have a virtual environment, hosted through Vidyo (See details on Vidyo [below](#Software-Installs) )
 
 ### Prerequisites  
 
@@ -29,7 +31,7 @@
 
 #### Getting a temporary Compute Canada WestGrid Account  
 + IF YOU ARE UNABLE TO DO THE ABOVE!!!
-+ Then email ____ to receive your temporary account
++ Then a temporary account will be provided to you in the week leading up to the course, and will dissolve when the course completes.
 
 #### Software Installs  
 + Install Vidyo, Instructions [Here](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Vidyo_instructions.md)
