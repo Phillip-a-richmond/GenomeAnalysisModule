@@ -21,14 +21,17 @@
 + Each workshop will have local environment, hosted at BC Children's Hospital with refreshments provided
 + Each workshop will also have a virtual environment, hosted through Vidyo (See details on Vidyo [below](#General-Course-Information-&-Prerequisites))
 
-### Prerequisites
-#### Getting a Compute Canada WestGrid Account
+### Prerequisites  
+
+#### Getting a Compute Canada WestGrid Account  
 + Follow the instructions [here](https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/)
 + If you're a temporary user, refer to the email with instructions to log-in
-#### Getting a temporary Compute Canada WestGrid Account
+
+#### Getting a temporary Compute Canada WestGrid Account  
 + IF YOU ARE UNABLE TO DO THE ABOVE!!!
 + Then email ____ to receive your temporary account
-#### Software Installs
+
+#### Software Installs  
 + Install Vidyo, Instructions [Here](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Vidyo_instructions.md)
 + For mac/linux users, only need native terminal which comes with the operating system.  You can access it in the Applications section for Mac users.  You also need to have X windows installed [Link](https://www.xquartz.org/)
 + For PC users, download and install [MobaXterm](http://mobaxterm.mobatek.net/) 
@@ -37,7 +40,8 @@
   + [IGV install](https://www.broadinstitute.org/software/igv/log-in) 
 + Filezilla (or other file transfer client) installed on local machine
   + [FileZilla](https://filezilla-project.org/)
-### Resources
+
+### Resources  
 + [Linux/Unix Cheatsheet](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/UnixCheatSheet.pdf) 
 + [Linux/Unix online tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/) 
 + Editor cheat sheets 
@@ -52,7 +56,7 @@
   + [Running jobs](https://www.westgrid.ca/support/running_jobs) 
   + [Software available](https://www.westgrid.ca/support/software/) 
       
-### To-Do before the first class
+### To-Do before the first class  
 1. Get your login information for WestGrid, and log-in to the orcinus compute server.
 ssh \<username\>@orcinus.westgrid.ca
 example:
@@ -64,7 +68,8 @@ ssh richmonp@orcinus.westgrid.ca
 
 ---
 
-## Course Details
+## Course Details  
+
 ### Session 1: Introduction to Linux I, Bioinformatics File Formats
 > Monday, June 5th, 10:00-12:00
 + [Session 1 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
