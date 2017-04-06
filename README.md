@@ -180,6 +180,7 @@ ssh richmonp@orcinus.westgrid.ca
 + Compute Canada WestGrid
 
 ![BCCH Logo](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/bcch_logo1.png)
+
 ![WestGrid Logo](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/wesgrid_logo_2016.png)
 
 
