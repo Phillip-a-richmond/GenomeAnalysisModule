@@ -1,6 +1,0 @@
-{
-  "name": "Arc-bioinformatics-training",
-  "tagline": "This is the website for the UBC Advanced Research Computing Bioinformatics Training Initiative ",
-  "body": "# ARC-Bioinformatics-Training\r\n> This is the website for the UBC Advanced Research Computing Bioinformatics Training Initiative.  Our mission is to teach bioinformatics analysis and bring compute resources to researchers at UBC and across Canada.\r\n\r\n\r\nResources:\r\n+ Compute Canada Account\r\n+ Logging into WestGrid\r\n+ Linux Primer\r\n\r\n\r\n## Tutorial Sessions\r\n+ Session 1: Introduction to Next Generation Sequencing Analysis: Short-read Mapping and Visualization\r\n  + Slides\r\n  + Scripts\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
