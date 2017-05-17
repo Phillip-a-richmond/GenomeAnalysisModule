@@ -12,9 +12,9 @@ I urge you to work together on these quizzes and problem sets.
 
 2.) Complete the prerequisites on the course website if you haven't already.  These include:
 
-A.) Install Vidyo
-B.) For PC Users, install MobaXTerm (or Putty)
-C.) Install a File transfer client (Example: FileZilla)
+  A.) Install Vidyo
+  B.) For PC Users, install MobaXTerm (or Putty)
+  C.) Install a File transfer client (Example: FileZilla)
 
 3.) Open up your terminal (on Mac just find the terminal application, on PC open up MobaXTerm). Log-in to the WestGrid Compute Cluster known as Orcinus (see example commands below).  The address of the cluster is: orcinus@westgrid.ca. If you are a temporary user, you will not be able to test logging in until after May 29th.
 
@@ -28,9 +28,9 @@ If you have trouble with this, please contact wgcomms@computecanada.ca IMMEDIATE
 
 5.) Email me (phillip.a.richmond@gmail.com) with the following:
 
-A.) Were you able to log in?  (if No, have you contacted wgcomms@computecanada.ca?)
-B.) What is your experience level with linux shell?
-C.) What do you hope to get out of the course?
-D.) What is your current favourite song (Artist, Song Name)?  Just trying to find some new tunes (>'.')>   <('.'<)
+  A.) Were you able to log in?  (if No, have you contacted wgcomms@computecanada.ca?)
+  B.) What is your experience level with linux shell?
+  C.) What do you hope to get out of the course?
+  D.) What is your current favourite song (Artist, Song Name)?  Just trying to find some new tunes (>'.')>   <('.'<)
 
 
