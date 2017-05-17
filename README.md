@@ -76,7 +76,7 @@ ssh richmonp@orcinus.westgrid.ca
 
 ### Session 1: Introduction to Linux I, Basic Command Line
 > Monday, June 5th, 10:00AM-12:00PM (PST)
-+ [Session 1 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
++ [Session 1 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/PreQuiz_Session1.txt)
 + [Session 1 Slides]()
 + *Linux* 
   + Logging in, filesystem, moving around, file editing, downloading files
