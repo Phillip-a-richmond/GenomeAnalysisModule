@@ -16,15 +16,22 @@ I urge you to work together on these quizzes and problem sets.
   B.) For PC Users, install MobaXTerm (or Putty)
   C.) Install a File transfer client (Example: FileZilla)
 
-3.) Open up your terminal (on Mac just find the terminal application, on PC open up MobaXTerm). Log-in to the WestGrid Compute Cluster known as Orcinus (see example commands below).  The address of the cluster is: orcinus@westgrid.ca. If you are a temporary user, you will not be able to test logging in until after May 29th.
+3.) Open up your terminal (on Mac just find the terminal application, on PC open up MobaXTerm). 
+Log-in to the WestGrid Compute Cluster known as Orcinus (see example commands below).  
+The address of the cluster is: orcinus@westgrid.ca. 
+If you are a temporary user, you will not be able to test logging in until after May 29th.
 
 ssh <username>@host
 example: ssh richmonp@orcinus.westgrid.ca
 example: ssh wg-user07@orcinus.westgrid.ca
 
-If you have trouble with this, please contact wgcomms@computecanada.ca IMMEDIATELY! The entire course is hosted on this server, so if you can't log in before class, you are going to have a bad time.
+If you have trouble with this, please contact wgcomms@computecanada.ca IMMEDIATELY! 
+The entire course is hosted on this server, so if you can't log in before class...
+You are going to have a bad time, mmkay.
 
-4.) Take a quick peek at the Session 1 slides (link on the website).  If you are feeling incredibly overwhelmed due to being very new to the linux command line, then consider taking this linux tutorial (http://www.ee.surrey.ac.uk/Teaching/Unix/).
+4.) Take a quick peek at the Session 1 slides (link on the website).  
+If you are feeling incredibly overwhelmed due to being very new to the linux command line, 
+then consider taking this linux tutorial (http://www.ee.surrey.ac.uk/Teaching/Unix/).
 
 5.) Email me (phillip.a.richmond@gmail.com) with the following:
 
