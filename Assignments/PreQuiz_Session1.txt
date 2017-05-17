@@ -21,9 +21,9 @@ Log-in to the WestGrid Compute Cluster known as Orcinus (see example commands be
 The address of the cluster is: orcinus@westgrid.ca. 
 If you are a temporary user, you will not be able to test logging in until after May 29th.
 
-ssh <username>@host
-example: ssh richmonp@orcinus.westgrid.ca
-example: ssh wg-user07@orcinus.westgrid.ca
+  ssh <username>@host
+  example: ssh richmonp@orcinus.westgrid.ca
+  example: ssh wg-user07@orcinus.westgrid.ca
 
 If you have trouble with this, please contact wgcomms@computecanada.ca IMMEDIATELY! 
 The entire course is hosted on this server, so if you can't log in before class...
