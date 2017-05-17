@@ -1,0 +1,36 @@
+Pre-Quiz for Session 1.  To be completed before June 5th.
+
+Welcome to the Introduction to Genomic Analysis Workshop Series!
+
+Each session will have a pre-session quiz, but since the course hasn't started this quiz will be quite short.
+
+Other sessions will have more difficult quizzes, that will require some additional time and effort outside of class.  
+
+I urge you to work together on these quizzes and problem sets.
+
+1.) Visit the Course website (https://phillip-a-richmond.github.io/Introduction-to-Genomic-Analysis/).
+
+2.) Complete the prerequisites on the course website if you haven't already.  These include:
+
+A.) Install Vidyo
+B.) For PC Users, install MobaXTerm (or Putty)
+C.) Install a File transfer client (Example: FileZilla)
+
+3.) Open up your terminal (on Mac just find the terminal application, on PC open up MobaXTerm). Log-in to the WestGrid Compute Cluster known as Orcinus (see example commands below).  The address of the cluster is: orcinus@westgrid.ca. If you are a temporary user, you will not be able to test logging in until after May 29th.
+
+ssh <username>@host
+example: ssh richmonp@orcinus.westgrid.ca
+example: ssh wg-user07@orcinus.westgrid.ca
+
+If you have trouble with this, please contact wgcomms@computecanada.ca IMMEDIATELY! The entire course is hosted on this server, so if you can't log in before class, you are going to have a bad time.
+
+4.) Take a quick peek at the Session 1 slides (link on the website).  If you are feeling incredibly overwhelmed due to being very new to the linux command line, then consider taking this linux tutorial (http://www.ee.surrey.ac.uk/Teaching/Unix/).
+
+5.) Email me (phillip.a.richmond@gmail.com) with the following:
+
+A.) Were you able to log in?  (if No, have you contacted wgcomms@computecanada.ca?)
+B.) What is your experience level with linux shell?
+C.) What do you hope to get out of the course?
+D.) What is your current favourite song (Artist, Song Name)?  Just trying to find some new tunes (>'.')>   <('.'<)
+
+

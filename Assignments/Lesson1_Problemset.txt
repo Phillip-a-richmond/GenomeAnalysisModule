@@ -1,0 +1,10 @@
+# This problem set will review the basic commands from the lecture:
+# Then you will need to learn some new commands yourself
+# And lastly you will explore some file formats
+ 
+
+
+
+
+
+
