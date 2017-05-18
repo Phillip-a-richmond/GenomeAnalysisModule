@@ -77,17 +77,16 @@ ssh richmonp@orcinus.westgrid.ca
 ### Session 1: Introduction to Linux I, Basic Command Line
 > Monday, June 5th, 10:00AM-12:00PM (PST)
 + [Session 1 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/PreQuiz_Session1.txt)
-+ [Session 1 Slides]()
++ [Session 1 Slides](https://docs.google.com/presentation/d/1vaHO9tewJhnpn3CQkIADKnJka4SrKCFb2_zOMTOi7yc/edit#slide=id.g1957375280_1_15)
 + *Linux* 
   + Logging in, filesystem, moving around, file editing, downloading files
   + Commands:
   + cp, ls, mv, cut, mkdir, rm, scp, wget
 + *System tools*: 
-  + FTP/SCP client, terminal/shell
+  + terminal/shell
 + *Bioinformatics*  
-  + File formats: BED, GFF, GTF, FASTA, DICT
-  + Databases accessed: UCSC
-+ [Session 1 ProblemSet]()
+  + File formats: BED, GFF/GTF, VCF
++ [Session 1 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session1_Problemset.txt)
 
 ---
 
@@ -96,6 +95,8 @@ ssh richmonp@orcinus.westgrid.ca
 + [Session 2 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
 + [Session 2 Slides]()
 + *Linux* 
+  + File editor
+  + FTP client
   + Shell scripts, interacting with the queue
   + Commands: sh, qsub, qstat, qdel, emacs, 
 + *Bioinformatics* 
