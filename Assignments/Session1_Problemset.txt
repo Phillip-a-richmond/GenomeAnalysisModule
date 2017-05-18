@@ -25,17 +25,28 @@ If it doesn't, redo your command in #4 using the whole-word option from the grep
 7) Delete the smaller of the two gtf files: GRN.gtf and TTN.gtf
 
 8) Make a BED file (chromosome,start,stop tab separated) of the CDS entries for TTN called TTN.bed
+(hint cut -f)
 
-9) 
+9) Download the clinvar vcf file into your Problemset Directory:
+ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz
 
+10) Unzip the clinvar.vcf.gz file
 
+11) Extract all variant lines corresponding to the gene ABCD1 from the clinvar file into a file called:
+ABCD1_clinvar.vcf
 
+12) Check the number of lines in the ABCD1_clinvar.vcf file.
 
+13) Extract all variant lines corresponding to the gene SLC6A8 from the clinvar.vcf file into a file called:
+SLC6A8_clinvar.vcf
 
+14) Concatenate the ABCD1_clinvar.vcf and SLC6A8_clinvar.vcf files into a single file called combined_clinvar.vcf
 
+15) Extract the header lines (starting with "#") from the file clinvar.vcf and add them to the top of combined_clinvar.vcf to make a new file called:
+ABCD1_SLC6A8_clinvar.vcf
 
+16) Compress the file ABCD1_SLC6A8_clinvar.vcf using gzip
 
+17) Copy your Problemset directory into /global/scratch/ARC_Training/Session1/Problemset/Finished/
 
-
-
-
+18) Change the permissions on your directory to be read, write, and execute for user, group, and world.
