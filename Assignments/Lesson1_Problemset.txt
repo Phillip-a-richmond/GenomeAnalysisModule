@@ -1,9 +1,11 @@
-# This problem set will review the basic commands from the lecture:
-# Then you will need to learn some new commands yourself
-# And lastly you will explore some file formats
- 
+This problem set will review the basic commands from the lecture, and add some new commands I didn't teach you (GASP!!!)
+
+The examples in this problem set will also guide you through exploring different file formats commonly used in genomics
 
 
+1) Create a new directory with your last name and first initial in all caps within:
+/global/scratch/ARC_Training/Session1/ProblemSet/
+2) 
 
 
 
