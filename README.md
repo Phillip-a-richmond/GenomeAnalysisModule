@@ -86,6 +86,7 @@ ssh richmonp@orcinus.westgrid.ca
   + terminal/shell
 + *Bioinformatics*  
   + File formats: BED, GFF/GTF, VCF
++ [Github Gist](https://gist.github.com/Phillip-a-richmond/8b36d58fb2f03d4760869b0676d50692)
 + [Session 1 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session1_Problemset.txt)
 
 ---
