@@ -66,7 +66,7 @@ ssh \<username\>@orcinus.westgrid.ca
 example:
 ssh richmonp@orcinus.westgrid.ca
 
-2. Complete the Pre-class Quiz found [Here](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
+2. Complete the Pre-class Quiz found [Here](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/PreQuiz_Session1.txt)
 
 3. Install Vidyo, IGV, FileZilla
 
