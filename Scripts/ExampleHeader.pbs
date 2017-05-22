@@ -20,4 +20,7 @@
 #Environmental variable defined by the batch system
 cd $PBS_O_WORKDIR
 
+echo "This is a job script"
+date
+
 
