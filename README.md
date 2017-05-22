@@ -36,7 +36,7 @@ Please register for the course using our EventBrite Link [here](https://www.even
 + Then a temporary account will be provided to you in the week leading up to the course, and will dissolve when the course completes.
 
 #### Software Installs  
-+ Install Vidyo, Instructions [Here](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Vidyo_instructions.md)
++ Install Vidyo, Instructions [Here](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Resources/Vidyo_instructions.md)
 + For mac/linux users, only need native terminal which comes with the operating system.  You can access it in the Applications section for Mac users.  You also need to have X windows installed [Link](https://www.xquartz.org/)
 + For PC users, download and install [MobaXterm](http://mobaxterm.mobatek.net/) 
   + [Advanced MobaXterm usage](https://www.youtube.com/watch?v=Gkl8LD1rwlU)  
@@ -46,7 +46,7 @@ Please register for the course using our EventBrite Link [here](https://www.even
   + [FileZilla](https://filezilla-project.org/)
   
   ### Resources  
-+ [Linux/Unix Cheatsheet](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/UnixCheatSheet.pdf) 
++ [Linux/Unix Cheatsheet](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Resources/UnixCheatSheet.pdf) 
 + [Linux/Unix online tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/) 
 + Editor cheat sheets 
   + [Emacs cheet sheet](http://www.rgrjr.com/emacs/emacs_cheat.html) 
