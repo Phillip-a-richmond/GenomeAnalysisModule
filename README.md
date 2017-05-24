@@ -94,7 +94,7 @@ ssh richmonp@orcinus.westgrid.ca
 ### Session 2: Introduction to Linux II, Interacting with the Queue
 > Tuesday, June 6th, 10:00AM-12:00PM (PST)
 + [Session 2 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
-+ [Session 2 Slides]()
++ [Session 2 Slides](https://docs.google.com/presentation/d/1u5R23969caKTCPB3YIYRZRNW2zIcktZJC5S89D-GgjU/edit#slide=id.g1deaa80ad7_0_0)
 + *Linux* 
   + File editor
   + FTP client
@@ -104,14 +104,15 @@ ssh richmonp@orcinus.westgrid.ca
   + File formats: FASTQ, FASTQ.GZ 
   + Tools used: FastQC 
   + HPC Resources needed: ~1 core/person for 2 hour block  
-+ [Session 2 ProblemSet]()
++ [Github Gist](https://gist.github.com/Phillip-a-richmond/76baff0d4525817e0ca59a638bb374a0)
++ [Session 2 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session2_Problemset.txt)
 
 ---
 
 ### Session 3: Short read mapping and visualization
 > Wednesday, June 7th, 9:30AM-11:30AM (PST)
-+ [Session 3 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
-+ [Session 3 Slides]()
++ [Session 3 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session2_Problemset.txt)
++ [Session 3 Slides](https://docs.google.com/presentation/d/1u5R23969caKTCPB3YIYRZRNW2zIcktZJC5S89D-GgjU/edit#slide=id.g1deaa80ad7_0_0)
 + *Bioinformatics*  
   + File formats: SAM, BAM, CRAM, BAI, sorted.BAM,
   + Tools used: BWA (with different options), samtools, IGV (downloaded on own computer)
