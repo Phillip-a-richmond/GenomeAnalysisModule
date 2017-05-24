@@ -93,7 +93,7 @@ ssh richmonp@orcinus.westgrid.ca
 
 ### Session 2: Introduction to Linux II, Interacting with the Queue
 > Tuesday, June 6th, 10:00AM-12:00PM (PST)
-+ [Session 2 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
++ [Session 2 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session1_Problemset.txt)
 + [Session 2 Slides](https://docs.google.com/presentation/d/1u5R23969caKTCPB3YIYRZRNW2zIcktZJC5S89D-GgjU/edit#slide=id.g1deaa80ad7_0_0)
 + *Linux* 
   + File editor
