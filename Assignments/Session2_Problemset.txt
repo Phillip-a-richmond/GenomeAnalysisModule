@@ -1,0 +1,66 @@
+Session 2 Problem Set
+
+This problem set will require you to fill in answers directly to a copy of
+this text file.
+
+1) Make a session 2 problem set directory titled <LASTNAME_FIRSTNAME> within
+the /global/scratch/ARC_Training/Session2/Problemset/ directory.
+
+2) Copy the file:
+/global/scratch/ARC_Training/Session2/Problemset/Session2_Problemset.txt 
+into your problem set directory.
+
+3) Edit the file, and fill in the answers the questions below.  
+Not every problem will require you to fill in an answer.   
+Start by typing your name here:
+
+
+4) Copy these scripts into your problemset directory:
+/global/scratch/ARC_Training/Session2/Problemset/Problemset_PBS_*
+(NOTE, the * is a wild-card character allowing you to specify any file
+matching before the *)
+
+
+5) Edit the script Problemset_PBS_1.pbs and add your email address where it
+says: <replace_This_with_your_email>
+
+
+
+6) Submit the script to the queue.  What is the job number?
+
+Job Number:  
+Job Name:
+
+
+7) This job should have sent you an email upon completion.  Copy the contents
+of the email here:
+
+
+
+
+8) Edit the script Problemset_PBS_2.pbs within your probelmset directory.
+Change /<LastName_FirstName> to reflect your name.
+
+
+
+9) Submit the script.  You will need to debug some erroneous typos in order to
+get it to work.  Happy bug hunting.
+
+
+
+
+10) What is your favourite restaurant in Vancouver?
+
+
+
+
+11) How long did this problem set take you?
+
+
+
+
+12) Once this worksheet is completed, download it onto your own computer using
+a file transfer client.  Email the file to Phillip.a.richmond@gmail.com
+
+
+
