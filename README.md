@@ -4,6 +4,8 @@
 
 
 ---
+## License
+> This work is distributed under the creative commons license (CC BY-SA 3.0).  Details found [here](https://creativecommons.org/licenses/by-sa/3.0/deed.en_US)
 
 ## General Course Information & Prerequisites
 ### Registering for the course
