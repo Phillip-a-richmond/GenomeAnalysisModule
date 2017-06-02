@@ -130,7 +130,7 @@ ssh richmonp@orcinus.westgrid.ca
 ---
 
 ### Session 4: Variant Calling - Small variants
-> Thursday, June 8th, 10:00AM-12:00PM (PST) 
+> Thursday, June 8th, 9:30AM-11:30PM (PST) 
 + [Session 4 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
 + [Session 4 Slides]()
 + *Bioinformatics*  
@@ -145,6 +145,9 @@ ssh richmonp@orcinus.westgrid.ca
 
 ### Mid-series Exam
 > Friday, June 9th
++ Will be available for answering questions from 10:00-12:00
+  + Virtually:  WG_Training room
+  + Locally in BCCHR Rm# 2108
 + [Mid-Series Exam]()
 
 ---
@@ -163,14 +166,14 @@ ssh richmonp@orcinus.westgrid.ca
 
 ---
 
-### Session 6: RNA-seq I, Read Mapping
+### Session 6: RNA-seq I, Read Mapping, Transcript Quantification
 > Tuesday, June 13th, 10:00AM-12:00PM (PST) 
 + [Session 6 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
 + [Session 6 Slides]()
 + *Bioinformatics*
   + File formats: GTF review
-  + Tools used: Tophat, cufflinks, cuffdiff (or updated version of tuxedo suite)
-  + Datasets: RNA-sequencing (Mouse?, Human?, Worm, Fly)
+  + Tools used: HISAT2, cufflinks, cuffdiff (or updated version of tuxedo suite)
+  + Datasets: RNA-sequencing Inbred Mouse Brain Expression Data
   + HPC Resources needed: ~4 cores/person for 2 hour block  
 + [Session 6 ProblemSet]()
 + [Link to recording]()
