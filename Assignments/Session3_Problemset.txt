@@ -8,7 +8,9 @@ And copy this file into that directory (you will need to edit your copy to
 fill in answers below)
 
 2) Pick a sample from this directory (except NA20845), create a PBS script and map the reads to the genome.
+/global/scratch/ARC_Training/Session3/Files/RAW_DATA/
 
+Keep the output files in your problemset 3 directory.
 
 3) Convert to sorted bam and get the stats using samtools flagstat.
 
