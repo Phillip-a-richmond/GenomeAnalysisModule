@@ -1,0 +1,59 @@
+Problemset Session 3
+
+
+1) Make yourself a problemset 3 directory titled <LASTNAME_FIRSTNAME> in the directory:
+/global/scratch/ARC_Training/Session3/Problemset/
+
+And copy this file into that directory (you will need to edit your copy to
+fill in answers below)
+
+2) Pick a sample from this directory (except NA20845), create a PBS script and map the reads to the genome.
+
+
+3) Convert to sorted bam and get the stats using samtools flagstat.
+
+
+4) How many reads were mapped in each of these samples?  
+Find someone else inthe class that has done the other samples to fill this out.
+If that's not possible for you, then just fill out for your sample or run all
+the samples yourself:
+
+SampleID	NumMappedReads	NumProperlyPaired
+HG01583
+HG03006
+HG03052
+NA19648
+NA20502
+
+5) Secure copy the sorted bam file, and it's index to your own local computer, either using FileZilla,
+another secure copy client, or the scp command.
+
+
+6) Open up IGV, load the hg38 genome, and load the alignment.
+
+
+7) Zoom in on the STK11 gene, and save the image (File --> Save image)
+
+
+8) Upload the snapshot to your problemset 3 directory. 
+
+
+
+9) There are more genomes than GRCh38 (hg38), and more organisms than just
+human.
+A) Pick an organism and genome build from:
+http://hgdownload.cse.ucsc.edu/downloads.html
+B) Download the fasta file (.fa, .fasta., .fa.gz, .fa.tar.gz) from an online resource. 
+C) Decompress it and concatenate chromosomes together (if necessary)
+D) Create a PBS script to index the fasta file with bwa. 
+
+
+10) What is your favourite book (any genre, except textbooks)?
+
+
+
+11) Copy your problemset 3 directory (with this filled-out problemset in it) into:
+/global/scratch/ARC_Training/Session3/Problemset/Finished/
+
+
+
