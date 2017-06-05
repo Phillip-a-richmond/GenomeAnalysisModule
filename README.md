@@ -89,6 +89,7 @@ ssh richmonp@orcinus.westgrid.ca
 + *Bioinformatics*  
   + File formats: BED, GFF/GTF, VCF
 + [Github Gist](https://gist.github.com/Phillip-a-richmond/8b36d58fb2f03d4760869b0676d50692)
++ [Session 1 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session1)
 + [Session 1 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session1_Problemset.txt)
 + [Link to recording]()
 
@@ -105,9 +106,9 @@ ssh richmonp@orcinus.westgrid.ca
   + Commands: sh, qsub, qstat, qdel, emacs, 
 + *Bioinformatics* 
   + File formats: FASTQ, FASTQ.GZ 
-  + Tools used: FastQC 
   + HPC Resources needed: ~1 core/person for 2 hour block  
 + [Github Gist](https://gist.github.com/Phillip-a-richmond/76baff0d4525817e0ca59a638bb374a0)
++ [Session2 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session2)
 + [Session 2 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session2_Problemset.txt)
 + [Link to recording]()
 
@@ -123,8 +124,8 @@ ssh richmonp@orcinus.westgrid.ca
   + Tools used: BWA (with different options), samtools, IGV (downloaded on own computer)
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block
-+ [Github Gist]()
-+ [Session 3 ProblemSet]()
++ [Github Gist](https://gist.github.com/Phillip-a-richmond/bf669287f33b5bd91c27549b94250834)
++ [Session 3 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session3_Problemset.txt)
 + [Link to recording]()
 
 ---
