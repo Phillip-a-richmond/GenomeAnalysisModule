@@ -5,10 +5,10 @@ For help with file formats, use...the Internet!  Example: http://www.ensembl.org
 
 
 1) Create a "Problemset directory" with your last name and first initial in all caps within:
-/global/scratch/ARC_Training/Session1/ProblemSet/
+/global/scratch/ARC_Training/Session1/Problemset/
 
 2) Copy this Session1 Problem set into your Problemset directory:
-/global/scratch/ARC_Training/Session1/ProblemSet/Session1_Problemset.txt
+/global/scratch/ARC_Training/Session1/Problemset/Session1_Problemset.txt
 
 3) Copy this file into your Problemset directory:
 /global/scratch/ARC_Training/Session1/Files/genes.gtf
