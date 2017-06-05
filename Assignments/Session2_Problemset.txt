@@ -15,6 +15,8 @@ Not every problem will require you to fill in an answer.
 Start by typing your name here:
 
 
+
+
 4) Copy these scripts into your problemset directory:
 /global/scratch/ARC_Training/Session2/Problemset/Problemset_PBS_*
 (NOTE, the * is a wild-card character allowing you to specify any file
@@ -23,7 +25,7 @@ matching before the *)
 
 5) Edit the script Problemset_PBS_1.pbs and add your email address where it
 says: <replace_This_with_your_email>
-
+Also, change the <LastName_FirstName> to be yours.
 
 
 6) Submit the script to the queue.  What is the job number?
@@ -32,8 +34,15 @@ Job Number:
 Job Name:
 
 
-7) This job should have sent you an email upon completion.  Copy the contents
-of the email here:
+7) This job should have sent you an email upon completion.  
+
+A) Copy the contents of the email here:
+
+
+
+
+
+B) Copy the contents of the .o file associated with the job here:
 
 
 
@@ -61,6 +70,16 @@ get it to work.  Happy bug hunting.
 
 12) Once this worksheet is completed, download it onto your own computer using
 a file transfer client.  Email the file to Phillip.a.richmond@gmail.com
+
+
+
+13) Make sure you have downloaded and installed IGV on your own computer.
+http://software.broadinstitute.org/software/igv/download
+
+Not just the web launch, but download of the application.
+Make sure you can open the application, which relies on java.
+If you get an error, make sure you have a recent java version:
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 
 
