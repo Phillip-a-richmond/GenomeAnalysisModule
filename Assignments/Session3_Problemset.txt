@@ -5,7 +5,8 @@ Problemset Session 3
 /global/scratch/ARC_Training/Session3/Problemset/
 
 And copy this file into that directory (you will need to edit your copy to
-fill in answers below)
+fill in answers below) 
+/global/scratch/ARC_Training/Session3/Problemset/Session3_Problemset.txt
 
 2) Pick a sample from this directory (except NA20845), create a PBS script and map the reads to the genome.
 /global/scratch/ARC_Training/Session3/Files/RAW_DATA/
@@ -16,7 +17,7 @@ Keep the output files in your problemset 3 directory.
 
 
 4) How many reads were mapped in each of these samples?  
-Find someone else inthe class that has done the other samples to fill this out.
+Find someone else in the class that has done the other samples to fill this out.
 If that's not possible for you, then just fill out for your sample or run all
 the samples yourself:
 
@@ -56,6 +57,21 @@ D) Create a PBS script to index the fasta file with bwa.
 
 11) Copy your problemset 3 directory (with this filled-out problemset in it) into:
 /global/scratch/ARC_Training/Session3/Problemset/Finished/
+
+
+BONUS (Only perform these if you feel like the above don't challenge your abilities):
+12) Remap the reads for one of the samples and change the -T and -k options for BWA. Change -T to 60, and change -k to 10.
+What are the results with default reads mapped vs. these new settings?
+
+Default:
+
+
+New Settings:
+
+
+13) Remap the reads using the variable-based PBS script.
+/global/scratch/ARC_Training/Session3/Files/SCRIPTS/MapAndConvertVariables.pbs
+This is a template, make sure you edit it to match your own needs.
 
 
 
