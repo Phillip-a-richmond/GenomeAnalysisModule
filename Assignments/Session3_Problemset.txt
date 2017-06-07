@@ -58,6 +58,8 @@ D) Create a PBS script to index the fasta file with bwa.
 11) Copy your problemset 3 directory (with this filled-out problemset in it) into:
 /global/scratch/ARC_Training/Session3/Problemset/Finished/
 
+Change the permissions to be read, write, and execute for user, group, and world.
+
 
 BONUS (Only perform these if you feel like the above don't challenge your abilities):
 12) Remap the reads for one of the samples and change the -T and -k options for BWA. Change -T to 60, and change -k to 10.
