@@ -1,0 +1,95 @@
+This problemset will incorporate some elements of session 3.
+If you need to, you can repurpose your old scripts from session 3 in order to
+do this problem set.  I highly recommend this.
+
+1) Create a Problemset 4 directory in:
+/global/scratch/ARC_Training/Session4/Problemset/
+
+
+2) Copy this file into that directory:
+/global/scratch/ARC_Training/Session4/Problemset/Session4_Problemset.txt
+
+
+3) Copy these fastq files into your workshop 4 directory:
+/global/scratch/ARC_Training/Session4/Files/RAW_DATA/NA12889_chrom20_R1.fastq
+/global/scratch/ARC_Training/Session4/Files/RAW_DATA/NA12889_chrom20_R2.fastq
+
+
+4) Generate a PBS script that will take these reads and do the following:
+(Hint: You can copy-paste from scripts we've already used in class)
+
+A) Map against this genome index (a version of hg19):
+/global/scratch/ARC_Training/Session4/Files/GENOME/hs37d5.fa
+
+B) Convert into bam, sort, and index the mapped file
+
+C) Call variants on the bam file using Freebayes
+
+D) Bgzip and tabix the vcf file
+
+
+5) Download the resulting .sorted.bam, .sorted.bam.bai, and .vcf files onto
+your local computer.
+
+
+6) Load the reads and the vcf file into IGV.
+Zoom in so your window is 300bp in size.
+
+
+
+
+7) Take an IGV snapshot of a deletion with a quality score  > 100, and title it: 
+NA12889_deletion.png
+
+(make sure to keep the correct window size)
+
+
+8) Take a snapshot of an SNV with a quality score > 100 (single nucleotide change) and title it:
+NA12889_snv.png
+
+
+(make sure to keep the correct window size)
+
+
+
+9) How many properly paired reads mapped?
+
+
+
+10) How many variants in your vcf file are not from chromosome 20?
+
+
+
+
+11) Which lesson(s) are you attending next week?
+
+Monday - Variant annotation and exploration using GEMINI
+
+
+
+Tuesday - RNA seq mapping of whole-brain RNAseq in mouse, and transcript
+quantifiation in preparation for differential expression analysis.
+
+
+
+Wednesday - Differential expression analysis starting with a geneXsample
+matrix (guest lecture from Jasleen Grewal)
+This analysis will be walked through via R-markdown, and more information
+about the Jasleen Grewal Experience coming soon.
+
+
+
+
+12) What is your favourite animal?
+
+
+
+
+13) Surprise, this is the exam.  Everything above covers what we've learned in
+session 1-4.  If you can do this, you can do anything.
+
+When you're finished, please email Phillip.a.richmond@gmail.com with this
+completed problemset, and the two images from IGV (NA12889_deletion.png,
+NA12889_SNV.png)
+
+
