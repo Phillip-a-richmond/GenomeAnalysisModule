@@ -140,7 +140,7 @@ ssh richmonp@orcinus.westgrid.ca
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block  
 + [Github Gist](https://gist.github.com/Phillip-a-richmond/4f6da08a09881cd088a49d49656ae243)
-+ [Session 4 ProblemSet]()
++ [Session 4 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/tree/master/Assignments)
 + [Link to recording]()
 
 ---
@@ -150,7 +150,7 @@ ssh richmonp@orcinus.westgrid.ca
 + Will be available for answering questions from 10:00-12:00
   + Virtually:  WG_Training room
   + Locally in BCCHR Rm# 2108
-+ [Mid-Series Exam]()
++ [Mid-Series Exam](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/tree/master/Assignments)
 
 ---
 
