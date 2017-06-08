@@ -132,13 +132,14 @@ ssh richmonp@orcinus.westgrid.ca
 
 ### Session 4: Variant Calling - Small variants
 > Thursday, June 8th, 9:30AM-11:30PM (PST) 
-+ [Session 4 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
-+ [Session 4 Slides]()
++ [Session 4 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session3_Problemset.txt)
++ [Session 4 Slides](https://docs.google.com/presentation/d/1vdX5-nBWnxlQ2C09i8J1OgOwirj-EA-nLwvXOHR58ek/edit#slide=id.g1e4523bd13_1_30)
 + *Bioinformatics*  
   + File formats: VCF
   + Tools used: Picard, GATK, Platypus, Freebayes, Samtools mpileup
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block  
++ [Github Gist](https://gist.github.com/Phillip-a-richmond/4f6da08a09881cd088a49d49656ae243)
 + [Session 4 ProblemSet]()
 + [Link to recording]()
 
