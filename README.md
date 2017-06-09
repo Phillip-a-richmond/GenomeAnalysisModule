@@ -91,7 +91,10 @@ ssh richmonp@orcinus.westgrid.ca
 + [Github Gist](https://gist.github.com/Phillip-a-richmond/8b36d58fb2f03d4760869b0676d50692)
 + [Session 1 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session1)
 + [Session 1 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session1_Problemset.txt)
-+ [Link to recording]()
++ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=bBtILur7bxNhjMp)
+  + Note: Fast-forward to 6:33 for presentation to start
++ [Link to final recording]()
+
 
 ---
 
@@ -110,7 +113,10 @@ ssh richmonp@orcinus.westgrid.ca
 + [Github Gist](https://gist.github.com/Phillip-a-richmond/76baff0d4525817e0ca59a638bb374a0)
 + [Session2 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session2)
 + [Session 2 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session2_Problemset.txt)
-+ [Link to recording]()
++ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=invabc4OKUOtXxa)
+  + Note: Fast-forward to 1:52 for presentation to start
++ [Link to final recording]()
+  
 
 
 ---
@@ -126,7 +132,9 @@ ssh richmonp@orcinus.westgrid.ca
   + HPC Resources needed: ~4 cores/person for 2 hour block
 + [Github Gist](https://gist.github.com/Phillip-a-richmond/bf669287f33b5bd91c27549b94250834)
 + [Session 3 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session3_Problemset.txt)
-+ [Link to recording]()
++ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=ycoB7nogbzccDOO)
+  + Note: Fast-forward to 1:28 for presentation to start
++ [Link to final recording]()
 
 ---
 
@@ -141,7 +149,9 @@ ssh richmonp@orcinus.westgrid.ca
   + HPC Resources needed: ~4 cores/person for 2 hour block  
 + [Github Gist](https://gist.github.com/Phillip-a-richmond/4f6da08a09881cd088a49d49656ae243)
 + [Session 4 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/tree/master/Assignments)
-+ [Link to recording]()
++ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=QJpWP4xxkhLwIyD)
+  + Note: Fast-forward to 1:20 for presentation to start
++ [Link to final recording]()
 
 ---
 
