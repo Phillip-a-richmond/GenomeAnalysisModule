@@ -132,6 +132,7 @@ ssh richmonp@orcinus.westgrid.ca
   + HPC Resources needed: ~4 cores/person for 2 hour block
 + [Github Gist](https://gist.github.com/Phillip-a-richmond/bf669287f33b5bd91c27549b94250834)
 + [Session 3 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session3_Problemset.txt)
++ [Session 3 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session3)
 + [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=ycoB7nogbzccDOO)
   + Note: Fast-forward to 1:28 for presentation to start
 + [Link to final recording]()
@@ -148,6 +149,7 @@ ssh richmonp@orcinus.westgrid.ca
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block  
 + [Github Gist](https://gist.github.com/Phillip-a-richmond/4f6da08a09881cd088a49d49656ae243)
++ [Session 4 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session4)
 + [Session 4 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/tree/master/Assignments)
 + [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=QJpWP4xxkhLwIyD)
   + Note: Fast-forward to 1:20 for presentation to start
@@ -161,6 +163,7 @@ ssh richmonp@orcinus.westgrid.ca
   + Virtually:  WG_Training room
   + Locally in BCCHR Rm# 2108
 + [Mid-Series Exam](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/tree/master/Assignments)
++ [Exam etherpad help](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session4)
 
 ---
 
