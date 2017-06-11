@@ -1,0 +1,76 @@
+All of these questions correspond to commands explained in the GEMINI slide deck:
+https://speakerdeck.com/arq5x/an-introduction-and-tutorial-for-variant-exploration-with-gemini
+
+All of these commands can be found in the github Gist.
+1) Create a directory titled <LASTNAME_FIRSTNAME> inside of:
+/global/scratch/ARC_Training/Session5/Problemset/
+
+2) Copy this file into your problemset directory:
+/global/scratch/ARC_Training/Session5/Problemset/Session5_Problemset.txt
+
+
+3) Which samples/subjects are in your database?
+
+
+4) Does the rest of the info match your pedigree file?
+
+
+5) How many novel (i.e. not in dbSNP) are observed in these samples?
+
+
+6) How many variants passed GATK filters?
+
+
+7) How many variants are rare and in a disease-associated gene?
+
+
+8) List those genes here:
+
+
+
+
+
+
+9) At how many sites does subject 1805 have a non-reference allele?
+
+
+
+
+10) At how many sites do subject 1805 and subject 4805 both have a non
+reference allele?
+
+
+
+11) How many  variants heterozygous in every sample? (note you have to count
+them)
+
+
+12) How many variants have at least 1 female homozygous for the alternate
+allele?
+
+
+13) How many variants have high quality genotypes for all samples
+(aligned depth >= 50)?
+
+
+
+14) Copy+paste the stats for these variants for the samples here:
+
+
+
+
+15) Calculate the transition/transversion ratio and copy it here:
+
+
+
+16) What is an amazing place you've traveled to (or lived in) outside of
+Vancouver?
+
+
+
+17) Download this completed file onto your computer and email it to:
+phillip.a.richmond@gmail.com
+
+
+
+
