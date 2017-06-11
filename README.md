@@ -169,14 +169,16 @@ ssh richmonp@orcinus.westgrid.ca
 
 ### Session 5: Variant Annotation
 > Monday, June 12th, 10:00AM-12:00PM (PST)   
-+ [Session 5 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
-+ [Session 5 Slides]()
++ [Session 5 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/tree/master/Assignments)
++ [Session 5 Slides](https://docs.google.com/presentation/d/1WJ6K-uKoKKcpIA0joufkU4Ym5rF6w3wAahzPWWjHSMs/edit?usp=sharing)
 + *Bioinformatics*
-  + File formats: VCF, BEDPE
+  + File formats: VCF
   + Tools used: GEMINI
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block  
-+ [Session 5 ProblemSet]()
++ [Session 5 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session5_Problemset.txt)
++ [Session 5 Etherpad]()
++ [Session 5 Github Gist](https://gist.github.com/Phillip-a-richmond/7cce5f287ecc678d29acea980a3086b6)
 + [Link to recording]()
 
 ---
