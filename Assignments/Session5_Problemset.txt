@@ -84,5 +84,14 @@ phillip.a.richmond@gmail.com
 
 
 
+18) If you are interested, go through the de novo tutorial:
+
+https://speakerdeck.com/arq5x/identifying-de-novo-mutations-with-gemini
+
+The necessary files don't need to be downloaded again.
+
+
+
+
 
 
