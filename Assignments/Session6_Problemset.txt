@@ -33,7 +33,7 @@ ISS_S_3
 5) Transfer the .sorted.bam, .sorted.bam.bai, and .gtf onto your computer
 
 6) Visualize all 4 samples (bam and gtf) for this coordinate window:
-
+PICK YOUR OWN COORDINATES
 chr13: - 
 
 And take a snapshot.
