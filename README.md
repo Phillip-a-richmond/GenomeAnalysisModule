@@ -150,7 +150,7 @@ ssh richmonp@orcinus.westgrid.ca
   + HPC Resources needed: ~4 cores/person for 2 hour block  
 + [Github Gist](https://gist.github.com/Phillip-a-richmond/4f6da08a09881cd088a49d49656ae243)
 + [Session 4 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session4)
-+ [Session 4 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/tree/master/Assignments)
++ [Session 4 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session4_Problemset.txt)
 + [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=QJpWP4xxkhLwIyD)
   + Note: Fast-forward to 1:20 for presentation to start
 + [Link to final recording]()
@@ -162,7 +162,7 @@ ssh richmonp@orcinus.westgrid.ca
 + Will be available for answering questions from 10:00-12:00
   + Virtually:  WG_Training room
   + Locally in BCCHR Rm# 2108
-+ [Mid-Series Exam](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/tree/master/Assignments)
++ [Mid-Series Exam](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session4_Problemset.txt)
 + [Exam etherpad help](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session4)
 
 ---
@@ -177,7 +177,7 @@ ssh richmonp@orcinus.westgrid.ca
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block  
 + [Session 5 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session5_Problemset.txt)
-+ [Session 5 Etherpad]()
++ [Session 5 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session5)
 + [Session 5 Github Gist](https://gist.github.com/Phillip-a-richmond/7cce5f287ecc678d29acea980a3086b6)
 + [Link to recording]()
 
@@ -185,24 +185,26 @@ ssh richmonp@orcinus.westgrid.ca
 
 ### Session 6: RNA-seq I, Read Mapping, Transcript Quantification
 > Tuesday, June 13th, 10:00AM-12:00PM (PST) 
-+ [Session 6 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
-+ [Session 6 Slides]()
++ [Session 6 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session4_Problemset.txt)
++ [Session 6 Slides](https://docs.google.com/presentation/d/1QyHtpR6rSRqB_EPY7UuoQY_ufZ8Qp1pctgEQ2hflERs)
 + *Bioinformatics*
   + File formats: GTF review
   + Tools used: HISAT2, stringtie
   + Datasets: RNA-sequencing Inbred Mouse Brain Expression Data
-  + HPC Resources needed: ~4 cores/person for 2 hour block  
-+ [Session 6 ProblemSet]()
+  + HPC Resources needed: ~4 cores/person for 2 hour block 
++ [Session 6 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session5)
++ [Session 6 Github Gist](https://gist.github.com/Phillip-a-richmond/ec216db03b1e6c4b1f645934a5c6ebfe)
++ [Session 6 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session6_Problemset.txt)
 + [Link to recording]()
 
 ---
 
 ### Session 7: RNA-seq II, Differential Expression
 > Wednesday, June 14th, 9:30AM-11:30AM (PST)
-+ [Session 7 Pre-Quiz](https://github.com/Phillip-a-richmond/ARC-Bioinformatics-Training/blob/master/Pre-Course-Quiz.md)
-+ [Session 6 Slides]()
++ [Session 7 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session6_Problemset.txt)
++ [Session 7 Slides]()
 + *Bioinformatics*
-  + HTSeq → DESeq  
++ Jasleen Grewal Experience
 + [Session 7 ProblemSet]()
 + 
 
