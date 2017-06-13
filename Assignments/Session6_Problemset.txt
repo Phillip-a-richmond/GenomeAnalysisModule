@@ -1,0 +1,77 @@
+Final Problem Set (Session 6)
+
+
+1) You know the drill.  Make a problemset directory <LASTNAME_FIRSTNAME> inside of:
+/global/scratch/ARC_Training/Session6/Problemset/
+
+
+
+2) Copy this file there:
+/global/scratch/ARC_Training/Session6/Problemset/Session6_Problemset.txt
+
+
+
+3) Copy these Fastq files into your directory:
+
+
+
+4) Make a PBS script that has the full pipeline for RNA seq analysis:
+
+A) Hisat2 alignment
+B) Samtools file format conversion
+C) stringtie transcript assembly
+D) Stringtie transcript quantification
+
+
+For these samples:
+ILS_S_1
+ILS_S_2
+ISS_S_2
+ISS_S_3
+
+
+5) Transfer the .sorted.bam, .sorted.bam.bai, and .gtf onto your computer
+
+6) Visualize all 4 samples (bam and gtf) for this coordinate window:
+
+chr13: - 
+
+And take a snapshot.
+
+
+7) Pull the per-transcript coverage (cov) from the ballgown file:
+
+t_data.ctab
+
+for ONLY genes on chr13, and each of the samples (hint cut), and save it into a file.
+
+Use the paste command to create a combined file with this format (using the
+cov files from above):
+
+chromosome	start	end	transcriptID	ILS_S_1cov	ILS_S_2cov	ISS_S_2cov	ISS_S_3cov
+
+
+8) Copy the first 20 lines of that file here: 
+
+chromosome      start   end     transcriptID    ILS_S_1cov      ILS_S_2cov	ISS_S_2cov      ISS_S_3cov
+
+
+
+
+9) What is your favourite funny (& appropriate) youtube video? Paste the link below:
+(P.S.) If you don't have one, go find one on www.youtube.com.
+(P.S.S) Motivation: 
+
+
+
+10) Download this file and send it to Phil along with your snapshot from #6
+phillip.a.richmond@gmail.com
+
+
+
+
+In preparation for tomorrow's Jasleen Grewal Experience:
+
+1) Install Rstudio in preparation for tomorrow
+Link:
+
