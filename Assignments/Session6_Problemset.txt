@@ -71,6 +71,6 @@ phillip.a.richmond@gmail.com
 
 In preparation for tomorrow's Jasleen Grewal Experience:
 
-1) Install Rstudio in preparation for tomorrow
-Link:
+1) Follow directions from this PDF:
+https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/instructions_deseq_setup.pdf 
 
