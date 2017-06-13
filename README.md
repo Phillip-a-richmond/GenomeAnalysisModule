@@ -202,11 +202,11 @@ ssh richmonp@orcinus.westgrid.ca
 ### Session 7: RNA-seq II, Differential Expression
 > Wednesday, June 14th, 9:30AM-11:30AM (PST)
 + [Session 7 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session6_Problemset.txt)
-+ [Session 7 Slides]()
++ [Session 7 Required Set Up](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/instructions_deseq_setup.pdf)
++ [Session 7 Slides](https://docs.google.com/presentation/d/1dgLI1qarA3OkFIbIjB0jN2cwjL-jhNqoJumtThw6Fms/edit#slide=id.g1deaa80ad7_0_0)
 + *Bioinformatics*
 + Jasleen Grewal Experience
-+ [Session 7 ProblemSet]()
-+ 
+
 
 
 
