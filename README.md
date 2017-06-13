@@ -189,7 +189,7 @@ ssh richmonp@orcinus.westgrid.ca
 + [Session 6 Slides]()
 + *Bioinformatics*
   + File formats: GTF review
-  + Tools used: HISAT2, cufflinks, cuffdiff (or updated version of tuxedo suite)
+  + Tools used: HISAT2, stringtie
   + Datasets: RNA-sequencing Inbred Mouse Brain Expression Data
   + HPC Resources needed: ~4 cores/person for 2 hour block  
 + [Session 6 ProblemSet]()
