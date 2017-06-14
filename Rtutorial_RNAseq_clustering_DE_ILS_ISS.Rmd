@@ -1,0 +1,261 @@
+---
+title: "Differential Expression Analysis with DESeq2  for beginners/intermediate"
+author: "Jasleen Grewal"
+date: "Wednesday, June 14, 2017"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+---
+
+```{r, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE, tidy.opts=list(width.cutoff=80),tidy=TRUE)
+```
+
+
+# Load Data and libraries    
+i) **First let us download the data**   
+- *Instructions*: **Please SCP the data files from WestGrid. You will have received instructions for this already.** 
+
+    We will be using an in-house dataset of [Inbred Long Sleep, ILS](https://www.jax.org/strain/009324) and [Inbred Short Sleep, ISS](https://www.jax.org/strain/009325) mice. The ILS strain is selected for 'longer recovery' from ethanol consumption. The ISS strain is selected for 'shorter recovery' from ethanol consumption (they don't get hangovers). This is because the ILS strain has a particular allele of the *Lore2* gene that exhibits an increase in the *loss of righting response time*. You can read more about it [here](http://pubmedcentralcanada.ca/pmcc/articles/PMC3581861/). Our dataset has 3 ILS samples treated with saline (control strain) and 4 ISS samples treated with saline (treatment strain).
+    The counts have been calculated using HTSeq.  
+    We will be loading our data into the *object* **data_raw**. 
+    We will be loading our covariate information into the *object* **covariates**.  By default, these objects are dataframes, a type of table in R.  
+    - **data_raw** contains our count data, where each row is a gene and each column is a sample.  
+    - **covariates** contains information for each sample, defining experimental groups. Here, each row is a sample, and each column defines different *attributes* of the sample.  
+
+```{r, echo=TRUE}
+data_raw = read.table("ILS_ISS_saline_HTSeq_nostats.txt", header=TRUE, stringsAsFactors=FALSE)
+covariates = read.table("ILS_ISS_saline_HTSeq_nostats_covars.txt", header=TRUE, stringsAsFactors=FALSE)
+```
+
+We can see the gene names in the *data_raw* dataframe by printing the **row names**, like so:  
+```{r, echo=TRUE}
+head(rownames(data_raw))
+```
+*The head command lets us view the first 6 entries, instead of printing alllll the genes*  
+
+
+We can see the sample names in the *data_raw* dataframe by printing the **column names**, like so:  
+```{r, echo=TRUE}
+colnames(data_raw)
+```
+
+We can see the sample names in the **covariates** dataframe by printing the **row names**, like so:
+```{r, echo=TRUE}
+rownames(covariates)
+```
+
+
+
+ii) **Load libraries**  
+If you do not have DESeq2 installed, you will need to run these two commands in your RStudio console:
+`source("http://bioconductor.org/biocLite.R")`   
+`biocLite("DESeq2")`  
+`biocLite("biomaRt")`  
+For the other 2 packages, you can install them like so:
+`install.packages("knitr")`
+```{r, echo=TRUE}
+library(DESeq2)
+library(ggplot2)
+library(biomaRt)
+library(knitr)
+```
+
+
+## View the data   
+**DATA** 
+The values for each gene are raw **counts**. There should be 38,293 genes (rows), across 7 samples (columns). The *dim* function lets us view the dimensions of a dataframe.  
+```{r, echo=TRUE, message=FALSE}
+print(dim(data_raw))
+```
+
+Let us take a look at the first 6 rows of the dataframe with the raw counts. The *head* command lets us do that. The *kable* command makes the output table look pretty in the pdf :) If you are running this in RStudio **Console**, you can just say `head(data_raw)`. 
+```{r, echo=TRUE}
+kable(head(data_raw))  
+```
+
+**COVARIATES**
+Let us also take a look at the covariates dataframe.
+```{r, echo=TRUE, message=FALSE}
+kable(covariates)  
+```
+
+
+## Data cleanup   
+i) Remove all genes where there are zero counts for all samples. You'll be left with 25,600 genes.  
+```{r, echo=TRUE}
+data_clean = data_raw[as.logical(rowSums(data_raw != 0)), ]
+dim(data_clean)
+```
+
+ii) Subset the data by the samples that have covariate information.
+We will also ***relevel*** our covariate column with information on the experimental type.  
+- We need to set the default 'reference' experimental strain to ILS, so that any fold changes are calculated as treatment (ISS) vs control (ILS).
+- Our experimental groups are defined in the column `covariates$Strain`  
+```{r, echo=TRUE}
+data=data_clean[,row.names(covariates)]
+covariates$Strain = factor(covariates$Strain, levels=c('ILS','ISS'))
+```
+  
+
+# DESeq2 wet toes - Step 1  
+## Build DESeq2 object   
+
+We will use the count data in our dataframe **data**, and our covariate information in our dataframe **covariates**, to fit a ***Strain*** based model for the samples. 
+```{r, echo=TRUE}
+dds_counts <- DESeqDataSetFromMatrix(countData=data, colData=covariates, design=~Strain)
+ds_fit <- DESeq(dds_counts)
+```
+
+## Plot PCA
+In order to make sure our data looks sensible, and to check for any outliers, we can plot the first 2 Principal Components of the data. For this, we will first need to retrieve the log transformed counts from our fit object, which we will do with the `rlogTransformation` function in DESeq2.  
+```{r, echo=TRUE}
+rld <- rlogTransformation(ds_fit, blind=TRUE)
+```
+```{r, echo=FALSE}
+vsd <- varianceStabilizingTransformation(ds_fit, blind=TRUE)
+```
+
+Then we use the `plotPCA` function in DESeq2 to plot the first 2 PC's.  
+```{r, echo=TRUE, warnings=FALSE, message=FALSE}
+DESeq2::plotPCA(rld, intgroup=c("Strain"))  + theme_bw() + geom_text(aes(label=colnames(rld))) 
+```
+
+As we can see, the ILS_S_2_B is quite far away from all the other samples. We will exclude this sample from future analysis. We will start by removing it from our covariates table.    
+```{r, echo=TRUE}
+covariates_new = covariates[rownames(covariates)!="ILS_S_2_B",]
+```
+
+#### What are the samples in the covariates table now?   
+```{r, echo=TRUE, message=FALSE}
+kable(covariates_new) 
+```
+
+Next, we will again make sure we are keeping the data for the samples we have the covariate information for (no more *ILS_S_2_B* !). We will also remove any genes that have 'zero' counts in all of our samples.   
+```{r, echo=TRUE, message=FALSE}
+data_new = data_clean[,rownames(covariates_new)]
+data_new = data_new[as.logical(rowSums(data_new != 0)), ]
+```
+
+What are the dimensions of our new dataset? (We should have 25,394 genes, and 6 samples now).  
+```{r, echo=TRUE, message=FALSE}
+print(dim(data_new))
+```
+
+Let us fit the model, again. Our model will be saved in the object, `ds_new_fit`.  
+```{r, echo=TRUE, message=FALSE}
+dds_new_counts <- DESeqDataSetFromMatrix(countData=data_new, colData=covariates_new, design=~Strain)
+ds_new_fit <- DESeq(dds_new_counts)
+rld_new <- rlogTransformation(ds_new_fit, blind=TRUE)
+```
+
+Let us also review our PCA plot, to make sure everything looks good and that we have removed the outlier.  
+```{r, echo=TRUE}
+DESeq2::plotPCA(rld_new, intgroup=c("Strain"))  + theme_bw() + geom_text(aes(label=colnames(rld_new)))
+```
+
+Now let us compare the two Strain types in the model that we fit.  
+We will see log2 fold change results for `Strain ISS vs ILS`   
+```{r, echo=TRUE}
+res = results(ds_new_fit)
+kable(head(res))
+```
+
+# DESeq2 wet toes - Step 2
+## Differential Expression Analysis   
+Lastly, let us try and identify differentially expressed genes in our results object, `res`. But first, let's make sure we have pvalues for all genes (i.e. no pvalues are *weird*)
+
+```{r, echo=FALSE}
+print(paste("Total genes are", dim(res)[1], sep=": "))
+print(paste("Gene with p-value 'NA'", dim(res[is.na(res$pvalue),])[1],  sep=": "))
+```
+
+#### Whatever is an NA p-value?   
+Sometimes with DESeq2, a gene with a p-value of NA mean that the gene's counts were below DESeq2's internal threshold for assessing any sort of substantial differential expression. This is called *independent filtering*, and we can remove this by setting the `independentFiltering` flag to FALSE when we generate our results from the model we fit, like so:  
+```{r, echo=TRUE}
+res_nofilter = results(ds_new_fit, independentFiltering = FALSE)
+```
+
+How many genes with NA p-value are there in this new results data object?  
+```{r, echo=FALSE}
+print(paste("Total genes are", dim(res_nofilter)[1], sep=": "))
+print(paste("Gene with p-value 'NA'", dim(res_nofilter[is.na(res_nofilter$pvalue),])[1],  sep=": "))
+```
+
+What? What are these genes then? Let us take a look at the genes in the `res` dataframe which have a pvalue of NA.  
+```{r, echo=TRUE}
+kable(res[is.na(res$pvalue), ])
+```
+
+What were the original count values of these genes? Let us get these gene names, and then *subset* our dataframe with the counts, `data_new`, with these genes.  
+```{r, echo=TRUE}
+genes_NA = rownames(res[is.na(res$pvalue), ])
+genecounts_NA = data_new[genes_NA,]
+kable(genecounts_NA)
+```
+
+In our case, it appears that there are some genes with count outliers. That is, a single sample has a count that is disproportionally impacting the log fold changes and resulting p-values. These are genes whose counts do not fit to a negative binomial distribution, but sadly this discussion lies outside the scope of this tutorial. 
+For now, we will simply fix for this by adjusting the *Cook's cutoff* that is used to determine count outliers (we can set the flag `cooksCutoff` to FALSE), like so:  
+```{r, echo=TRUE}
+res_nofilter = results(ds_new_fit, independentFiltering = FALSE, cooksCutoff=FALSE)
+```
+
+How many genes with NA p-value are there in this new results data object?  
+```{r, echo=FALSE}
+print(paste("Total genes are", dim(res_nofilter)[1], sep=": "))
+print(paste("Gene with p-value 'NA'", dim(res_nofilter[is.na(res_nofilter$pvalue),])[1],  sep=": "))
+```
+
+## P-value versus Adjusted P-value    
+- If our **null hypothesis** is that no gene is differentially expressed in the ISS strain as compared to the ILS strain of mice, then by random chance we would expect up to 1% of the genes to have a p-value below 0.01.  
+- To adjust for multiple testing, we can use the Benjamini-Hochberg test correction method. Nicely enough, DESeq2 does that for us automatically, and we can find these values in the `padj` column of our new results object, `res_nofilter`.
+
+```{r, echo=FALSE}
+print(paste("Number of genes with p-value < 0.01", dim(res_nofilter[(res_nofilter$pvalue) < 0.01,])[1],  sep=": "))
+print(paste("Number of genes with adjusted p-value < 0.01", dim(res_nofilter[(res_nofilter$padj) < 0.01,])[1],  sep=": "))
+print(paste("1% of total number of genes is ", dim(res_nofilter)[1]*0.01, sep=""))
+```
+
+# Saving results file   
+We can save our results object to a csv file, to analyze later in Excel or other tools of our choice.  
+```{r, echo=TRUE}
+write.csv(as.data.frame(res_nofilter), file="results.csv" )
+```
+
+
+# Data distribution  
+**This section is optional**   
+
+We can look at the dispersion of gene counts around their mean values. 
+***What is this, and why is this relevant?***  
+Experiments have found that the negative binomial distribution more appropriately captures the spread of counts for any gene among biological replicates in RNAseq. We need to assume a distribution for our data if we want to estimate any probability of 'extreme events' happening by random chance, from a small set of replicates. 
+**Dispersion plots** show how much every gene's counts deviates from its mean value in our dataset. This gives us an idea of *within-group* variability in our dataset. The red line shows the curve that is fit through the dispersion value of each gene (shown in black). The points in blue are **dispersion outliers**, and do not fall within our expectation for the range of dispersion based on what we have fit to. 
+```{r, echo=TRUE}
+DESeq2::plotDispEsts(ds_new_fit)
+```
+
+We can also have an overview of the comparison with an *MA* plot. An MA-plot shows the log-fold changes for genes in our comparison groups versus the average counts for each gene. We can use it to figure out if nwe need to normalize our data. As we go towards lower read count values, there is usually higher variability in the log fold change estimates. This *heteroskedasticity* is because the ratios come out noisier for lower counts.  
+DESeq2 tries to fix this by making the Log Fold Change estimate *shrink towards zero* when there are low counts for a gene, or when the dispersion for a gene is high, or when there are few degrees of freedom in the model. You can read more about this [here](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8).  
+Red points indicate genes with adjusted *P* value < 0.1.  
+
+```{r, echo=TRUE}
+plotMA(res_nofilter, ylim=c(-1,1))
+```
+
+# Adding gene names  
+**This section is optional**   
+
+We can replace our ensemble gene names with their official 'mgi' gene names, without using Google! Remember these are mice genes, that's why we need to refer to the *M.musculus* ensembl dataset, and map over the ensemble IDs to the 'MGI' symbol. 
+```{r, echo=TRUE}
+ensembl = useMart("ensembl", dataset="mmusculus_gene_ensembl")
+genemap <- getBM(attributes = c("ensembl_gene_id", "mgi_symbol"), 
+                 filters="ensembl_gene_id", values = rownames(res_nofilter), mart=ensembl)
+idx <- match(rownames(res_nofilter), genemap$ensembl_gene_id)
+res_nofilter$mgi_symbol <- genemap$mgi_symbol[ idx ]
+```
+
+The resulting results table looks like this:  
+```{r, echo=TRUE}
+kable(head(res_nofilter))
+```

@@ -1,0 +1,9 @@
+Strain	Treatment
+ILS_S_1_A	ILS	Saline
+ILS_S_2_B	ILS	Saline
+ILS_S_3_C	ILS	Saline
+ILS_S_3_H	ILS	Saline
+ISS_S_1_A	ISS	Saline
+ISS_S_2_B	ISS	Saline
+ISS_S_3_F	ISS	Saline
+
