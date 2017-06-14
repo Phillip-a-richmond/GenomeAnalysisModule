@@ -204,6 +204,10 @@ ssh richmonp@orcinus.westgrid.ca
 + [Session 7 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session6_Problemset.txt)
 + [Session 7 Required Set Up](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/instructions_deseq_setup.pdf)
 + [Session 7 Slides](https://docs.google.com/presentation/d/1dgLI1qarA3OkFIbIjB0jN2cwjL-jhNqoJumtThw6Fms/edit#slide=id.g1deaa80ad7_0_0)
++ [Session 7 PDF for DESeq](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Rtutorial_RNAseq_clustering_DE_ILS_ISS.pdf)
++ [Session 7 R markdown for DESeq](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Rtutorial_RNAseq_clustering_DE_ILS_ISS.Rmd)
++ [Session 7 Data Table](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/ILS_ISS_saline_HTSeq_nostats.txt)
++ [Session 7 Data Covariates](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/ILS_ISS_saline_HTSeq_nostats_covars.txt)
 + *Bioinformatics*
 + Jasleen Grewal Experience
 
