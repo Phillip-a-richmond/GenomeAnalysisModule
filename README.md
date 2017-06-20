@@ -152,7 +152,7 @@ ssh richmonp@orcinus.westgrid.ca
 + [Session 4 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session4)
 + [Session 4 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session4_Problemset.txt)
 + [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=QJpWP4xxkhLwIyD)
-  + Note: Fast-forward to 1:20 for presentation to start
+  + Note: Fast-forward to 01:20 for presentation to start
 + [Link to final recording]()
 
 ---
@@ -179,7 +179,9 @@ ssh richmonp@orcinus.westgrid.ca
 + [Session 5 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session5_Problemset.txt)
 + [Session 5 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session5)
 + [Session 5 Github Gist](https://gist.github.com/Phillip-a-richmond/7cce5f287ecc678d29acea980a3086b6)
-+ [Link to recording]()
++ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=E2wWUWpLkAZE5aJ)
+  + Note: Recording starts at 0:00.
+
 
 ---
 
@@ -195,7 +197,8 @@ ssh richmonp@orcinus.westgrid.ca
 + [Session 6 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session5)
 + [Session 6 Github Gist](https://gist.github.com/Phillip-a-richmond/ec216db03b1e6c4b1f645934a5c6ebfe)
 + [Session 6 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session6_Problemset.txt)
-+ [Link to recording]()
++ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=Bb6vMbJqnF9iwqD)
+  + Note: Skip ahead to 00:50 for presentation to start
 
 ---
 
@@ -210,7 +213,8 @@ ssh richmonp@orcinus.westgrid.ca
 + [Session 7 Data Covariates](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/ILS_ISS_saline_HTSeq_nostats_covars.txt)
 + *Bioinformatics*
 + Jasleen Grewal Experience
-
++ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=cbB2f9knXPsiCsZ)
+  + Note: Fast-forward to 03:08 for presentation to start
 
 
 
