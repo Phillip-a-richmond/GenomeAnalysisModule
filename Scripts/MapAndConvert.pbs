@@ -1,0 +1,51 @@
+#!/bin/bash
+#PBS -S /bin/bash
+
+## I want 4 processors 
+#PBS -l procs=1
+
+## How much RAM does each processor need?
+#PBS -l pmem=2000mb
+
+## The maximum walltime that will be used for my job 
+#PBS -l walltime=00:35:00
+
+## I want email sent when the job begins, ends and aborts (bea)
+#PBS -m bea
+
+## Where I want the email to be sent
+#PBS -M YourEmailAddress@gmail.com 
+
+## Let's run this job from the place that we submit the script from 
+cd $PBS_O_WORKDIR
+
+## Load the module containing bwa and samtools
+module load bio-tools
+module load bio-tools/WG_Genomic_Analysis_Workshop
+
+## Generate BWA index (I already did this for you since it takes a long time)
+## But if you want to know how to do it, it's simple:
+#bwa index <in.fasta>
+#bwa index /global/scratch/ARC_Training/Session3/Files/GENOME/genome.fa
+
+
+## Map with BWA
+### bwa mem -t <numProcs> <genome_index> <R1.fastq> <R2.fastq>  >  <out.sam>
+bwa mem -t 1  /global/scratch/ARC_Training/Session3/Files/GENOME/genome.fa  \
+/global/scratch/ARC_Training/Session3/Files/RAW_DATA/NA20845.chr19.subregion_R1.fastq \
+/global/scratch/ARC_Training/Session3/Files/RAW_DATA/NA20845.chr19.subregion_R2.fastq \
+>  /global/scratch/ARC_Training/Session3/RICHMOND/NA20845.chr19.subregion.sam
+
+## Convert sam to bam using samtools view
+### samtools view -b <in.sam> -o <out.bam>
+samtools view  -b /global/scratch/ARC_Training/Session3/RICHMOND/NA20845.chr19.subregion.sam  -o /global/scratch/ARC_Training/Session3/RICHMOND/NA20845.chr19.subregion.bam  
+
+## Sort the bam file using samtools sort
+### samtools sort <in.bam> <out.sorted.bam>
+samtools sort /global/scratch/ARC_Training/Session3/RICHMOND/NA20845.chr19.subregion.bam  /global/scratch/ARC_Training/Session3/RICHMOND/NA20845.chr19.subregion.sorted
+
+## Index the sorted bam 
+### samtools index <in.sorted.bam>
+samtools index   /global/scratch/ARC_Training/Session3/RICHMOND/NA20845.chr19.subregion.sorted.bam
+
+

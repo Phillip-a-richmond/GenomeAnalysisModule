@@ -1,0 +1,59 @@
+#!/bin/bash
+#PBS -S /bin/bash
+
+## I want 8 processors 
+#PBS -l procs=12
+
+## How much RAM does each processor need?
+#PBS -l pmem=2000mb
+
+## The maximum walltime that will be used for my job 
+#PBS -l walltime=200:15:00
+
+## I want email sent when the job begins, ends and aborts (bea)
+#PBS -m bea
+
+## Where I want the email to be sent
+#PBS -M phillip.a.richmond@gmail.com
+
+## Let's run this job from the place that we submit the script from 
+cd $PBS_O_WORKDIR
+
+## Define variables to be used in the commands below
+WORKING_DIR='/global/scratch/ARC_Training/Session4/Files/PROCESS/'
+GENOME='/global/scratch/ARC_Training/Session4/Files/GENOME/hs37d5.fa'
+FASTQR1='/global/scratch/ARC_Training/Session4/Files/RAW_DATA/NA12889_chrom20_R1.fastq'
+FASTQR2='/global/scratch/ARC_Training/Session4/Files/RAW_DATA/NA12889_chrom20_R2.fastq'
+SAM='NA12889_exome_chr20_bwa.sam'
+BAM='NA12889_exome_chr20_bwa.bam'
+SORTEDBAMPREFIX='NA12889_exome_chr20_bwa.sorted'
+SORTEDBAM='NA12889_exome_chr20_bwa.sorted.bam'
+SAMPLE_ID='NA12889_exome_chr20'
+
+## Load the module containing bwa and samtools
+module load bio-tools/WG_Genomic_Analysis_Workshop
+
+## Let's go to directory we want to work in
+cd $WORKING_DIR
+
+## Generate BWA index (I already did this for you since it takes a long time)
+## But if you want to know how to do it, it's simple:
+#bwa index <in.fasta>
+#bwa index $GENOME
+
+## Map with BWA
+bwa mem -t 12  $GENOME \
+$FASTQR1 $FASTQR2 \
+-R "@RG\tID:$SAMPLE_ID\tSM:$SAMPLE_ID\tPL:illumina" \
+> $WORKING_DIR$SAM
+
+## Convert sam to bam using samtools view
+samtools view -@ 12 -b $WORKING_DIR$SAM -o $WORKING_DIR$BAM 
+
+## Sort the bam file using samtools sort
+samtools sort -@ 12  -m 2G $WORKING_DIR$BAM  $WORKING_DIR$SORTEDBAMPREFIX 
+
+## Index the sorted bam 
+samtools index $WORKING_DIR$SORTEDBAM  
+
+

@@ -1,0 +1,64 @@
+#!/bin/bash
+#PBS -S /bin/bash
+
+## I want 8 processors 
+#PBS -l procs=12
+
+## How much RAM does each processor need?
+#PBS -l pmem=2000mb
+
+## The maximum walltime that will be used for my job 
+#PBS -l walltime=200:15:00
+
+## I want email sent when the job begins, ends and aborts (bea)
+#PBS -m bea
+
+## Where I want the email to be sent
+#PBS -M phillip.a.richmond@gmail.com
+
+## Let's run this job from the place that we submit the script from 
+cd $PBS_O_WORKDIR
+
+## Define variables to be used in the commands below
+WORKING_DIR='/global/scratch/ARC_Training/Session4/Files/PROCESS/'
+GENOME='/global/scratch/ARC_Training/Session4/Files/GENOME/hs37d5.fa'
+SORTEDBAM='NA12890.chrom20.ILLUMINA.bwa.CEU.exome.20121211.bam'
+SAMPLE_ID='NA12890_1KG'
+MPILEUPVCF='NA12890_1KG_exome_chr20_bwa_samtoolsMpileup.vcf'
+MPILEUPVCFGZ='NA12890_1KG_exome_chr20_bwa_samtoolsMpileup.vcf.gz'
+FREEBAYESVCF='NA12890_1KG_exome_chr20_bwa_Freebayes.vcf'
+FREEBAYESVCFGZ='NA12890_1KG_exome_chr20_bwa_Freebayes.vcf.gz'
+
+## Load the module containing bwa and samtools
+module load bio-tools/WG_Genomic_Analysis_Workshop
+module load bio-tools
+## Let's go to directory we want to work in
+cd $WORKING_DIR
+
+
+# First make sure you have indexed your genome
+# samtools faidx <in.fa>
+#samtools faidx $GENOME
+
+# Now we will generate a VCF.  We will use 2 tools: Samtools mpileup, and Freebayes.
+samtools mpileup -f $GENOME -v  $SORTEDBAM | bcftools call -mv -O v -o $MPILEUPVCF 
+
+
+# Zip and index with bgzip and tabix
+bgzip $MPILEUPVCF -c > $MPILEUPVCFGZ
+tabix $MPILEUPVCFGZ
+
+
+# Let's use another tool to call variants
+freebayes -f $GENOME $SORTEDBAM > $FREEBAYESVCF
+
+
+# Zip and index with bgzip and tabix
+bgzip $FREEBAYESVCF -c > $FREEBAYESVCFGZ
+tabix $FREEBAYESVCFGZ
+
+
+
+
+
+

@@ -14,13 +14,15 @@
 #PBS -m bea
 
 ## Where I want the email to be sent
-#PBS -M prichmond@cmmt.ubc.ca
-
+#PBS -M yourEmailAddress@gmail.com 
 
 #Environmental variable defined by the batch system
 cd $PBS_O_WORKDIR
 
-echo "This is a job script"
-date
+
+
+mkdir /global/scratch/ARC_Training/RICHMOND/PBS/
+
+
 
 

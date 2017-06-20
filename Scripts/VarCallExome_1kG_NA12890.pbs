@@ -1,0 +1,57 @@
+#!/bin/bash
+#PBS -S /bin/bash
+
+## I want 1 processor
+#PBS -l procs=1
+
+## How much RAM does each processor need?
+#PBS -l pmem=2000mb
+
+## The maximum walltime that will be used for my job 
+#PBS -l walltime=10:15:00
+
+## I want email sent when the job begins, ends and aborts (bea)
+#PBS -m bea
+
+## Where I want the email to be sent
+#PBS -M <your_email_here>
+
+## Let's run this job from the place that we submit the script from 
+cd $PBS_O_WORKDIR
+
+## Define variables to be used in the commands below
+WORKING_DIR='/global/scratch/ARC_Training/Session4/Files/PROCESS/'
+GENOME='/global/scratch/ARC_Training/Session4/Files/GENOME/hs37d5.fa'
+SORTEDBAM='NA12890.chrom20.ILLUMINA.bwa.CEU.exome.20121211.bam'
+FREEBAYESVCF='NA12890_1KG_exome_chr20_bwa_Freebayes.vcf'
+FREEBAYESVCFGZ='NA12890_1KG_exome_chr20_bwa_Freebayes.vcf.gz'
+
+## Load the module containing bwa and samtools
+module load bio-tools/WG_Genomic_Analysis_Workshop
+module load bio-tools
+## Let's go to directory we want to work in
+cd $WORKING_DIR
+
+# First make sure you have indexed your genome
+# samtools faidx <in.fa>
+#samtools faidx $GENOME
+
+# Let's use Freebayes to call variants
+## Usage: (look at the freebayes -h output)
+### freebayes -f <genome.fa>   <bamfile>   >   output.vcf
+freebayes -f $GENOME $SORTEDBAM > $FREEBAYESVCF
+
+# Zip and index with bgzip and tabix
+## Usage:
+### bgzip <vcf>  -c   >   <vcf.gz>
+bgzip $FREEBAYESVCF -c > $FREEBAYESVCFGZ
+
+## Usage:
+### tabix <vcf> 
+tabix $FREEBAYESVCFGZ
+
+
+
+
+
+
