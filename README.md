@@ -126,7 +126,7 @@ ssh richmonp@orcinus.westgrid.ca
 + [Session 3 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session2_Problemset.txt)
 + [Session 3 Slides](https://docs.google.com/presentation/d/1BJJjY3TaR-TEe8HhBCu1pXp2HFCKgTraRkayrUdvG4Y/edit#slide=id.g1deaa80ad7_0_0)
 + *Bioinformatics*  
-  + File formats: SAM, BAM, CRAM, BAI, sorted.BAM,
+  + File formats: SAM, BAM, BAI, sorted.BAM,
   + Tools used: BWA (with different options), samtools, IGV (downloaded on own computer)
   + Datasets: DNA-sequencing (Human)
   + HPC Resources needed: ~4 cores/person for 2 hour block
