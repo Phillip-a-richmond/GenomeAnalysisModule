@@ -217,6 +217,9 @@ ssh richmonp@orcinus.westgrid.ca
   + Note: Fast-forward to 03:08 for presentation to start
 
 
+## Example Certificate:
+![certificate](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Oriol Fornés Crespo.pdf)
+
 
 ## Proudly Supported By:
 + University of British Columbia Advanced Research Computing
