@@ -218,7 +218,7 @@ ssh richmonp@orcinus.westgrid.ca
 
 
 ## Example Certificate:
-![certificate](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Oriol Fornés Crespo.pdf)
+![certificate](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Oriol%20Fornés%20Crespo.pdf)
 
 
 ## Proudly Supported By:
