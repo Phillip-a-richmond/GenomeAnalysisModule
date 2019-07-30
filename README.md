@@ -7,6 +7,20 @@
 ## License
 > This work is distributed under the creative commons license (CC BY-SA 3.0).  Details found [here](https://creativecommons.org/licenses/by-sa/3.0/deed.en_US)
 
+## Manuscript
+> A manuscript detailing this work can be found here:
+
+[Introduction to Genomic Analysis Workshop: A catalyst for engaging life-science researchers in high throughput analysis](https://f1000research.com/articles/8-1221)
+
+## Downloadable content for adaptable use
+
+The materials are in the process of being re-adapted for the SLURM scheduler, and will be made available via a zenodo link within before the end of 2019. 
+
+## Current workshop materials on Compute Canada Cedar compute cluster
+
+If you are a Canadian researcher, the materials here are present on the Orcinus compute cluster (orcinus.westgrid.ca:/global/scratch/ARC_Training/) and Cedar (cedar.computecanada.ca:/scratch/richmonp/TRAINING/IntroductionToGenomicAnalysis). 
+
+
 ## General Course Information & Prerequisites
 ### Registering for the course
 Please register for the course using our EventBrite Link [here](https://www.eventbrite.ca/e/introduction-to-genomic-analysis-workshop-series-registration-33475860199)
