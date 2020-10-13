@@ -48,7 +48,7 @@ Complete the Prerequisites (above). If you have any challenges, please contact D
 
 ## Course Syllabus  
 
-### Session 1: Monday, November 2nd, 1:00PM-5:00PM (PST)
+### Session 1: Monday, November 2nd, 1:00PM-5:00PM (PST), SHY D308
 + Course Introduction (Lecture: 1:00-1:45)
   + Goals of the course
   + Format of the course
@@ -69,7 +69,7 @@ Complete the Prerequisites (above). If you have any challenges, please contact D
 + *Problem Set 1* (4:00-5:00)
   + Link: []()
 
-### Session 2: Wednesday, November 4th, 9:00AM-12:00PM (PST)
+### Session 2: Wednesday, November 4th, 9:00AM-12:00PM (PST), SHY D308
 + *Problem Set 1 Review* (9:00-10:00)
 + Interacting with the cluster scheduler (Lecture: 10:00-10:30)
   + Learning the cluster
@@ -83,7 +83,7 @@ Complete the Prerequisites (above). If you have any challenges, please contact D
 + *Problem Set 2* (11:15-12:00)
   + Link: []()
 
-### Session 3: Wednesday, November 4th, 2:00PM-3:45PM (PST)
+### Session 3: Wednesday, November 4th, 2:00PM-3:45PM (PST), CSB V2-222
 + *Problem Set 2 Review* (2:00-2:30)
 + Short read mapping and visualization (Lecture: 2:30-2:45)
   + Pipeline Overview
@@ -95,7 +95,7 @@ Complete the Prerequisites (above). If you have any challenges, please contact D
 + *Problem Set 3* (3:15-3:45)
   + Link: []() 
 
-### Session 4: Monday, November 9th, 1:00PM-5:00PM (PST)
+### Session 4: Monday, November 9th, 1:00PM-5:00PM (PST), SHY D308
 + *Problem Set 3 Review* (1:00-2:00)
 + Variant calling and visualization (Lecture: 2:00-2:30)
   + Many tools for variant calling, but require same inputs
@@ -116,7 +116,7 @@ Complete the Prerequisites (above). If you have any challenges, please contact D
 
 _*Any assistance needed with Problem Sets 1-4 covered in the week between sessions. At this point, we need to ensure that all students have processed their samples to the VCF stage.*_
 
-### Session 5: Monday, November 16th, 1:00PM-5:00PM (PST), 
+### Session 5: Monday, November 16th, 1:00PM-5:00PM (PST), SHY D308
 + *Problem Set 4 Review*
 + Variant interpretation for rare disease diagnosis (Lecture: 2:00-2:45) 
   + Variant databases for annotation (ClinVar, gnomAD)
@@ -142,11 +142,10 @@ _*Any assistance needed with Problem Sets 1-4 covered in the week between sessio
 + *Review Problem Set 5* (9:00-10:00)
 + Open help session, working on Practical (10:00-12:00)
 
-### Session 7: Wednesday November 18th, 3hr) CSB V2-222
+### Session 7: Wednesday November 18th, 2:00PM-5:00PM (PST), CSB V2-222
 + *Practical* (2:00-5:00)
   + Each student presents their case to the group 
   + 15-20 minutes / presentation (10-15 min present, 5 min questions). 
-
 
 
 
