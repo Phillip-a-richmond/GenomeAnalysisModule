@@ -1,10 +1,8 @@
 # Genome Analysis Module
-> This course is intended for trainees in the Genetic Counselling MSc Program at the University of British Columbia. The computing resources are hosted at BC Children's Hospital Research Institute. All data is synthetic, and for more information contact Dr. Phillip Richmond (prichmond@bcchr.ca). If you are looking for content related to the manuscript, please see Release 1. 
+> This course is intended for trainees in the Genetic Counselling MSc Program at the University of British Columbia. The computing resources are hosted at BC Children's Hospital Research Institute. 
+> For more information contact Dr. Phillip Richmond (prichmond@bcchr.ca). If you are looking for content related to the manuscript, please see Release 1. 
 
 ---
-## License
-> This work is distributed under the creative commons license (CC BY-SA 3.0).  Details found [here](https://creativecommons.org/licenses/by-sa/3.0/deed.en_US)
-
 ## Manuscript
 > A manuscript detailing the prior work can be found here:
 
