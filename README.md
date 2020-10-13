@@ -3,11 +3,6 @@
 > For more information contact Dr. Phillip Richmond (prichmond@bcchr.ca). If you are looking for content related to the manuscript, please see Release 1. 
 
 ---
-## Manuscript
-> A manuscript detailing the prior work can be found here:
-
-[Introduction to Genomic Analysis Workshop: A catalyst for engaging life-science researchers in high throughput analysis](https://f1000research.com/articles/8-1221)
-
 
 ## General Course Information & Prerequisites
 ### Course Format
@@ -156,5 +151,9 @@ _*Any assistance needed with Problem Sets 1-4 covered in the week between sessio
 
 
 
+## Manuscript
+> A manuscript detailing the prior work can be found here:
+
+[Introduction to Genomic Analysis Workshop: A catalyst for engaging life-science researchers in high throughput analysis](https://f1000research.com/articles/8-1221)
 
 
