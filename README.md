@@ -17,6 +17,14 @@
 > The course will be designed in a flexible format, adaptable for teaching online, or in person, or a combination of both. 
 
 ### Prerequisites  
+Setting up the working environment (Video 1, 10 min). 
++ Content
+  + Installing necessary software (see below) 
+  + Connecting to the cluster 
+  + Making a workspace 
++ Slides: 
++ Video: 
++ Worksheet: 
 
 #### Software Installs  
 + For mac/linux users, only need native terminal which comes with the operating system.  You can access it in the Applications section for Mac users.  You also need to have X windows installed [Link](https://www.xquartz.org/)
@@ -41,24 +49,82 @@
   + [WinSCP](https://winscp.net/eng/download.php) 
       
 ### To-Do before the first class  
-1. Get your login information for the BCCHR General Purpose Computing Cluster (GPCC). 
-Test your login with:
-ssh \<username\>@gpcc-node01.bcricwh.lan
-example:
-ssh richmonp@orcinus.westgrid.ca
-
-2. Complete the Pre-class Quiz found [Here]()
-
-3. Install Vidyo, IGV, FileZilla, and MobaXterm if you're on a PC. 
+Complete the Prerequisites (above). If you have any challenges, please contact Dr. Phillip Richmond (prichmond@bcchr.ca). 
 
 ---
 
 ## Course Syllabus  
 
-### Session 1: Introduction to Linux I, Basic Command Line
-> Monday, June 5th, 10:00AM-12:00PM (PST)
-+ [Session 1 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/PreQuiz_Session1.txt)
-+ [Session 1 Slides](https://docs.google.com/presentation/d/1vaHO9tewJhnpn3CQkIADKnJka4SrKCFb2_zOMTOi7yc/edit#slide=id.g1957375280_1_15)
+### Session 1: Monday, November 2nd, 1:00PM-5:00PM (PST)
++ Course Introduction (Lecture: 1:00-1:45)
+  + Goals of the course
+  + Format of the course
+  + Genome Analysis for Rare Disease Diagnosis 
+  + Slides[]()
++ Introduction to command line and HPC (Video 2, 15-20 min: 1:45-2:45)
+  + Key commands for navigating: cp, ls, mv, cut, mkdir, rm, scp, wget
+  + Key commands for file handling (& exposure to genomics file formats): more, less, grep, head, cut, tail, wc
+  + Key file formats: Fasta, Fastq, VCF
+  + Slides:[]()
+  + Video:[]()
++ Coffee Break and catch up (2:45-3:00)
++ Introduction to file editing, bash scripts (Video 3, 15-20 min: 3:00-4:00)
+  + Emacs
+  + Bash scripts
++ *Problem Set 1* (4:00-5:00)
+  + Link to Problem Set: []()
+
+### Session 2: Wednesday, November 4th, 9:00AM-12:00PM (PST)
++ *Problem Set 1 Review* (9:00-10:00)
++ Interacting with the cluster scheduler (Lecture: 10:00-10:30)
+  + Learning the cluster
+  + SLURM job submitting
+  + Module system for software
++ Interacting with the cluster scheduler (Video 4, 15 min: 10:30-11:00)
+  + Edit job scripts, submit to queue, collect output
++ Coffee Break and catch up (11:00-11:15)
++ *Problem Set 2* (11:15-12:00)
+
+### Session 3: Wednesday, November 4th, 2:00PM-3:45PM (PST)
++ *Problem Set 2 Review* (2:00-2:30)
++ Short read mapping and visualization (Lecture: 2:30-2:45)
+  + Pipeline Overview
+  + Exploring command line tools and how to use them
++ Mapping Reads to the genome (Video 5, 15 min: 2:45-3:15) 
+  + Map short reads with BWA mem
+  + Convert SAM to BAM using Samtools
+  + Use Samtools flagstat to get read mapping statistics
++ *Problem Set 3* (3:15-3:45)
+
+### Session 4: Monday, November 9th, 1:00PM-5:00PM (PST)
++ Problem Set 3 Review (1:00-2:00)
++ Variant calling and visualization (Lecture: 2:00-2:30)
+  + Many tools for variant calling, but require same inputs
+  + Different classes of variants which can be called 
+  + Call variants with DeepVariant (Video 6, 15 min: 2:30-3:00) 
+  + Call variants using pre-built DeepVariant scripts on pre-processed BAM files
++ Coffee Break and catch up (3:00-3:15)
++ Visualization with IGV (Video 7, 10 min: 3:15-4:00)
+  + Download and install IGV
+  + Load GRCh38 genome
+  + Load read files
+  + Zoom to region with read coverage
+  + Take snapshot of variant
++ Problem Set 4 (4:00-5:00)
+
+
+
+_*Any assistance needed with Problem Sets 1-4 covered in the week between sessions. At this point, we need to ensure that all students have processed their samples to the VCF stage.*_
+
+
+
+
+
+
+
+
+
+
 + *Linux* 
   + Logging in, filesystem, moving around, file editing, downloading files
   + Commands:
