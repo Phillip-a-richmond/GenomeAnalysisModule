@@ -97,7 +97,7 @@ Complete the Prerequisites (above). If you have any challenges, please contact D
 + *Problem Set 3* (3:15-3:45)
 
 ### Session 4: Monday, November 9th, 1:00PM-5:00PM (PST)
-+ Problem Set 3 Review (1:00-2:00)
++ *Problem Set 3 Review* (1:00-2:00)
 + Variant calling and visualization (Lecture: 2:00-2:30)
   + Many tools for variant calling, but require same inputs
   + Different classes of variants which can be called 
@@ -110,12 +110,35 @@ Complete the Prerequisites (above). If you have any challenges, please contact D
   + Load read files
   + Zoom to region with read coverage
   + Take snapshot of variant
-+ Problem Set 4 (4:00-5:00)
-
-
++ *Problem Set 4* (4:00-5:00)
 
 _*Any assistance needed with Problem Sets 1-4 covered in the week between sessions. At this point, we need to ensure that all students have processed their samples to the VCF stage.*_
 
+### Session 5: Monday, November 16th, 1:00PM-5:00PM (PST), 
++ *Problem Set 4 Review*
++ Variant interpretation for rare disease diagnosis (Lecture: 2:00-2:45) 
+  + Variant databases for annotation (ClinVar, gnomAD)
+  + In silico metrics (CADD)
+  + Phenotype:Genotype
+    + Human Phenotype Ontology (HPO), 
+    + Online Mendelian Inheritance in Man (OMIM)
+  + Automation with Exomiser
++ Running Exomiser on a VCF (Video 9, 15 min: 2:45-3:15)
+  + Run exomiser using pre-built configs and scripts on pre-organized VCF files
++ Coffee Break and catch up (3:15-3:30)
++ Interpreting Exomiser output in excel/html (Video 10, 15 min: 3:30-4:00)
+  + Download exomiser output in TSV format, open and explore tabs in excel
+  + Visualize output HTML file
++ *Problem Set 5* (4:00-5:00)
+
+### Session 6: Wednesday, November 18th, 9:00AM-12:00PM (PST), SHY D308
++ *Review Problem Set 5* (9:00-10:00)
++ Open help session, working on Practical (10:00-12:00)
+
+### Session 7: Wednesday November 18th, 3hr) CSB V2-222
++ *Practical* (2:00-5:00)
+  + Each student presents their case to the group 
+  + 15-20 minutes / presentation (10-15 min present, 5 min questions). 
 
 
 
@@ -123,129 +146,3 @@ _*Any assistance needed with Problem Sets 1-4 covered in the week between sessio
 
 
 
-
-
-+ *Linux* 
-  + Logging in, filesystem, moving around, file editing, downloading files
-  + Commands:
-  + cp, ls, mv, cut, mkdir, rm, scp, wget
-+ *System tools*: 
-  + terminal/shell
-+ *Bioinformatics*  
-  + File formats: BED, GFF/GTF, VCF
-+ [Github Gist](https://gist.github.com/Phillip-a-richmond/8b36d58fb2f03d4760869b0676d50692)
-+ [Session 1 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session1)
-+ [Session 1 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session1_Problemset.txt)
-+ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=bBtILur7bxNhjMp)
-  + Note: Fast-forward to 6:33 for presentation to start
-+ [Link to final recording]()
-
-
----
-
-### Session 2: Introduction to Linux II, Interacting with the Queue
-> Tuesday, June 6th, 10:00AM-12:00PM (PST)
-+ [Session 2 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session1_Problemset.txt)
-+ [Session 2 Slides](https://docs.google.com/presentation/d/1u5R23969caKTCPB3YIYRZRNW2zIcktZJC5S89D-GgjU/edit#slide=id.g1deaa80ad7_0_0)
-+ *Linux* 
-  + File editor
-  + FTP client
-  + Shell scripts, interacting with the queue
-  + Commands: sh, qsub, qstat, qdel, emacs, 
-+ *Bioinformatics* 
-  + File formats: FASTQ, FASTQ.GZ 
-  + HPC Resources needed: ~1 core/person for 2 hour block  
-+ [Github Gist](https://gist.github.com/Phillip-a-richmond/76baff0d4525817e0ca59a638bb374a0)
-+ [Session2 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session2)
-+ [Session 2 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session2_Problemset.txt)
-+ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=invabc4OKUOtXxa)
-  + Note: Fast-forward to 1:52 for presentation to start
-+ [Link to final recording]()
-  
-
-
----
-
-### Session 3: Short read mapping and visualization
-> Wednesday, June 7th, 9:30AM-11:30AM (PST)
-+ [Session 3 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session2_Problemset.txt)
-+ [Session 3 Slides](https://docs.google.com/presentation/d/1BJJjY3TaR-TEe8HhBCu1pXp2HFCKgTraRkayrUdvG4Y/edit#slide=id.g1deaa80ad7_0_0)
-+ *Bioinformatics*  
-  + File formats: SAM, BAM, BAI, sorted.BAM,
-  + Tools used: BWA (with different options), samtools, IGV (downloaded on own computer)
-  + Datasets: DNA-sequencing (Human)
-  + HPC Resources needed: ~4 cores/person for 2 hour block
-+ [Github Gist](https://gist.github.com/Phillip-a-richmond/bf669287f33b5bd91c27549b94250834)
-+ [Session 3 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session3_Problemset.txt)
-+ [Session 3 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session3)
-+ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=ycoB7nogbzccDOO)
-  + Note: Fast-forward to 1:28 for presentation to start
-+ [Link to final recording]()
-
----
-
-### Session 4: Variant Calling - Small variants
-> Thursday, June 8th, 9:30AM-11:30PM (PST) 
-+ [Session 4 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session3_Problemset.txt)
-+ [Session 4 Slides](https://docs.google.com/presentation/d/1vdX5-nBWnxlQ2C09i8J1OgOwirj-EA-nLwvXOHR58ek/edit#slide=id.g1e4523bd13_1_30)
-+ *Bioinformatics*  
-  + File formats: VCF
-  + Tools used: Picard, GATK, Platypus, Freebayes, Samtools mpileup
-  + Datasets: DNA-sequencing (Human)
-  + HPC Resources needed: ~4 cores/person for 2 hour block  
-+ [Github Gist](https://gist.github.com/Phillip-a-richmond/4f6da08a09881cd088a49d49656ae243)
-+ [Session 4 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session4)
-+ [Session 4 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session4_Problemset.txt)
-+ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=QJpWP4xxkhLwIyD)
-  + Note: Fast-forward to 01:20 for presentation to start
-+ [Link to final recording]()
-
----
-
-### Mid-series Exam
-> Friday, June 9th
-+ Will be available for answering questions from 10:00-12:00
-  + Virtually:  WG_Training room
-  + Locally in BCCHR Rm# 2108
-+ [Mid-Series Exam](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session4_Problemset.txt)
-+ [Exam etherpad help](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session4)
-
----
-
-### Session 5: Variant Annotation
-> Monday, June 12th, 10:00AM-12:00PM (PST)   
-+ [Session 5 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/tree/master/Assignments)
-+ [Session 5 Slides](https://docs.google.com/presentation/d/1WJ6K-uKoKKcpIA0joufkU4Ym5rF6w3wAahzPWWjHSMs/edit?usp=sharing)
-+ *Bioinformatics*
-  + File formats: VCF
-  + Tools used: GEMINI
-  + Datasets: DNA-sequencing (Human)
-  + HPC Resources needed: ~4 cores/person for 2 hour block  
-+ [Session 5 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session5_Problemset.txt)
-+ [Session 5 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session5)
-+ [Session 5 Github Gist](https://gist.github.com/Phillip-a-richmond/7cce5f287ecc678d29acea980a3086b6)
-+ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=E2wWUWpLkAZE5aJ)
-  + Note: Recording starts at 0:00.
-
-
----
-
-### Session 6: RNA-seq I, Read Mapping, Transcript Quantification
-> Tuesday, June 13th, 10:00AM-12:00PM (PST) 
-+ [Session 6 Pre-Quiz](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session4_Problemset.txt)
-+ [Session 6 Slides](https://docs.google.com/presentation/d/1QyHtpR6rSRqB_EPY7UuoQY_ufZ8Qp1pctgEQ2hflERs)
-+ *Bioinformatics*
-  + File formats: GTF review
-  + Tools used: HISAT2, stringtie
-  + Datasets: RNA-sequencing Inbred Mouse Brain Expression Data
-  + HPC Resources needed: ~4 cores/person for 2 hour block 
-+ [Session 6 Etherpad](https://etherpad.openstack.org/p/Introduction_To_Genomic_Analysis_Session5)
-+ [Session 6 Github Gist](https://gist.github.com/Phillip-a-richmond/ec216db03b1e6c4b1f645934a5c6ebfe)
-+ [Session 6 ProblemSet](https://github.com/Phillip-a-richmond/Introduction-to-Genomic-Analysis/blob/master/Assignments/Session6_Problemset.txt)
-+ [Link to raw recording](https://vidyoreplay.computecanada.ca/replay/showRecordingExternal.html?key=Bb6vMbJqnF9iwqD)
-  + Note: Skip ahead to 00:50 for presentation to start
-
----
-
-### Session 7: RNA-seq II, Differential Expression
-> Wednesday, June 14th, 9:30AM-11:30AM (PST)
