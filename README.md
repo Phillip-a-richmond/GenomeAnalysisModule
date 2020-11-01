@@ -51,12 +51,12 @@ Complete the Prerequisites (above). If you have any challenges, please contact D
   + Goals of the course
   + Format of the course
   + Genome Analysis for Rare Disease Diagnosis 
-  + Slides[]()
+  + Slides[Link](https://docs.google.com/presentation/d/1ow6LICXq9bg-IvUY1k-Kg9vYx5D6-GQh6FNHYK6jUr8/edit#slide=id.p)
 + Introduction to command line and HPC (Video 2, 15-20 min: 1:45-2:45)
   + Key commands for navigating: cp, ls, mv, cut, mkdir, rm, scp, wget
   + Key commands for file handling (& exposure to genomics file formats): more, less, grep, head, cut, tail, wc
   + Key file formats: Fasta, Fastq, VCF
-  + Slides:[]()
+  + Slides:[Link]()
   + Video:[]()
 + Coffee Break and catch up (2:45-3:00)
 + Introduction to file editing, bash scripts (Video 3, 15-20 min: 3:00-4:00)
