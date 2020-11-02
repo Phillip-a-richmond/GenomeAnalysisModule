@@ -146,6 +146,13 @@ _*Any assistance needed with Problem Sets 1-4 covered in the week between sessio
   + 15-20 minutes / presentation (10-15 min present, 5 min questions). 
 
 
+## Repository Directory Contents:
+1. Assignments - Find assignment files here.
+2. CaseInformation - Find information about the 10 cases here. 
+3. 
+
+
+
 
 
 ## Manuscript

@@ -8,7 +8,7 @@ Other sessions will have more difficult quizzes, that will require some addition
 
 I urge you to work together on these quizzes and problem sets.
 
-1.) Visit the Course website (https://phillip-a-richmond.github.io/Introduction-to-Genomic-Analysis/).
+1.) Visit the Course website (https://phillip-a-richmond.github.io/GenomeAnalysisModule/).
 
 2.) Complete the prerequisites on the course website if you haven't already.  These include:
 

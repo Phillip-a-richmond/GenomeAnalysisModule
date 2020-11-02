@@ -1,0 +1,39 @@
+{
+  "id": "Case6",
+  "subject": {
+    "id": "Patient6",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002180",
+        "label": "Psychosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000709",
+        "label": "Primary adrenal insufficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008207",
+        "label": "Neurodegeneration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002500",
+        "label": "Abnormality of the cerebral white matter"
+      }
+    }
+  ]
+}

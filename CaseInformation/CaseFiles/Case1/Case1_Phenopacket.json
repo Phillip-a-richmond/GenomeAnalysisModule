@@ -1,0 +1,33 @@
+{
+  "id": "Case1",
+  "subject": {
+    "id": "Patient1",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000964",
+        "label": "Eczema"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000388",
+        "label": "Otitis media"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002248",
+        "label": "Hematemesis"
+      }
+    }
+  ]
+}

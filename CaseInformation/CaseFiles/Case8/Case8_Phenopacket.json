@@ -1,0 +1,51 @@
+{
+  "id": "Case8",
+  "subject": {
+    "id": "Patient8",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032318",
+        "label": "congenital heart disease"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000475",
+        "label": "wide neck"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000368",
+        "label": "low set posteriorly rotated ears"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "widely spaced eyes"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000445",
+        "label": "broad nose"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003196",
+        "label": "short nose"
+      }
+    }
+  ]
+}

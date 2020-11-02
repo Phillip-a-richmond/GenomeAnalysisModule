@@ -1,3 +1,6 @@
 # Ignore student spaces
 StudentSpaces/*
 Files/*
+
+# not fullyd eleted files
+.nfs*

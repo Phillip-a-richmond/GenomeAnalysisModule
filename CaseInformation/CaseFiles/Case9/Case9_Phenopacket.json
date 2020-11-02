@@ -1,0 +1,33 @@
+{
+  "id": "Case9",
+  "subject": {
+    "id": "Patient9",
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011800",
+        "label": "Flat midface"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008625",
+        "label": "sensorineural hearing loss"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000545",
+        "label": "myopia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000175",
+        "label": "cleft palate"
+      }
+    }
+  ]
+}

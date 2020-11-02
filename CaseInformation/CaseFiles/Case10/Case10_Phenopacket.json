@@ -1,0 +1,57 @@
+{
+  "id": "Case10",
+  "subject": {
+    "id": "Patient10",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "microcephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000325",
+        "label": "triangular face"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000400",
+        "label": "large and prominent ears"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000637",
+        "label": "long palpebral fissures"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001572",
+        "label": "macrodontia"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "Case4",
+  "subject": {
+    "id": "Patient4",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002613",
+        "label": "Biliary cirrhosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002024",
+        "label": "Malabsorption"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002206",
+        "label": "Pulmonary fibrosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002205",
+        "label": "Recurrent respiratory infections"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001738",
+        "label": "Exocrine pancreatic insufficiency"
+      }
+    }
+  ]
+}

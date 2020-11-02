@@ -1,0 +1,45 @@
+{
+  "id": "Case7",
+  "subject": {
+    "id": "Patient7",
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:002342",
+        "label": "Moderate intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002553",
+        "label": "arched eyebrows"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000494",
+        "label": "downslanting palpebral fissures"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000448",
+        "label": "prominent nose"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000347",
+        "label": "micrognathia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011304",
+        "label": "broad thumbs"
+      }
+    }
+  ]
+}

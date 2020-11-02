@@ -1,0 +1,51 @@
+This problem set will review the basic commands from the lecture, and add some new commands I didn't teach you (GASP!!!)
+
+The examples in this problem set will also guide you through exploring different file formats commonly used in genomics.  
+For help with file formats, use...the Internet!  
+
+
+1) Create a "Problemset directory" with your last name and first initial in all caps within:
+
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/<YourDirName>/ProblemSet1/
+
+2) Copy this Session1 Problem set into your Problemset directory:
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Assignments/ProblemSet1/ProblemSet1.txt
+
+3) Copy this file into your Problemset directory:
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Files/genes.gff3
+
+3) Rename the file to be called: hg38_genes.gff3
+
+4) Extract all lines that correspond to the gene "GRN", and save them in a file called GRN.gff3 
+
+5) Double check your GRN.gff3 to make sure it only has lines corresponding to GRN in it.  
+If it doesn't, redo your command in #4 using the whole-word option from the grep command.
+
+6) Extract all lines that correspond to the gene "TTN", and save them in a file called TTN.gff3 
+
+7) Delete the smaller of the two gff3 files: GRN.gff3 and TTN.gff3
+
+8) Make a BED file (chromosome,start,stop tab separated) of the CDS entries for TTN called TTN.bed
+(hint cut -f)
+
+9) Download the clinvar vcf file into your Problemset Directory:
+ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz
+
+10) Unzip the clinvar.vcf.gz file
+
+11) Extract all variant lines corresponding to the gene GLS from the clinvar file into a file called:
+GLS_clinvar.vcf
+
+12) Check the number of lines in the GLS_clinvar.vcf file.
+
+13) Extract all variant lines corresponding to the gene SLC6A8 from the clinvar.vcf file into a file called:
+SLC6A8_clinvar.vcf
+
+14) Concatenate the GLS_clinvar.vcf and SLC6A8_clinvar.vcf files into a single file called combined_clinvar.vcf
+
+15) Extract the header lines (starting with "#") from the file clinvar.vcf and add them to the top of combined_clinvar.vcf to make a new file called:
+GLS_SLC6A8_clinvar.vcf
+
+16) Compress the file GLS_SLC6A8_clinvar.vcf using gzip
+
+17) Change the permissions on your Problemset directory to be read, write, and execute for user, group, and world.
