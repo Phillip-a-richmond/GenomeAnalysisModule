@@ -56,16 +56,16 @@ Complete the Prerequisites (above). If you have any challenges, please contact D
   + Key commands for navigating: cp, ls, mv, cut, mkdir, rm, scp, wget
   + Key commands for file handling (& exposure to genomics file formats): more, less, grep, head, cut, tail, wc
   + Key file formats: Fasta, Fastq, VCF
-  + Slides:[Link]()
+  + Slides:[Link](https://docs.google.com/presentation/d/1VQWdHYdes7AtKdOJMdspQdO3l0x5LsrZ7wYacz0Hfv0/edit#slide=id.ga6a4b9d161_0_0)
   + Video:[]()
 + Coffee Break and catch up (2:45-3:00)
 + Introduction to file editing, bash scripts (Video 3, 15-20 min: 3:00-4:00)
   + Emacs
   + Bash scripts
-  + Slides:[]()
+  + Slides:[Link](https://docs.google.com/presentation/d/19i8z70WvshyPQbU6SKUUlcZzIPDGtN17JX5o2bw6D_Q/edit#slide=id.p)
   + Video:[]()
 + *Problem Set 1* (4:00-5:00)
-  + Link: []()
+  + Link: [Here](https://github.com/Phillip-a-richmond/GenomeAnalysisModule/blob/master/Assignments/ProblemSet1/ProblemSet1.txt)
 
 ### Session 2: Wednesday, November 4th, 9:00AM-12:00PM (PST), SHY D308
 + *Problem Set 1 Review* (9:00-10:00)
