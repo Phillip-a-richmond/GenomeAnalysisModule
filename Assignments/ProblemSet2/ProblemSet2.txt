@@ -1,85 +1,54 @@
-Session 2 Problem Set
+# Problem Set 2
 
-This problem set will require you to fill in answers directly to a copy of
-this text file.
+## Overview
+In this problem set, you will create a shell script to map and convert raw read data.
+Then, you will download the mapped reads to your computer, and visualize the data in IGV.
+Then send the image to prichmond@bcchr.ca.
 
-1) Make a session 2 problem set directory titled <LASTNAME_FIRSTNAME> within
-the /global/scratch/ARC_Training/Session2/Problemset/ directory.
+1) Make a ProblemSet2 directory within your workshop directory.
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/<YourDir>/ProblemSet2
 
-2) Copy the file:
-/global/scratch/ARC_Training/Session2/Problemset/Session2_Problemset.txt 
-into your problem set directory.
+2) Choose your sample from this directory, and copy it to your ProblemSet2 directory.
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Files/
 
-3) Edit the file, and fill in the answers the questions below.  
-Not every problem will require you to fill in an answer.   
-Start by typing your name here:
+Sample Assignments are:
+Ann - HG01583.chr19.subregion_R*fastq
+Emma - HG03006.chr19.subregion_R*fastq
+Jacob - HG03052.chr19.subregion_R*fastq
+Kiara - NA19648.chr19.subregion_R*fastq
+Loryn - NA20502.chr19.subregion_R*fastq
+Manraj - NA20845.chr19.subregion_R*fastq
+Jenna - HG01583.chr19.subregion_R*fastq
+Tracey - NA19648.chr19.subregion_R*fastq
 
+3) Create a shell script in your ProbelmSet2 directory called: MapAndConvert.sh
 
+4) Add the commands to it for mapping the reads with BWA mem against the GRCh38 genome.
 
+GRCh38 Genome is here:
 
-4) Copy these scripts into your problemset directory:
-/global/scratch/ARC_Training/Session2/Problemset/Problemset_PBS_*
-(NOTE, the * is a wild-card character allowing you to specify any file
-matching before the *)
+/mnt/common/DATABASES/REFERENCES/GRCh38/GENOME/GRCh38-lite.fa
 
+5) Add the command to the shell script to convert the sam file into a bam.
 
-5) Edit the script Problemset_PBS_1.pbs and add your email address where it
-says: <replace_This_with_your_email>
-Also, change the <LastName_FirstName> to be yours.
+6) Add the command to the shell script to sort the bam file.
 
+7) Add the command to the shell script to index the sorted bam file.
 
-6) Submit the script to the queue.  What is the job number?
+8) Run the entire shell script using:
 
-Job Number:  
-Job Name:
+sh MapAndConvert.sh
 
+9) Download the output sorted bam (.sorted.bam) and sorted bam index (.sorted.bam.bai) onto your computer using FileZilla
 
-7) This job should have sent you an email upon completion.  
+10) Open the files in IGV on your computer.
 
-A) Copy the contents of the email here:
+11) Zoom to the region with reads mapped and take a snapshot called ProblemSet2.png.
 
+12) Upload your snapshot to your ProblemSet2 Directory.
 
+13) Send your ProblemSet2.png to prichmond@bcchr.ca
 
-
-
-B) Copy the contents of the .o file associated with the job here:
-
-
-
-
-8) Edit the script Problemset_PBS_2.pbs within your probelmset directory.
-Change /<LastName_FirstName> to reflect your name.
-
-
-
-9) Submit the script.  You will need to debug some erroneous typos in order to
-get it to work.  Happy bug hunting.
-
-
-
-
-10) What is your favourite restaurant in Vancouver?
-
-
-
-
-11) How long did this problem set take you?
-
-
-
-
-12) Once this worksheet is completed, download it onto your own computer using
-a file transfer client.  Email the file to Phillip.a.richmond@gmail.com
-
-
-
-13) Make sure you have downloaded and installed IGV on your own computer.
-http://software.broadinstitute.org/software/igv/download
-
-Not just the web launch, but download of the application.
-Make sure you can open the application, which relies on java.
-If you get an error, make sure you have a recent java version:
-http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 
 

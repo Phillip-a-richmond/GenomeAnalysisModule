@@ -49,3 +49,11 @@ GLS_SLC6A8_clinvar.vcf
 16) Compress the file GLS_SLC6A8_clinvar.vcf using gzip
 
 17) Change the permissions on your Problemset directory to be read, write, and execute for user, group, and world.
+
+18) Edit this file, and put your name at the top, with the date.
+
+19) Send the completed worksheet to prichmond@bcchr.ca
+
+20) Pat yourself on the back. You are amazing!
+
+
