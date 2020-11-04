@@ -56,14 +56,14 @@ Complete the Prerequisites (above). If you have any challenges, please contact D
   + Key commands for navigating: cp, ls, mv, cut, mkdir, rm, scp, wget
   + Key commands for file handling (& exposure to genomics file formats): more, less, grep, head, cut, tail, wc
   + Key file formats: Fasta, Fastq, VCF
-  + Slides:[Link](https://docs.google.com/presentation/d/1VQWdHYdes7AtKdOJMdspQdO3l0x5LsrZ7wYacz0Hfv0/edit#slide=id.ga6a4b9d161_0_0)
-  + Video:[]()
+  + Slides: [Here](https://docs.google.com/presentation/d/1VQWdHYdes7AtKdOJMdspQdO3l0x5LsrZ7wYacz0Hfv0/edit#slide=id.ga6a4b9d161_0_0)
+  + Video: []()
 + Coffee Break and catch up (2:45-3:00)
 + Introduction to file editing, bash scripts (Video 3, 15-20 min: 3:00-4:00)
   + Emacs
   + Bash scripts
-  + Slides:[Link](https://docs.google.com/presentation/d/19i8z70WvshyPQbU6SKUUlcZzIPDGtN17JX5o2bw6D_Q/edit#slide=id.p)
-  + Video:[]()
+  + Slides: [Here](https://docs.google.com/presentation/d/19i8z70WvshyPQbU6SKUUlcZzIPDGtN17JX5o2bw6D_Q/edit#slide=id.p)
+  + Video: []()
 + *Problem Set 1* (4:00-5:00)
   + Link: [Here](https://github.com/Phillip-a-richmond/GenomeAnalysisModule/blob/master/Assignments/ProblemSet1/ProblemSet1.txt)
 
@@ -73,7 +73,7 @@ Complete the Prerequisites (above). If you have any challenges, please contact D
   + Learning the cluster
   + SLURM job submitting
   + Module system for software
-  + Slides: []()
+  + Slides: [Here](https://docs.google.com/presentation/d/1G7wMYo-5NyjQClwfhPTscLsvhcAPMqlc1wbRfHwLHHw/edit?usp=sharing)
   + Video: []()
 + Interacting with the cluster scheduler (Video 4, 15 min: 10:30-11:00)
   + Edit job scripts, submit to queue, collect output
