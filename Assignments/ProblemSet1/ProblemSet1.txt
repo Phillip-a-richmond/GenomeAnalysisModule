@@ -1,4 +1,4 @@
-This problem set will review the basic commands from the lecture, and add some new commands I didn't teach you (GASP!!!)
+Manraj Randhawa; November 3, 2020.This problem set will review the basic commands from the lecture, and add some new commands I didn't teach you (GASP!!!)
 
 The examples in this problem set will also guide you through exploring different file formats commonly used in genomics.  
 For help with file formats, use...the Internet!  

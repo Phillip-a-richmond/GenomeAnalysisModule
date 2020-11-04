@@ -149,7 +149,9 @@ _*Any assistance needed with Problem Sets 1-4 covered in the week between sessio
 ## Repository Directory Contents:
 1. Assignments - Find assignment files here.
 2. CaseInformation - Find information about the 10 cases here. 
-3. 
+3. Files - Files for use within the workshops stored here (not the case files).
+4. StudentSpaces - This directory is the sandbox for student directories
+
 
 
 

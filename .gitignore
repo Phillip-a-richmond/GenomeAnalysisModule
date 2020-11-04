@@ -4,3 +4,7 @@ Files/*
 
 # not fullyd eleted files
 .nfs*
+
+# all fastq data
+*fastq*
+*fq*
