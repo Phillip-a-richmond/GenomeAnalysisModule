@@ -21,7 +21,7 @@ Manraj - NA20845.chr19.subregion_R*fastq
 Jenna - HG01583.chr19.subregion_R*fastq
 Tracey - NA19648.chr19.subregion_R*fastq
 
-3) Create a shell script in your ProbelmSet2 directory called: MapAndConvert.sh
+3) Create a shell script in your ProbelmSet2 directory called: MapAndConvert_ProblemSet2.sh
 
 4) Add the commands to it for mapping the reads with BWA mem against the GRCh38 genome.
 
@@ -37,7 +37,7 @@ GRCh38 Genome is here:
 
 8) Run the entire shell script using:
 
-sh MapAndConvert.sh
+sh MapAndConvert_ProblemSet2.sh
 
 9) Download the output sorted bam (.sorted.bam) and sorted bam index (.sorted.bam.bai) onto your computer using FileZilla
 
@@ -48,7 +48,4 @@ sh MapAndConvert.sh
 12) Upload your snapshot to your ProblemSet2 Directory.
 
 13) Send your ProblemSet2.png to prichmond@bcchr.ca
-
-
-
 

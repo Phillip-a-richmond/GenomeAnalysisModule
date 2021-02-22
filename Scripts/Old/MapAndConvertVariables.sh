@@ -6,8 +6,8 @@
 #SBATCH --mail-type=ALL
 
 ## CPU Usage
-#SBATCH --mem=160G
-#SBATCH --cpus-per-task=40
+#SBATCH --mem=100G
+#SBATCH --cpus-per-task=32
 #SBATCH --time=24:00:00
 #SBATCH --nodes=1
 
@@ -57,9 +57,10 @@ SAMPLE_ID=${SAMPLE}_GRCh38
 #############
 cd $WORKING_DIR
 
-bwa mem /mnt/common/DATABASES/REFERENCES/GRCh38/GENOME/GRCh38-lite.fa \
-        -t 40 \
-        -R "@RG\tID:Case10\tSM:Case10\tPL:illumina" \
+bwa mem $BWA_INDEX \
+        -t $NSLOTS \
+        -R "@RG\tID:$SAMPLE_ID\tSM:$SAMPLE_ID\tPL:illumina" \
+        -M \
         $FASTQR1 \
         $FASTQR2 \
         > $WORKING_DIR$SAMPLE_ID.sam

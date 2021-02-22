@@ -8,3 +8,11 @@ Files/*
 # all fastq data
 *fastq*
 *fq*
+
+# Case data
+CaseInformation/CaseFiles/*
+
+Scripts/OEFILES/*
+
+Exomiser/*
+
