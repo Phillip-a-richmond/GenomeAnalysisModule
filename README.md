@@ -56,6 +56,7 @@ Setting up the working environment
 ### Thursday June 3rd (10:00-12:00) - Intro to course, Intro to Genome Analysis for Rare Disease, Case Distribution 
 - Soft-start (15 min: 10:00-10:15)
 - Course Introduction (Lecture, 60 min: 10:15-11:15)
+    - [Link](https://docs.google.com/presentation/d/1uzLQoHP3NODOWEs0BM2UZ8zG9lULiw25hcf07fLmSZs/edit#slide=id.p)
     - Goals of the course
     - Format of the course
     - Genome Analysis for Rare Disease Diagnosis
@@ -70,6 +71,7 @@ Setting up the working environment
 
 ### Friday June 4th (10:00-12:00) - Intro to linux command line & file handling
 - Introduction to command line and HPC (Work-along, 45 min - 10:00-10:45)
+    - [Link](https://docs.google.com/presentation/d/1TAIXbS3cJwEYpUXrhjig1e1JcVNYUvr8ZE0qWApuCA4/edit#slide=id.p)
     - Key commands for navigating
     - ls, mkdir, cd, pwd
     - Key commands for file handling (& exposure to genomics file formats)
@@ -85,6 +87,7 @@ Setting up the working environment
 ### Monday June 7th (10:00-12:00) - Short read mapping & visualization (Command line/bash)
 - *Problem Set 1 Review (20 min: 10:00-10:20)*
 - Short read mapping & Visualization (Work-along, 60 min - 10:20-11:20)
+    - [Link](https://docs.google.com/presentation/d/1dDV7rpvDun7or578Pmm4fp9GRKRzMHKYpMs7AAlXZ0E/edit#slide=id.p)
     - Pipeline Overview
     - Exploring command line tools and how to use them
     - Map short reads to reference genome with BWA mem
@@ -103,6 +106,7 @@ Setting up the working environment
 ### Wednesday June 9th (10:00-12:00) - Variant calling and visualization
 - *Problem Set 3 Review (30 min - 10:00-10:30)*
 - Call variants with DeepTrio (Work-along, 45 min - 10:30-11:15) 
+    - [Link](https://docs.google.com/presentation/d/1mLunTcJn1UIHSoHkBycS_6lWzvi_DGF9nNDSoo9tQ_g/edit#slide=id.p)
     - Call variants using pre-built DeepTrio scripts on pre-processed small BAM files
     - Visualize variants in IGV
     - Load GRCh38 genome
@@ -123,6 +127,7 @@ Setting up the working environment
 
 ### Friday June 11th (10:00-12:00) - Variant prioritization with Exomiser
 - Running Exomiser on a VCF (Work-along, 45 min - 10:00-10:45)
+    - [Link](https://docs.google.com/presentation/d/11LTBnsUh-gKxIMTfmSvuCX6R9YWsctNNMvLtUcu2Jhk/edit#slide=id.p)
     - Run exomiser using pre-built configs and scripts on Case 6
     - Interpreting Exomiser output in excel/html (Work-along, 45 min - 10:45-11:30)
     - Download exomiser output in TSV format, open and explore tabs in excel
