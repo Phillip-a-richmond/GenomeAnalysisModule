@@ -15,7 +15,7 @@ Setting up the working environment (Video 1, 10 min).
   + Installing necessary software (see below) 
   + Connecting to the cluster 
   + Making a workspace 
-+ Slides: [Link](https://docs.google.com/presentation/d/1tlas5MAvcKWCngZlg416YuazkYMluegkPhkCTTV-GQ8/edit#slide=id.g9eded813b6_0_58)
++ Slides: [Link](https://docs.google.com/presentation/d/1tNzW21k7WnjfU-gDvL_gJB5R32GMlCrH0P1lHpH1jCY/edit#slide=id.g9d2975bcf0_0_5)
 
 #### Software Installs  
 + For mac/linux users, only need native terminal which comes with the operating system.  You can access it in the Applications section for Mac users.  You also need to have X windows installed [Link](https://www.xquartz.org/)
@@ -46,120 +46,97 @@ Complete the Prerequisites (above). If you have any challenges, please contact D
 
 ## Course Syllabus  
 
-### Session 1: Monday, November 2nd, 1:00PM-5:00PM (PST), SHY D308
-+ Course Introduction (Lecture: 1:00-1:45)
-  + Goals of the course
-  + Format of the course
-  + Genome Analysis for Rare Disease Diagnosis 
-  + Slides[Link](https://docs.google.com/presentation/d/1ow6LICXq9bg-IvUY1k-Kg9vYx5D6-GQh6FNHYK6jUr8/edit#slide=id.p)
-+ Introduction to command line and HPC (Video 2, 15-20 min: 1:45-2:45)
-  + Key commands for navigating: cp, ls, mv, cut, mkdir, rm, scp, wget
-  + Key commands for file handling (& exposure to genomics file formats): more, less, grep, head, cut, tail, wc
-  + Key file formats: Fasta, Fastq, VCF
-  + Slides: [Here](https://docs.google.com/presentation/d/1VQWdHYdes7AtKdOJMdspQdO3l0x5LsrZ7wYacz0Hfv0/edit#slide=id.ga6a4b9d161_0_0)
-  + Video: []()
-+ Coffee Break and catch up (2:45-3:00)
-+ Introduction to file editing, bash scripts (Video 3, 15-20 min: 3:00-4:00)
-  + Emacs
-  + Bash scripts
-  + Slides: [Here](https://docs.google.com/presentation/d/19i8z70WvshyPQbU6SKUUlcZzIPDGtN17JX5o2bw6D_Q/edit#slide=id.p)
-  + Video: []()
-+ *Problem Set 1* (4:00-5:00)
-  + Link: [Here](https://github.com/Phillip-a-richmond/GenomeAnalysisModule/blob/master/Assignments/ProblemSet1/ProblemSet1.txt)
+### Prerequisite – to be done before Session 1 (15 minutes): 
+Setting up the working environment 
+- Installing secure shell and sshfs 
+- Connecting to the cluster 
+- Making a workspace
+- [Link](https://docs.google.com/presentation/d/1tNzW21k7WnjfU-gDvL_gJB5R32GMlCrH0P1lHpH1jCY/edit#slide=id.g9d2975bcf0_0_5)
+ 
+### Thursday June 3rd (10:00-12:00) - Intro to course, Intro to Genome Analysis for Rare Disease, Case Distribution 
+- Soft-start (15 min: 10:00-10:15)
+- Course Introduction (Lecture, 60 min: 10:15-11:15)
+    - Goals of the course
+    - Format of the course
+    - Genome Analysis for Rare Disease Diagnosis
+    - Limitations of whole exome sequencing, short reads, gene discovery, where the field is going
+- Distribute cases & link to resources (Work-along, 30 min - 11:15-11:45)
+    - Introduce concepts presented in the cases
+    - OMIM, ClinVar, HPO
+- Establish working environment (Work-along, 15 minutes - 11:45-12:00)
+    - Install IGV
+    - Login to cluster
+    - Install SSHFS
 
-### Session 2: Wednesday, November 4th, 9:00AM-12:00PM (PST), SHY D308
-+ *Problem Set 1 Review* (9:00-10:00)
-+ Interacting with the cluster scheduler (Lecture: 10:00-10:30)
-  + Learning the cluster
-  + SLURM job submitting
-  + Module system for software
-  + Slides: [Here](https://docs.google.com/presentation/d/1G7wMYo-5NyjQClwfhPTscLsvhcAPMqlc1wbRfHwLHHw/edit?usp=sharing)
-  + Video: []()
-+ Interacting with the cluster scheduler (Video 4, 15 min: 10:30-11:00)
-  + Edit job scripts, submit to queue, collect output
-+ Coffee Break and catch up (11:00-11:15)
-+ *Problem Set 2* (11:15-12:00)
-  + Link: []()
-
-### Session 3: Wednesday, November 4th, 2:00PM-3:45PM (PST), CSB V2-222
-+ *Problem Set 2 Review* (2:00-2:30)
-+ Short read mapping and visualization (Lecture: 2:30-2:45)
-  + Pipeline Overview
-  + Exploring command line tools and how to use them
-+ Mapping Reads to the genome (Video 5, 15 min: 2:45-3:15) 
-  + Map short reads with BWA mem
-  + Convert SAM to BAM using Samtools
-  + Use Samtools flagstat to get read mapping statistics
-+ *Problem Set 3* (3:15-3:45)
-  + Link: []() 
-
-### Session 4: Monday, November 9th, 1:00PM-5:00PM (PST), SHY D308
-+ *Problem Set 3 Review* (1:00-2:00)
-+ Variant calling and visualization (Lecture: 2:00-2:30)
-  + Many tools for variant calling, but require same inputs
-  + Different classes of variants which can be called 
-  + Call variants with DeepVariant (Video 6, 15 min: 2:30-3:00) 
-  + Call variants using pre-built DeepVariant scripts on pre-processed BAM files
-  + Slides: []()
-+ Coffee Break and catch up (3:00-3:15)
-+ Visualization with IGV (Video 7, 10 min: 3:15-4:00)
-  + Download and install IGV
-  + Load GRCh38 genome
-  + Load read files
-  + Zoom to region with read coverage
-  + Take snapshot of variant
-  + Slides: []()
-  + Video: []()
-+ *Problem Set 4* (4:00-5:00)
-
-_*Any assistance needed with Problem Sets 1-4 covered in the week between sessions. At this point, we need to ensure that all students have processed their samples to the VCF stage.*_
-
-### Session 5: Monday, November 16th, 1:00PM-5:00PM (PST), SHY D308
-+ *Problem Set 4 Review*
-+ Variant interpretation for rare disease diagnosis (Lecture: 2:00-2:45) 
-  + Variant databases for annotation (ClinVar, gnomAD)
-  + In silico metrics (CADD)
-  + Phenotype:Genotype
-    + Human Phenotype Ontology (HPO), 
-    + Online Mendelian Inheritance in Man (OMIM)
-  + Automation with Exomiser
-  + Slides: []()
-+ Running Exomiser on a VCF (Video 9, 15 min: 2:45-3:15)
-  + Run exomiser using pre-built configs and scripts on pre-organized VCF files
-  + Slides: []()
-  + Video: []()
-+ Coffee Break and catch up (3:15-3:30)
-+ Interpreting Exomiser output in excel/html (Video 10, 15 min: 3:30-4:00)
-  + Download exomiser output in TSV format, open and explore tabs in excel
-  + Visualize output HTML file
-  + Slides: []()
-  + Video: []()
-+ *Problem Set 5* (4:00-5:00)
-
-### Session 6: Wednesday, November 18th, 9:00AM-12:00PM (PST), SHY D308
-+ *Review Problem Set 5* (9:00-10:00)
-+ Open help session, working on Practical (10:00-12:00)
-
-### Session 7: Wednesday November 18th, 2:00PM-5:00PM (PST), CSB V2-222
-+ *Practical* (2:00-5:00)
-  + Each student presents their case to the group 
-  + 15-20 minutes / presentation (10-15 min present, 5 min questions). 
+### Friday June 4th (10:00-12:00) - Intro to linux command line & file handling
+- Introduction to command line and HPC (Work-along, 45 min - 10:00-10:45)
+    - Key commands for navigating
+    - ls, mkdir, cd, pwd
+    - Key commands for file handling (& exposure to genomics file formats)
+    - more, less, grep, head, cut, tail, wc, chmod
+    - Fasta, Fastq, VCF
+- Introduction to file editing, bash scripts (Work-along, 30 min - 10:45-11:15)
+    - Nano
+    - Bash scripts
+    - Variables
+- *Problem Set 1 (45 min - 11:15-12:00) - basic linux navigation + file handling*
 
 
-## Repository Directory Contents:
-1. Assignments - Find assignment files here.
-2. CaseInformation - Find information about the 10 cases here. 
-3. Files - Files for use within the workshops stored here (not the case files).
-4. StudentSpaces - This directory is the sandbox for student directories
+### Monday June 7th (10:00-12:00) - Short read mapping & visualization (Command line/bash)
+- *Problem Set 1 Review (20 min: 10:00-10:20)*
+- Short read mapping & Visualization (Work-along, 60 min - 10:20-11:20)
+    - Pipeline Overview
+    - Exploring command line tools and how to use them
+    - Map short reads to reference genome with BWA mem
+    - Convert, sort, index, with Samtools
+- *Problem Set 2 (40 min: 11:20-12:00) - short read mapping with bash scripts*
 
 
+### Tuesday June 8th (10:00-12:00) - Process cases through pipeline using cluster
+- *Problem Set 2 Review (30 min: 10:00-10:30)*
+- Interacting with the cluster scheduler (Work-along, 45 min - 10:30-11:15)
+    - Concept of job scheduler on cluster
+    - Basic job scripts
+    -  Mapping and visualization through cluster
+- *Problem Set 3 (45 min - 11:15-12:00) -  Case processing fastq-->BAM + Visualize*
+
+### Wednesday June 9th (10:00-12:00) - Variant calling and visualization
+- *Problem Set 3 Review (30 min - 10:00-10:30)*
+- Call variants with DeepTrio (Work-along, 45 min - 10:30-11:15) 
+    - Call variants using pre-built DeepTrio scripts on pre-processed small BAM files
+    - Visualize variants in IGV
+    - Load GRCh38 genome
+    - Load read files
+    - Zoom to region with read coverage
+    - Take snapshot of variant
+- *Problem Set 4 (45 min - 11:15-12:00) - Call variants on samples*
+
+### Thursday June 10th (10:00-12:00) - Variant annotation and interpretation
+- *Extra time for Problem Set 4 (60 min - 10:00-11:00)*
+- Variant interpretation for rare disease diagnosis (Lecture, 60 min - 11:00-12:00) 
+    - Variant databases for annotation (ClinVar, gnomAD)
+    - In silico metrics (CADD)
+    - Phenotype:Genotype
+    - Human Phenotype Ontology (HPO), 
+    - Online Mendelian Inheritance in Man (OMIM)
+    - Automation with Exomiser - Exomiser paper
+
+### Friday June 11th (10:00-12:00) - Variant prioritization with Exomiser
+- Running Exomiser on a VCF (Work-along, 45 min - 10:00-10:45)
+    - Run exomiser using pre-built configs and scripts on Case 6
+    - Interpreting Exomiser output in excel/html (Work-along, 45 min - 10:45-11:30)
+    - Download exomiser output in TSV format, open and explore tabs in excel
+    - Visualize output HTML file
+- *Problem Set 5 (30 min - 11:30-12:00) - Run Exomiser on your case data*
+
+### Monday June 14th (10:00-12:00) - Catch-up & open help session
+- *Review Problem Set 5, address any issues, make sure everyone has their case exomiser output. (60 min - 10:00-11:00)*
+- Open help session, working on Practical (60 min - 11:00-12:00)
 
 
+### Tuesday June 15th (10:00-12:00) - Practical
+- Practical (120 min - 10:00-12:00)
+    - Each student presents their case to the group, 8 students ~15 minutes / presentation (10 min present, 5 min questions). 
 
-
-## Manuscript
-> A manuscript detailing the prior work can be found here:
-
-[Introduction to Genomic Analysis Workshop: A catalyst for engaging life-science researchers in high throughput analysis](https://f1000research.com/articles/8-1221)
 
 
