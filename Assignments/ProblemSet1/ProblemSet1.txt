@@ -1,10 +1,10 @@
-Manraj Randhawa; November 3, 2020.This problem set will review the basic commands from the lecture, and add some new commands I didn't teach you (GASP!!!)
+This problem set will review the basic commands from the lecture, and add some new commands I didn't teach you (GASP!!!)
 
 The examples in this problem set will also guide you through exploring different file formats commonly used in genomics.  
 For help with file formats, use...the Internet!  
 
 
-1) Create a "Problemset directory" with your last name and first initial in all caps within:
+1) Create a "Problemset directory" within your workshop directory:
 
 /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/<YourDirName>/ProblemSet1/
 
@@ -52,7 +52,7 @@ GLS_SLC6A8_clinvar.vcf
 
 18) Edit this file, and put your name at the top, with the date.
 
-19) Send the completed worksheet to prichmond@bcchr.ca
+19) Tell Phil on slack you have finished and point to this completed problem set file.
 
 20) Pat yourself on the back. You are amazing!
 

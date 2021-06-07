@@ -12,14 +12,11 @@ Then send the image to prichmond@bcchr.ca.
 /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Files/
 
 Sample Assignments are:
-Ann - HG01583.chr19.subregion_R*fastq
-Emma - HG03006.chr19.subregion_R*fastq
-Jacob - HG03052.chr19.subregion_R*fastq
-Kiara - NA19648.chr19.subregion_R*fastq
-Loryn - NA20502.chr19.subregion_R*fastq
-Manraj - NA20845.chr19.subregion_R*fastq
-Jenna - HG01583.chr19.subregion_R*fastq
-Tracey - NA19648.chr19.subregion_R*fastq
+Alex - HG01583.chr19.subregion_R*fastq
+Areesha - HG03006.chr19.subregion_R*fastq
+Darlene - HG03052.chr19.subregion_R*fastq
+LC - NA19648.chr19.subregion_R*fastq
+Jones - NA20502.chr19.subregion_R*fastq
 
 3) Create a shell script in your ProbelmSet2 directory called: MapAndConvert_ProblemSet2.sh
 
@@ -47,5 +44,5 @@ sh MapAndConvert_ProblemSet2.sh
 
 12) Upload your snapshot to your ProblemSet2 Directory.
 
-13) Send your ProblemSet2.png to prichmond@bcchr.ca
+13) Send Phil a message on slack when you are done!
 

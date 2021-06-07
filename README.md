@@ -1,5 +1,5 @@
 # Genome Analysis Module
-> This course is intended for trainees in the Genetic Counselling MSc Program at the University of British Columbia. The computing resources are hosted at BC Children's Hospital Research Institute.  
+> This course is intended for trainees in the Genetic Counselling MSc Program at the University of British Columbia, and summer students within the Summer Student Research Program at BC Children's Hospital Research Institute. The computing resources are hosted at BC Children's Hospital Research Institute.  
 > For more information contact Dr. Phillip Richmond (prichmond@bcchr.ca). If you are looking for content related to the manuscript, please see Release 1. 
 
 ---
@@ -10,7 +10,7 @@
 > The course will be designed in a flexible format, adaptable for teaching online, or in person, or a combination of both. 
 
 ### Prerequisites  
-Setting up the working environment (Video 1, 10 min). 
+Setting up the working environment. 
 + Content
   + Installing necessary software (see below) 
   + Connecting to the cluster 
@@ -60,10 +60,10 @@ Setting up the working environment
     - Goals of the course
     - Format of the course
     - Genome Analysis for Rare Disease Diagnosis
+    - OMIM, ClinVar, HPO
     - Limitations of whole exome sequencing, short reads, gene discovery, where the field is going
 - Distribute cases & link to resources (Work-along, 30 min - 11:15-11:45)
     - Introduce concepts presented in the cases
-    - OMIM, ClinVar, HPO
 - Establish working environment (Work-along, 15 minutes - 11:45-12:00)
     - Install IGV
     - Login to cluster
