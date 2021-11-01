@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --partition=defq
+#SBATCH --partition=dev_q
 
 ## Change to be your email address
 #SBATCH --mail-user=prichmond@bcchr.ca
@@ -8,10 +8,10 @@
 
 ## CPU Usage
 ## 60 Gb of RAM for the whole job
-#SBATCH --mem=350G
+#SBATCH --mem=80G
 
 ## Using 16 CPUs
-#SBATCH --cpus-per-task=80
+#SBATCH --cpus-per-task=10
 
 ## Running for a max time of 48 hours
 #SBATCH --time=48:00:00
@@ -27,7 +27,7 @@
 # Set up #
 ##########
 
-NSLOTS=78
+NSLOTS=10
 REFGENOME=/mnt/common/DATABASES/REFERENCES/GRCh38/GENOME/GRCh38-lite.fa
 PICARDJAR=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/opt/BamsurgeonEnvironment/share/picard-2.23.8-0/picard.jar
 VCF2BAMSURGEON=/mnt/common/WASSERMAN_SOFTWARE/GeneBreaker/BenchmarkingTransition/FullSimulation/reformatSimToBamSurgeon.py
@@ -36,16 +36,18 @@ GENEBREAKER=/mnt/common/WASSERMAN_SOFTWARE/GeneBreaker/
 cd /mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/
 
 
-# Creating case 10
 # Case 10
 
-# Dad
+#######
+# Dad #
+#######
 #cp /mnt/common/OPEN_DATA/POLARIS_RAW/ERR1955420_1.fastq.gz /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/CaseInformation/CaseFiles/Case10/Case10_father_R1.fastq.gz
 #cp /mnt/common/OPEN_DATA/POLARIS_RAW/ERR1955420_2.fastq.gz /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/CaseInformation/CaseFiles/Case10/Case10_father_R2.fastq.gz
 
-# Mom
-
-# Activate BamSurgeon
+#######
+# Mom #
+#######
+## Activate BamSurgeon
 BAMSURGEON=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/
 source $BAMSURGEON/opt/miniconda3/etc/profile.d/conda.sh
 conda activate $BAMSURGEON/opt/BamsurgeonEnvironment
@@ -63,37 +65,41 @@ VARFILE=Case10_mother_bamsurgeon_varfile.tsv
 # Create varfile
 gunzip -c $INVCFGZ > $INVCF
 
+# Create bamsurgeon file from vcf input
 python $VCF2BAMSURGEON \
 	-I $INVCF \
 	-O $VARFILE
 
 ## Mutate Bam
-#addsnv.py \
-#	-v $VARFILE \
-#	-f $INBAM \
-#	-r $REFGENOME \
-#	-o $OUTBAM \
-#	--picardjar $PICARDJAR \
-#	--force \
-#	--mindepth 5 \
-#	-p 80
-#
+addindel.py \
+	-v $VARFILE \
+	-f $INBAM \
+	-r $REFGENOME \
+	-o $OUTBAM \
+	--picardjar $PICARDJAR \
+	--force \
+	--mindepth 5 \
+	-p $NSLOTS
+
 # Samtools sort & index
 samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
 #samtools index $OUTBAM_SORTED
 
 # Convert to fastq
 samtools fastq \
-	-@ 78 \
+	-@ $NSLOTS \
 	-1 $OUTFQ1 -2 $OUTFQ2 \
 	-0 /dev/null \
 	-s /dev/null \
 	-n $OUTBAM_SORTED
 
+gzip $OUTFQ1
+gzip $OUTFQ2
 
+###########
+# Proband #
+###########
 
-
-# Proband
 # Activate BamSurgeon
 BAMSURGEON=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/
 source $BAMSURGEON/opt/miniconda3/etc/profile.d/conda.sh
@@ -109,32 +115,35 @@ INVCFGZ=${GENEBREAKER}/TrainingScenarios/ANKRD11_GRCh38_AutosomalDominantMaterna
 INVCF=${GENEBREAKER}/TrainingScenarios/ANKRD11_GRCh38_AutosomalDominantMaternal_Male/proband_PathoVar.vcf
 VARFILE=Case10_proband_bamsurgeon_varfile.tsv
 
-# Create varfile
+## Create varfile
 gunzip -c $INVCFGZ > $INVCF
 
+# Create bamsurgeon file from vcf input
 python $VCF2BAMSURGEON \
 	-I $INVCF \
 	-O $VARFILE
 
 # Mutate Bam
-#addsnv.py \
-#	-v $VARFILE \
-#	-f $INBAM \
-#	-r $REFGENOME \
-#	-o $OUTBAM \
-#	--picardjar $PICARDJAR \
-#	--force \
-#	--mindepth 5 \
-#	-p 80
+addindel.py \
+	-v $VARFILE \
+	-f $INBAM \
+	-r $REFGENOME \
+	-o $OUTBAM \
+	--picardjar $PICARDJAR \
+	--force \
+	--mindepth 5 \
+	-p $NSLOTS
 
 # Samtools sort & index
 samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
-#samtools index $OUTBAM_SORTED
-
+#
 # Convert to fastq
 samtools fastq \
-	-@ 78 \
+	-@ $NSLOTS \
 	-1 $OUTFQ1 -2 $OUTFQ2 \
 	-0 /dev/null \
 	-s /dev/null \
 	-n $OUTBAM_SORTED
+
+gzip $OUTFQ1
+gzip $OUTFQ2

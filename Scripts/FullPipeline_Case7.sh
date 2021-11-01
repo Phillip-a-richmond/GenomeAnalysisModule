@@ -10,8 +10,8 @@
 ## 160 Gb of RAM for the whole job
 #SBATCH --mem=160G
 
-## Using 40 CPUs
-#SBATCH --cpus-per-task=40
+## Using 20 CPUs
+#SBATCH --cpus-per-task=20
 
 ## Running for a max time of 48 hours
 #SBATCH --time=48:00:00

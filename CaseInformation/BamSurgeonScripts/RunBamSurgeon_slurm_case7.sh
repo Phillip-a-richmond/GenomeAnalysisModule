@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --partition=defq
+#SBATCH --partition=dev_q
 
 ## Change to be your email address
 #SBATCH --mail-user=prichmond@bcchr.ca
@@ -27,7 +27,7 @@
 # Set up #
 ##########
 
-NSLOTS=78
+NSLOTS=30
 REFGENOME=/mnt/common/DATABASES/REFERENCES/GRCh38/GENOME/GRCh38-lite.fa
 PICARDJAR=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/opt/BamsurgeonEnvironment/share/picard-2.23.8-0/picard.jar
 VCF2BAMSURGEON=/mnt/common/WASSERMAN_SOFTWARE/GeneBreaker/BenchmarkingTransition/FullSimulation/reformatSimToBamSurgeon.py
@@ -36,8 +36,8 @@ GENEBREAKER=/mnt/common/WASSERMAN_SOFTWARE/GeneBreaker/
 cd /mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/
 
 
-# Creating case 4
-# Case 4
+# Creating case 7
+# Case 7
 
 # Dad
 # Activate BamSurgeon
@@ -71,7 +71,7 @@ addsnv.py \
 	--picardjar $PICARDJAR \
 	--force \
 	--mindepth 5 \
-	-p 80
+	-p $NSLOTS
 
 # Samtools sort & index
 samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
@@ -79,18 +79,19 @@ samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
 
 # Convert to fastq
 samtools fastq \
-	-@ 78 \
+	-@ $NSLOTS \
 	-1 $OUTFQ1 -2 $OUTFQ2 \
 	-0 /dev/null \
 	-s /dev/null \
 	-n $OUTBAM_SORTED
 
-
+gzip $OUTFQ1
+gzip $OUTFQ2
 
 # Mom
 # not needed
-cp /mnt/common/OPEN_DATA/POLARIS_RAW/LEFTOVER/ERR1955435_1.fastq.gz /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/CaseInformation/CaseFiles/Case7/Case7_mother_R1.fastq.gz
-cp /mnt/common/OPEN_DATA/POLARIS_RAW/LEFTOVER/ERR1955435_2.fastq.gz /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/CaseInformation/CaseFiles/Case7/Case7_mother_R2.fastq.gz
+#cp /mnt/common/OPEN_DATA/POLARIS_RAW/LEFTOVER/ERR1955435_1.fastq.gz /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/CaseInformation/CaseFiles/Case7/Case7_mother_R1.fastq.gz
+#cp /mnt/common/OPEN_DATA/POLARIS_RAW/LEFTOVER/ERR1955435_2.fastq.gz /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/CaseInformation/CaseFiles/Case7/Case7_mother_R2.fastq.gz
 
 # Proband
 # Activate BamSurgeon
@@ -124,7 +125,7 @@ addsnv.py \
 	--picardjar $PICARDJAR \
 	--force \
 	--mindepth 5 \
-	-p 80
+	-p $NSLOTS
 
 # Samtools sort & index
 samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
@@ -132,8 +133,11 @@ samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
 
 # Convert to fastq
 samtools fastq \
-	-@ 78 \
+	-@ $NSLOTS \
 	-1 $OUTFQ1 -2 $OUTFQ2 \
 	-0 /dev/null \
 	-s /dev/null \
 	-n $OUTBAM_SORTED
+
+gzip $OUTFQ1
+gzip $OUTFQ2

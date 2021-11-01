@@ -1,0 +1,47 @@
+#GENE_SYMBOL	ENTREZ_GENE_ID	EXOMISER_GENE_PHENO_SCORE	EXOMISER_GENE_VARIANT_SCORE	EXOMISER_GENE_COMBINED_SCORE	HUMAN_PHENO_SCORE	MOUSE_PHENO_SCORE	FISH_PHENO_SCORE	WALKER_SCORE	PHIVE_ALL_SPECIES_SCORE	OMIM_SCORE	MATCHES_CANDIDATE_GENE	HUMAN_PHENO_EVIDENCE	MOUSE_PHENO_EVIDENCE	FISH_PHENO_EVIDENCE	HUMAN_PPI_EVIDENCE	MOUSE_PPI_EVIDENCE	FISH_PPI_EVIDENCE
+SCN9A	6335	0.6573	1.0000	0.9386	0.6573	0.5493	0.0000	0.0000	0.6573	1.0000	0	Dravet syndrome, modifier of (OMIM:607208): Mental deterioration (HP:0001268)-Mental deterioration (HP:0001268), Seizure (HP:0001250)-Status epilepticus (HP:0002133), Neurodegeneration (HP:0002180)-Cerebral atrophy (HP:0002059), 	Seizure (HP:0001250)-abnormal seizure response to electrical stimulation (MP:0001650), 				
+RBFOX1	54715	0.5072	0.9984	0.7602	0.0000	0.0000	0.0000	0.5072	0.5072	1.0000	0				Proximity to ATXN2 associated with Spinocerebellar ataxia type 2 (ORPHA:98756): Mental deterioration (HP:0001268)-Dementia (HP:0000726), Neurodegeneration (HP:0002180)-Spinal cord posterior columns myelin loss (HP:0008311), Abnormality of the cerebral white matter (HP:0002500)-Abnormality of the substantia nigra (HP:0045007), 	Proximity to ATXN2 Mental deterioration (HP:0001268)-impaired coordination (MP:0001405), Primary adrenal insufficiency (HP:0008207)-intrahepatic cholestasis (MP:0005415), 	
+GPAT3	84803	0.5064	0.9949	0.7526	0.0000	0.0000	0.0000	0.5064	0.5064	1.0000	0				Proximity to GK associated with Glycerol kinase deficiency (OMIM:307030): Seizure (HP:0001250)-Seizure (HP:0001250), Primary adrenal insufficiency (HP:0008207)-Adrenal insufficiency (HP:0000846), 	Proximity to GK Primary adrenal insufficiency (HP:0008207)-abnormal pituitary secretion (MP:0001746), Abnormality of the cerebral white matter (HP:0002500)-abnormal pituitary secretion (MP:0001746), 	
+SMYD3	64754	0.5001	0.9932	0.7372	0.0000	0.0000	0.0000	0.5001	0.5001	1.0000	0				Proximity to ESR2 associated with ?Ovarian dysgenesis 8 (OMIM:618187): Primary adrenal insufficiency (HP:0008207)-Elevated circulating follicle stimulating hormone level (HP:0008232), 	Proximity to ESR2 Mental deterioration (HP:0001268)-abnormal spatial learning (MP:0001463), Neurodegeneration (HP:0002180)-neuron degeneration (MP:0003224), Abnormality of the cerebral white matter (HP:0002500)-abnormal substantia nigra morphology (MP:0000836), 	
+DLC1	10395	0.5111	0.9773	0.7310	0.0000	0.4005	0.0000	0.5111	0.5111	1.0000	0		Abnormality of the cerebral white matter (HP:0002500)-abnormal forebrain development (MP:0003232), 			Proximity to NPAS3 Mental deterioration (HP:0001268)-abnormal behavioral response to xenobiotic (MP:0009745), Abnormality of the cerebral white matter (HP:0002500)-abnormal corpus callosum morphology (MP:0000780), 	
+RGPD1	400966	0.5001	0.9842	0.7209	0.0000	0.0000	0.0000	0.5001	0.5001	1.0000	0				Proximity to GLE1 associated with Amyotrophic lateral sclerosis (ORPHA:803): Primary adrenal insufficiency (HP:0008207)-Xerostomia (HP:0000217), Neurodegeneration (HP:0002180)-Neurodegeneration (HP:0002180), 		
+OR8U1	219417	0.5000	0.9701	0.6938	0.0000	0.0000	0.0000	0.5000	0.5000	1.0000	0				Proximity to ATXN3 associated with Machado-Joseph disease (OMIM:109150): Mental deterioration (HP:0001268)-Dementia (HP:0000726), Neurodegeneration (HP:0002180)-Cerebellar atrophy (HP:0001272), 	Proximity to ATXN3 Mental deterioration (HP:0001268)-impaired coordination (MP:0001405), Neurodegeneration (HP:0002180)-neurodegeneration (MP:0002229), Abnormality of the cerebral white matter (HP:0002500)-abnormal Purkinje cell morphology (MP:0000877), 	
+TOP2B	7155	0.5049	0.9533	0.6716	0.0000	0.4748	0.0000	0.5049	0.5049	1.0000	0		Abnormality of the cerebral white matter (HP:0002500)-small olfactory bulb (MP:0002741), 		Proximity to SMC1A associated with Wiedemann-Steiner syndrome (ORPHA:319182): Mental deterioration (HP:0001268)-Psychomotor deterioration (HP:0002361), Seizure (HP:0001250)-Seizure (HP:0001250), Primary adrenal insufficiency (HP:0008207)-Growth hormone deficiency (HP:0000824), Abnormality of the cerebral white matter (HP:0002500)-Abnormal corpus callosum morphology (HP:0001273), 		
+LILRB1	10859	0.3626	0.9725	0.3571	0.0000	0.3626	0.0000	0.0000	0.3626	1.0000	0		Abnormality of the cerebral white matter (HP:0002500)-abnormal visual cortex morphology (MP:0000805), 				
+DCHS2	54798	0.5000	0.7966	0.3154	0.0000	0.0000	0.0000	0.5000	0.5000	1.0000	0				Proximity to APC2 associated with Sotos syndrome (ORPHA:821): Seizure (HP:0001250)-Seizure (HP:0001250), Primary adrenal insufficiency (HP:0008207)-Precocious puberty (HP:0000826), Abnormality of the cerebral white matter (HP:0002500)-Aplasia/Hypoplasia of the corpus callosum (HP:0007370), 	Proximity to APC2 Mental deterioration (HP:0001268)-long stride length (MP:0010540), Seizure (HP:0001250)-seizures (MP:0002064), Abnormality of the cerebral white matter (HP:0002500)-abnormal olfactory bulb layer morphology (MP:0009946), 	
+CDHR5	53841	0.5002	0.7434	0.2206	0.0000	0.0000	0.0000	0.5002	0.5002	1.0000	0				Proximity to SPG21 associated with Autosomal recessive spastic paraplegia type 21 (ORPHA:101001): Mental deterioration (HP:0001268)-Dementia (HP:0000726), Neurodegeneration (HP:0002180)-Frontotemporal cerebral atrophy (HP:0006892), Abnormality of the cerebral white matter (HP:0002500)-Hypoplasia of the corpus callosum (HP:0002079), 		
+CFAP43	80217	0.2617	0.9956	0.1941	0.5235	0.0000	0.0000	0.0000	0.5235	0.5000	0	Hydrocephalus, normal pressure, 1 (OMIM:236690): Mental deterioration (HP:0001268)-Dementia (HP:0000726), 					
+LILRA2	11027	0.3626	0.8017	0.1037	0.0000	0.3626	0.0000	0.0000	0.3626	1.0000	0		Abnormality of the cerebral white matter (HP:0002500)-abnormal visual cortex morphology (MP:0000805), 				
+POTEH	23784	0.5000	0.4941	0.0278	0.0000	0.0000	0.0000	0.5000	0.5000	1.0000	0				Proximity to ANK3 associated with ?Mental retardation, autosomal recessive, 37 (OMIM:615493): Seizure (HP:0001250)-Seizure (HP:0001250), 	Proximity to ANK3 Mental deterioration (HP:0001268)-abnormal gait (MP:0001406), Seizure (HP:0001250)-convulsive seizures (MP:0000947), Neurodegeneration (HP:0002180)-Purkinje cell degeneration (MP:0000876), Abnormality of the cerebral white matter (HP:0002500)-small cerebellum (MP:0000852), 	
+AL356585.3	-1	0.0000	1.0000	0.0162	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+NF1P6	-1	0.0000	1.0000	0.0162	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+PLCL2	23228	0.0000	0.9972	0.0158	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+CBWD5	220869	0.0000	0.9941	0.0154	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+IGLV1-47	-1	0.0000	0.9941	0.0154	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+EPPK1	83481	0.0000	0.9931	0.0152	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+ANXA8	653145	0.0000	0.9921	0.0151	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+IGKV4-1	-1	0.0000	0.9911	0.0150	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+GSTT4	25774	0.0000	0.9831	0.0139	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+IGHV2-70D	-1	0.0000	0.9828	0.0139	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+IGKV3-15	-1	0.0000	0.9770	0.0132	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+NBPF14	25832	0.0000	0.9767	0.0131	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+SCGB1C2	653486	0.0000	0.9761	0.0131	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+TBC1D3I	102724862	0.0000	0.9704	0.0124	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+MUC3A	4584	0.0000	0.9663	0.0120	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+IGHV1-24	-1	0.0000	0.9598	0.0113	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+GOLGA6L22	440243	0.0000	0.9544	0.0107	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+ZDHHC7	55625	0.0000	0.9511	0.0104	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+IGHV1-69D	-1	0.0000	0.9489	0.0102	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+FAM120B	84498	0.0000	0.9487	0.0102	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+AC135068.2	-1	0.0000	0.9105	0.0072	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+SPATA31A5	727905	0.0000	0.9073	0.0070	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+AP000436.1	-1	0.0000	0.8286	0.0034	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+IGHV4-61	-1	0.0000	0.8099	0.0029	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+IGHV1OR21-1	-1	0.0000	0.8040	0.0027	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+SPDYE6	729597	0.0000	0.8000	0.0026	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+NPIPB5	100132247	0.0000	0.7316	0.0014	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+LRRC37A3	374819	0.0000	0.6381	0.0006	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+IGHV2-70	-1	0.0000	0.4721	0.0001	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+POTEB3	102724631	0.0000	0.2604	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+NBPF11	200030	0.0000	0.2099	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						
+FCGBP	8857	0.0000	0.1161	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	1.0000	0						

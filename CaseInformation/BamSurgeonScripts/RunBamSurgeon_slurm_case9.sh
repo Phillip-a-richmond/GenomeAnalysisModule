@@ -11,7 +11,7 @@
 #SBATCH --mem=350G
 
 ## Using 16 CPUs
-#SBATCH --cpus-per-task=80
+#SBATCH --cpus-per-task=40
 
 ## Running for a max time of 48 hours
 #SBATCH --time=48:00:00
@@ -27,7 +27,7 @@
 # Set up #
 ##########
 
-NSLOTS=78
+NSLOTS=40
 REFGENOME=/mnt/common/DATABASES/REFERENCES/GRCh38/GENOME/GRCh38-lite.fa
 PICARDJAR=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/opt/BamsurgeonEnvironment/share/picard-2.23.8-0/picard.jar
 VCF2BAMSURGEON=/mnt/common/WASSERMAN_SOFTWARE/GeneBreaker/BenchmarkingTransition/FullSimulation/reformatSimToBamSurgeon.py
@@ -71,7 +71,7 @@ addsnv.py \
 	--picardjar $PICARDJAR \
 	--force \
 	--mindepth 5 \
-	-p 80
+	-p 40
 
 # Samtools sort & index
 samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
@@ -79,7 +79,7 @@ samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
 
 # Convert to fastq
 samtools fastq \
-	-@ 78 \
+	-@ 40 \
 	-1 $OUTFQ1 -2 $OUTFQ2 \
 	-0 /dev/null \
 	-s /dev/null \
@@ -124,7 +124,7 @@ addsnv.py \
 	--picardjar $PICARDJAR \
 	--force \
 	--mindepth 5 \
-	-p 80
+	-p 40
 
 # Samtools sort & index
 samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
@@ -132,7 +132,7 @@ samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
 
 # Convert to fastq
 samtools fastq \
-	-@ 78 \
+	-@ 40 \
 	-1 $OUTFQ1 -2 $OUTFQ2 \
 	-0 /dev/null \
 	-s /dev/null \

@@ -16,3 +16,11 @@ Scripts/OEFILES/*
 
 Exomiser/*
 
+# sif 
+*.sif
+
+# error/output
+*error
+*out
+
+*DS_Store

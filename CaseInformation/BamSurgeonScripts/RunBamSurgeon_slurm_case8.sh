@@ -11,7 +11,7 @@
 #SBATCH --mem=350G
 
 ## Using 16 CPUs
-#SBATCH --cpus-per-task=80
+#SBATCH --cpus-per-task=40
 
 ## Running for a max time of 48 hours
 #SBATCH --time=48:00:00
@@ -68,30 +68,29 @@ INVCF=${GENEBREAKER}/TrainingScenarios/PTPN11_GRCh38_AutosomalDominantDeNovo_Mal
 VARFILE=Case8_proband_bamsurgeon_varfile.tsv
 
 # Create varfile
-gunzip -c $INVCFGZ > $INVCF
-
-python $VCF2BAMSURGEON \
-	-I $INVCF \
-	-O $VARFILE
-
-# Mutate Bam
-addsnv.py \
-	-v $VARFILE \
-	-f $INBAM \
-	-r $REFGENOME \
-	-o $OUTBAM \
-	--picardjar $PICARDJAR \
-	--force \
-	--mindepth 5 \
-	-p 80
-
+#gunzip -c $INVCFGZ > $INVCF
+#
+#python $VCF2BAMSURGEON \
+#	-I $INVCF \
+#	-O $VARFILE
+#
+## Mutate Bam
+#addsnv.py \
+#	-v $VARFILE \
+#	-f $INBAM \
+#	-r $REFGENOME \
+#	-o $OUTBAM \
+#	--picardjar $PICARDJAR \
+#	--force \
+#	--mindepth 5 \
+#	-p 40
+#
 # Samtools sort & index
-samtools sort $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
-samtools index $OUTBAM_SORTED
+samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
 
 # Convert to fastq
 samtools fastq \
-	-@ 78 \
+	-@ 40 \
 	-1 $OUTFQ1 -2 $OUTFQ2 \
 	-0 /dev/null \
 	-s /dev/null \

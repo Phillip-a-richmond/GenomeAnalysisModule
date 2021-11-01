@@ -1,47 +1,18 @@
 # Problem Set 4
 
 ## Overview
-This is the full pipeline problem set!
+We will be calling variants on our samples!
 
-1) Copy this script to your workshop directory, and call it FullPipline_ProblemSet4.sh:
+1. Create a ProblemSet4 directory in your student space.
 
-/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Scripts/FullPipeline_Sample1.sh
+2. Copy this script to that directory:
 
-2) Edit the email address, workshop directory location, and sample IDs. Sample assignments are:
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Scripts/RunDeepTrio_CaseTemplate.sh
 
-Ann - HG01583.chr19.subregion_R*fastq
-Emma - HG03006.chr19.subregion_R*fastq
-Jacob - HG03052.chr19.subregion_R*fastq
-Kiara - NA19648.chr19.subregion_R*fastq
-Loryn - NA20502.chr19.subregion_R*fastq
-Manraj - NA20845.chr19.subregion_R*fastq
-Jenna - HG01583.chr19.subregion_R*fastq
-Tracey - NA19648.chr19.subregion_R*fastq
+3. Change the script to be relevant to your paths, your email, and your case number
 
-Note, the SAMPLE should be equal to HG01583.chr19.subregion, e.g.
-SAMPLE=HG01583.chr19.subregion
+4. Submit the script to the scheduler.
 
-3) Run the full pipeline through the scheduler 
 
-4) Copy the VCF, sorted BAM, and BAM index to your local laptop. 
 
-5) Visualize the variants alongside the reads in IGV.
 
-6) Take an image of an indel and save it as ProblemSet4_indel.png.
-
-7) Take an image of an SNV and save it as ProblemSet4_SNV.png
-
-8) Email both images to prichmond@bcchr.ca
-
-## Do the above by Wendesday November 11th ##
-
-9) Phil will email you with the path to your fastq data for your case. 
-
-10) Copy the FullPipeline_ProblemSet4.sh into 3 new scripts: 
-FullPipeline_Proband.sh
-FullPipeline_Father.sh
-FullPipeline_Mother.sh
-
-11) Change the sample IDs, and paths to fastq files in each of the 3 new scripts.
-
-12) Run each script, change the permissions on your directory, and ping Phil on slack.

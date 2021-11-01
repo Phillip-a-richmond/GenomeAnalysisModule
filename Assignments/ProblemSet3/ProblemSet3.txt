@@ -1,23 +1,20 @@
 #Problem Set 3
 
 ## Overview
-In this problem set, you will test your ability to use the scheduler (SLURM) to submit your mapping pipeline script. 
+In this problem set, you will copy a script to map your case data, edit it to be relevant to your case, and then submit to the scheduler.
 
-1) Concatenate the SlurmHeader.sh with your MapAndConvert_ProblemSet2.sh file from Problem Set 2, and save the output in a file called MapAndConvert_ProblemSet3.sh.
-SlurmHeader.sh is here:
+1. Create a ProblemSet3 directory in your Student workshop directory:
 
-/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Scripts/
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/<YourDir>/ProblemSet3/
 
-2) Change your email address
+2. Copy this template script to that directory:
 
-3) Change the number of threads to be 40
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Scripts/MapAndConvert_CaseTemplate.sh
 
-4) Change the RAM to be 160G
+3. Edit the template to match your case, and your email address. Double check that all your fastq files are present in your case directory:
 
-5) Run the job using sbatch
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Scripts/CaseInformation/CaseFiles/<CaseN>/
 
-7) Check the job status using squeue
+4. Submit to the scheduler. 
 
-8) Check the output and error files
-
-9) If your job ran successfully, send Phil a message on slack
+5. Done!

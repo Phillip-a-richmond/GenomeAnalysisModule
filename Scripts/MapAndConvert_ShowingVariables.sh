@@ -25,8 +25,9 @@ samtools   index   Sample1.sorted.bam
 WORKING_DIR=/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/Sherlock/
 SAMPLE=Sample1
 GENOME_INDEX=/mnt/common/DATABASES/REFERENCES/GRCh38/GENOME/GRCh38-lite.fa
-FASTQR1=${SAMPLE}_R1.fastq
-FASTQR2=${SAMPLE}_R2.fastq
+FASTQ_DIR=/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Files/
+FASTQR1=${FASTQ_DIR}/${SAMPLE}_R1.fastq
+FASTQR2=${FASTQ_DIR}/${SAMPLE}_R2.fastq
 
 bwa mem $GENOME_INDEX $FASTQR1 $FASTQR2 > ${SAMPLE}.sam
 
@@ -36,8 +37,7 @@ samtools sort ${SAMPLE}.bam -o ${SAMPLE}.sorted.bam
 
 samtools index ${SAMPLE}.sorted.bam
 
-
-## Variables and line-continuations
+# Variables and line-continuations
 # For BWA mem, I'm adding a read group tag. this will help us later
 
 bwa mem $GENOME_INDEX \
@@ -57,4 +57,5 @@ samtools sort \
 samtools index \
 	${SAMPLE}.sorted.bam
 
-
+samtools flagstat \
+	${SAMPLE}.sorted.bam 

@@ -1,0 +1,459 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=LowQual,Description="Confidence in this variant being real is below calling threshold.">
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=bed,Description="Gene panel target region (Bed)">
+##FILTER=<ID=filter,Description="Failed previous VCF filters">
+##FILTER=<ID=freq,Description="Frequency">
+##FILTER=<ID=gene-id,Description="Gene id">
+##FILTER=<ID=gene-priority,Description="Gene priority score">
+##FILTER=<ID=inheritance,Description="Inheritance">
+##FILTER=<ID=interval,Description="Interval">
+##FILTER=<ID=known-var,Description="Known variant">
+##FILTER=<ID=path,Description="Pathogenicity">
+##FILTER=<ID=quality,Description="Quality">
+##FILTER=<ID=reg-feat,Description="Regulatory feature">
+##FILTER=<ID=var-effect,Description="Variant effect">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Read depth for each allele">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Conditional genotype quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=MIN_DP,Number=1,Type=Integer,Description="Minimum DP observed within the GVCF block.">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Phred-scaled genotype likelihoods rounded to the closest integer">
+##FORMAT=<ID=VAF,Number=A,Type=Float,Description="Variant allele fractions.">
+##INFO=<ID=ANN,Number=1,Type=String,Description="Functional annotations:'Allele|Annotation|Annotation_Impact|Gene_Name|Gene_ID|Feature_Type|Feature_ID|Transcript_BioType|Rank|HGVS.c|HGVS.p|cDNA.pos / cDNA.length|CDS.pos / CDS.length|AA.pos / AA.length|Distance|ERRORS / WARNINGS / INFO'">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position (for use with symbolic alleles)">
+##INFO=<ID=ExContribAltAllele,Number=A,Type=Flag,Description="Exomiser alt allele id contributing to score">
+##INFO=<ID=ExGeneSCombi,Number=A,Type=Float,Description="Exomiser gene combined score">
+##INFO=<ID=ExGeneSPheno,Number=A,Type=Float,Description="Exomiser gene phenotype score">
+##INFO=<ID=ExGeneSVar,Number=A,Type=Float,Description="Exomiser gene variant score">
+##INFO=<ID=ExGeneSymbId,Number=A,Type=String,Description="Exomiser gene id">
+##INFO=<ID=ExGeneSymbol,Number=A,Type=String,Description="Exomiser gene symbol">
+##INFO=<ID=ExVarEff,Number=A,Type=String,Description="Exomiser variant effect">
+##INFO=<ID=ExVarHgvs,Number=A,Type=String,Description="Exomiser variant hgvs">
+##INFO=<ID=ExVarScore,Number=A,Type=Float,Description="Exomiser variant score">
+##INFO=<ID=ExWarn,Number=A,Type=String,Description="Exomiser warning">
+##INFO=<ID=SVANN,Number=1,Type=String,Description="Functional SV Annotation:'Annotation|Annotation_Impact|Gene_Name|Gene_ID|Feature_Type|Feature_ID|Transcript_BioType|ERRORS / WARNINGS / INFO'">
+##bcftools_concatCommand=concat -a -O z -o proband_GeneBreaker.vcf.gz proband_Background.vcf.gz proband_PathoVar.vcf.gz; Date=Thu Oct 22 11:38:17 2020
+##bcftools_concatVersion=1.10.2+htslib-1.10.2
+##bcftools_mergeCommand=merge -0 -o Merged_GeneBreaker.vcf proband_GeneBreaker.vcf.gz mother_GeneBreaker.vcf.gz father_GeneBreaker.vcf.gz; Date=Thu Oct 22 11:39:10 2020
+##bcftools_mergeVersion=1.10.2+htslib-1.10.2
+##contig=<ID=1,length=248956422>
+##contig=<ID=10,length=133797422>
+##contig=<ID=11,length=135086622>
+##contig=<ID=12,length=133275309>
+##contig=<ID=13,length=114364328>
+##contig=<ID=14,length=107043718>
+##contig=<ID=15,length=101991189>
+##contig=<ID=16,length=90338345>
+##contig=<ID=17,length=83257441>
+##contig=<ID=18,length=80373285>
+##contig=<ID=19,length=58617616>
+##contig=<ID=2,length=242193529>
+##contig=<ID=20,length=64444167>
+##contig=<ID=21,length=46709983>
+##contig=<ID=22,length=50818468>
+##contig=<ID=3,length=198295559>
+##contig=<ID=4,length=190214555>
+##contig=<ID=5,length=181538259>
+##contig=<ID=6,length=170805979>
+##contig=<ID=7,length=159345973>
+##contig=<ID=8,length=145138636>
+##contig=<ID=9,length=138394717>
+##contig=<ID=MT,length=16569>
+##contig=<ID=X,length=156040895>
+##contig=<ID=Y,length=57227415>
+##contig=<ID=KI270728.1,length=1872759>
+##contig=<ID=KI270727.1,length=448248>
+##contig=<ID=KI270442.1,length=392061>
+##contig=<ID=KI270729.1,length=280839>
+##contig=<ID=GL000225.1,length=211173>
+##contig=<ID=KI270743.1,length=210658>
+##contig=<ID=GL000008.2,length=209709>
+##contig=<ID=GL000009.2,length=201709>
+##contig=<ID=KI270747.1,length=198735>
+##contig=<ID=KI270722.1,length=194050>
+##contig=<ID=GL000194.1,length=191469>
+##contig=<ID=KI270742.1,length=186739>
+##contig=<ID=GL000205.2,length=185591>
+##contig=<ID=GL000195.1,length=182896>
+##contig=<ID=KI270736.1,length=181920>
+##contig=<ID=KI270733.1,length=179772>
+##contig=<ID=GL000224.1,length=179693>
+##contig=<ID=GL000219.1,length=179198>
+##contig=<ID=KI270719.1,length=176845>
+##contig=<ID=GL000216.2,length=176608>
+##contig=<ID=KI270712.1,length=176043>
+##contig=<ID=KI270706.1,length=175055>
+##contig=<ID=KI270725.1,length=172810>
+##contig=<ID=KI270744.1,length=168472>
+##contig=<ID=KI270734.1,length=165050>
+##contig=<ID=GL000213.1,length=164239>
+##contig=<ID=GL000220.1,length=161802>
+##contig=<ID=KI270715.1,length=161471>
+##contig=<ID=GL000218.1,length=161147>
+##contig=<ID=KI270749.1,length=158759>
+##contig=<ID=KI270741.1,length=157432>
+##contig=<ID=GL000221.1,length=155397>
+##contig=<ID=KI270716.1,length=153799>
+##contig=<ID=KI270731.1,length=150754>
+##contig=<ID=KI270751.1,length=150742>
+##contig=<ID=KI270750.1,length=148850>
+##contig=<ID=KI270519.1,length=138126>
+##contig=<ID=GL000214.1,length=137718>
+##contig=<ID=KI270708.1,length=127682>
+##contig=<ID=KI270730.1,length=112551>
+##contig=<ID=KI270438.1,length=112505>
+##contig=<ID=KI270737.1,length=103838>
+##contig=<ID=KI270721.1,length=100316>
+##contig=<ID=KI270738.1,length=99375>
+##contig=<ID=KI270748.1,length=93321>
+##contig=<ID=KI270435.1,length=92983>
+##contig=<ID=GL000208.1,length=92689>
+##contig=<ID=KI270538.1,length=91309>
+##contig=<ID=KI270756.1,length=79590>
+##contig=<ID=KI270739.1,length=73985>
+##contig=<ID=KI270757.1,length=71251>
+##contig=<ID=KI270709.1,length=66860>
+##contig=<ID=KI270746.1,length=66486>
+##contig=<ID=KI270753.1,length=62944>
+##contig=<ID=KI270589.1,length=44474>
+##contig=<ID=KI270726.1,length=43739>
+##contig=<ID=KI270735.1,length=42811>
+##contig=<ID=KI270711.1,length=42210>
+##contig=<ID=KI270745.1,length=41891>
+##contig=<ID=KI270714.1,length=41717>
+##contig=<ID=KI270732.1,length=41543>
+##contig=<ID=KI270713.1,length=40745>
+##contig=<ID=KI270754.1,length=40191>
+##contig=<ID=KI270710.1,length=40176>
+##contig=<ID=KI270717.1,length=40062>
+##contig=<ID=KI270724.1,length=39555>
+##contig=<ID=KI270720.1,length=39050>
+##contig=<ID=KI270723.1,length=38115>
+##contig=<ID=KI270718.1,length=38054>
+##contig=<ID=KI270317.1,length=37690>
+##contig=<ID=KI270740.1,length=37240>
+##contig=<ID=KI270755.1,length=36723>
+##contig=<ID=KI270707.1,length=32032>
+##contig=<ID=KI270579.1,length=31033>
+##contig=<ID=KI270752.1,length=27745>
+##contig=<ID=KI270512.1,length=22689>
+##contig=<ID=KI270322.1,length=21476>
+##contig=<ID=GL000226.1,length=15008>
+##contig=<ID=KI270311.1,length=12399>
+##contig=<ID=KI270366.1,length=8320>
+##contig=<ID=KI270511.1,length=8127>
+##contig=<ID=KI270448.1,length=7992>
+##contig=<ID=KI270521.1,length=7642>
+##contig=<ID=KI270581.1,length=7046>
+##contig=<ID=KI270582.1,length=6504>
+##contig=<ID=KI270515.1,length=6361>
+##contig=<ID=KI270588.1,length=6158>
+##contig=<ID=KI270591.1,length=5796>
+##contig=<ID=KI270522.1,length=5674>
+##contig=<ID=KI270507.1,length=5353>
+##contig=<ID=KI270590.1,length=4685>
+##contig=<ID=KI270584.1,length=4513>
+##contig=<ID=KI270320.1,length=4416>
+##contig=<ID=KI270382.1,length=4215>
+##contig=<ID=KI270468.1,length=4055>
+##contig=<ID=KI270467.1,length=3920>
+##contig=<ID=KI270362.1,length=3530>
+##contig=<ID=KI270517.1,length=3253>
+##contig=<ID=KI270593.1,length=3041>
+##contig=<ID=KI270528.1,length=2983>
+##contig=<ID=KI270587.1,length=2969>
+##contig=<ID=KI270364.1,length=2855>
+##contig=<ID=KI270371.1,length=2805>
+##contig=<ID=KI270333.1,length=2699>
+##contig=<ID=KI270374.1,length=2656>
+##contig=<ID=KI270411.1,length=2646>
+##contig=<ID=KI270414.1,length=2489>
+##contig=<ID=KI270510.1,length=2415>
+##contig=<ID=KI270390.1,length=2387>
+##contig=<ID=KI270375.1,length=2378>
+##contig=<ID=KI270420.1,length=2321>
+##contig=<ID=KI270509.1,length=2318>
+##contig=<ID=KI270315.1,length=2276>
+##contig=<ID=KI270302.1,length=2274>
+##contig=<ID=KI270518.1,length=2186>
+##contig=<ID=KI270530.1,length=2168>
+##contig=<ID=KI270304.1,length=2165>
+##contig=<ID=KI270418.1,length=2145>
+##contig=<ID=KI270424.1,length=2140>
+##contig=<ID=KI270417.1,length=2043>
+##contig=<ID=KI270508.1,length=1951>
+##contig=<ID=KI270303.1,length=1942>
+##contig=<ID=KI270381.1,length=1930>
+##contig=<ID=KI270529.1,length=1899>
+##contig=<ID=KI270425.1,length=1884>
+##contig=<ID=KI270396.1,length=1880>
+##contig=<ID=KI270363.1,length=1803>
+##contig=<ID=KI270386.1,length=1788>
+##contig=<ID=KI270465.1,length=1774>
+##contig=<ID=KI270383.1,length=1750>
+##contig=<ID=KI270384.1,length=1658>
+##contig=<ID=KI270330.1,length=1652>
+##contig=<ID=KI270372.1,length=1650>
+##contig=<ID=KI270548.1,length=1599>
+##contig=<ID=KI270580.1,length=1553>
+##contig=<ID=KI270387.1,length=1537>
+##contig=<ID=KI270391.1,length=1484>
+##contig=<ID=KI270305.1,length=1472>
+##contig=<ID=KI270373.1,length=1451>
+##contig=<ID=KI270422.1,length=1445>
+##contig=<ID=KI270316.1,length=1444>
+##contig=<ID=KI270340.1,length=1428>
+##contig=<ID=KI270338.1,length=1428>
+##contig=<ID=KI270583.1,length=1400>
+##contig=<ID=KI270334.1,length=1368>
+##contig=<ID=KI270429.1,length=1361>
+##contig=<ID=KI270393.1,length=1308>
+##contig=<ID=KI270516.1,length=1300>
+##contig=<ID=KI270389.1,length=1298>
+##contig=<ID=KI270466.1,length=1233>
+##contig=<ID=KI270388.1,length=1216>
+##contig=<ID=KI270544.1,length=1202>
+##contig=<ID=KI270310.1,length=1201>
+##contig=<ID=KI270412.1,length=1179>
+##contig=<ID=KI270395.1,length=1143>
+##contig=<ID=KI270376.1,length=1136>
+##contig=<ID=KI270337.1,length=1121>
+##contig=<ID=KI270335.1,length=1048>
+##contig=<ID=KI270378.1,length=1048>
+##contig=<ID=KI270379.1,length=1045>
+##contig=<ID=KI270329.1,length=1040>
+##contig=<ID=KI270419.1,length=1029>
+##contig=<ID=KI270336.1,length=1026>
+##contig=<ID=KI270312.1,length=998>
+##contig=<ID=KI270539.1,length=993>
+##contig=<ID=KI270385.1,length=990>
+##contig=<ID=KI270423.1,length=981>
+##contig=<ID=KI270392.1,length=971>
+##contig=<ID=KI270394.1,length=970>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband	mother	father
+X	54182952	.	G	A	51.90	PASS	ExContribAltAllele=0;ExGeneSCombi=0.7426456;ExGeneSPheno=0.5000186;ExGeneSVar=0.99636716;ExGeneSymbId=ENSG00000184083;ExGeneSymbol=FAM120C;ExVarEff=missense_variant;ExVarHgvs=23:g.54182952G>A;ExVarScore=0.99636716	GT:AD:DP:GQ:PL:VAF	0/1:9,14:23:44:44,0,59:0.608696	0/0	1/1:0,17:17:48:51,50,0:1
+X	27747991	.	A	G	58.50	PASS	ExContribAltAllele=0;ExGeneSCombi=0.72967434;ExGeneSPheno=0.5000092;ExGeneSVar=0.9891048;ExGeneSymbId=ENSG00000189186;ExGeneSymbol=DCAF8L2;ExVarEff=missense_variant;ExVarHgvs=23:g.27747991A>G;ExVarScore=0.9891048	GT:AD:DP:GQ:PL:VAF	0/1:24,19:43:45:45,0,62:0.44186	0/0	1/1:0,28:28:56:58,60,0:1
+X	18906777	.	C	T	59	PASS	ExContribAltAllele=0;ExGeneSCombi=0.17794193;ExGeneSPheno=0.25083718;ExGeneSVar=0.99636716;ExGeneSymbId=ENSG00000044446;ExGeneSymbol=PHKA2;ExVarEff=missense_variant;ExVarHgvs=23:g.18906777C>T;ExVarScore=0.99636716	GT:AD:DP:GQ:PL:VAF	0/1:22,19:41:45:45,0,58:0.463415	0/0	1/1:0,22:22:56:58,59,0:1
+22	41155018	666310	C	T	100	inheritance	ExGeneSCombi=1.3301251E-4;ExGeneSPheno=0.41975963;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000100393;ExGeneSymbol=EP300;ExVarEff=stop_gained;ExVarHgvs=22:g.41155018C>T;ExVarScore=1.0	GT:AD:DP:GQ:PL:VAF	0/1:22,23:45:75:100,0,100:0.511	0/0	0/1:22,23:45:75:100,0,100:0.511
+1	16232263	.	G	A	47.40	inheritance	ExGeneSCombi=1.1019308E-4;ExGeneSPheno=0.40165085;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000132881;ExGeneSymbol=CPLANE2;ExVarEff=missense_variant;ExVarHgvs=1:g.16232263G>A;ExVarScore=0.992917	GT:AD:DP:GQ:PL:VAF	0/1:14,17:32:47:47,0,62:0.53125	0/0	0/1:18,10:28:37:36,0,62:0.357143
+19	11033439	.	C	T	47.80	inheritance	ExGeneSCombi=9.884682E-5;ExGeneSPheno=0.3911959;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000127616;ExGeneSymbol=SMARCA4;ExVarEff=synonymous_variant;ExVarHgvs=19:g.11033439C>T;ExVarScore=0.98952895	GT:AD:DP:GQ:PL:VAF	0/1:19,12:32:34:33,0,60:0.375	0/0	0/1:23,27:50:47:47,0,57:0.54
+10	95684595	.	A	G	53.60	inheritance	ExGeneSCombi=9.4896466E-5;ExGeneSPheno=0.38727182;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000119977;ExGeneSymbol=TCTN3;ExVarEff=synonymous_variant;ExVarHgvs=10:g.95684595A>G;ExVarScore=0.92827594	GT:AD:DP:GQ:PL:VAF	0/1:13,18:31:52:53,0,57:0.580645	0/0	0/1:18,24:43:52:52,0,62:0.55814
+12	12130897	.	G	GA	44.30	inheritance	ExGeneSCombi=7.3477306E-5;ExGeneSPheno=0.36265966;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000070018;ExGeneSymbol=LRP6;ExVarEff=splice_region_variant;ExVarHgvs=12:g.12130897G>GA;ExVarScore=0.8367909	GT:AD:DP:GQ:PL:VAF	0/1:17,24:42:43:44,0,50:0.571429	0/0	0/1:25,25:51:37:37,0,51:0.490196
+X	154653499	.	C	T	19.40	PASS	ExContribAltAllele=0;ExGeneSCombi=6.746623E-5;ExGeneSPheno=0.0;ExGeneSVar=0.4011749;ExGeneSymbId=ENSG00000126890;ExGeneSymbol=CTAG2;ExVarEff=missense_variant;ExVarHgvs=23:g.154653499C>T;ExVarScore=0.4011749	GT:AD:DP:GQ:PL:VAF	0/1:4,7:11:19:19,0,28:0.636364	0/0	1/1:0,2:2:5:13,3,0:1
+16	89808371	.	AAAAAC	A	36	inheritance	ExGeneSCombi=6.544167E-5;ExGeneSPheno=0.35151672;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000187741;ExGeneSymbol=FANCA;ExVarEff=splice_region_variant;ExVarHgvs=16:g.89808371AAAAAC>A;ExVarScore=0.8690486	GT:AD:DP:GQ:PL:VAF	0/1:13,24:37:36:35,0,59:0.648649	0/0	0/1:24,15:39:33:32,0,58:0.384615
+1	11253872	.	G	A	47.30	inheritance	ExGeneSCombi=6.1679624E-5;ExGeneSPheno=0.34582052;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000198793;ExGeneSymbol=MTOR;ExVarEff=synonymous_variant;ExVarHgvs=1:g.11253872G>A;ExVarScore=0.8309112	GT:AD:DP:GQ:PL:VAF	0/1:18,23:41:47:47,0,54:0.560976	0/0	0/1:13,23:36:41:44,0,43:0.638889
+4	46475066	.	C	T	55.10	inheritance	ExGeneSCombi=4.9530558E-5;ExGeneSPheno=0.32471552;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000151834;ExGeneSymbol=GABRA2;ExVarEff=splice_donor_variant;ExVarHgvs=4:g.46475066C>T;ExVarScore=0.9972702	GT:AD:DP:GQ:PL:VAF	0/1:18,24:42:54:55,0,61:0.571429	0/0	0/1:27,24:51:53:52,0,66:0.470588
+11	114250366	.	C	G	49.80	inheritance	ExGeneSCombi=4.9149472E-5;ExGeneSPheno=0.32397243;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000109906;ExGeneSymbol=ZBTB16;ExVarEff=synonymous_variant;ExVarHgvs=11:g.114250366C>G;ExVarScore=0.98970515	GT:AD:DP:GQ:PL:VAF	0/1:13,12:25:49:49,0,58:0.48	0/0	0/1:12,12:24:46:45,0,63:0.5
+9	120415090	.	T	G	37.90	inheritance	ExGeneSCombi=4.5044442E-5;ExGeneSPheno=0.3155814;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000136861;ExGeneSymbol=CDK5RAP2;ExVarEff=missense_variant;ExVarHgvs=9:g.120415090T>G;ExVarScore=0.9972702	GT:AD:DP:GQ:PL:VAF	0/1:16,21:37:38:37,0,50:0.567568	0/0	0/1:19,17:36:35:35,0,53:0.472222
+19	38729097	.	C	T	51.40	inheritance	ExGeneSCombi=4.3556927E-5;ExGeneSPheno=0.31235063;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000130402;ExGeneSymbol=ACTN4;ExVarEff=synonymous_variant;ExVarHgvs=19:g.38729097C>T;ExVarScore=0.69380975	GT:AD:DP:GQ:PL:VAF	0/1:20,15:35:50:51,0,56:0.428571	0/0	0/1:14,19:34:47:48,0,53:0.558824
+19	33387892	.	C	T	43.80	inheritance	ExGeneSCombi=4.1073527E-5;ExGeneSPheno=0.3067027;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000124299;ExGeneSymbol=PEPD;ExVarEff=missense_variant;ExVarHgvs=19:g.33387892C>T;ExVarScore=1.0	GT:AD:DP:GQ:PL:VAF	0/1:37,20:57:37:36,0,59:0.350877	0/0	0/1:17,13:30:44:43,0,66:0.433333
+11	27368638	.	T	C	55	inheritance	ExGeneSCombi=3.984905E-5;ExGeneSPheno=0.30379093;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000205213;ExGeneSymbol=LGR4;ExVarEff=synonymous_variant;ExVarHgvs=11:g.27368638T>C;ExVarScore=0.9674292	GT:AD:DP:GQ:PL:VAF	0/1:15,25:40:53:54,0,57:0.625	0/0	0/1:18,18:36:50:50,0,57:0.5
+11	1190684	.	C	T	32.60	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1190684C>T;ExVarScore=0.009168029	GT:AD:DP:GQ:PL:VAF	0/1:32,19:52:33:32,0,51:0.365385	0/0	0/1:28,19:48:30:29,0,51:0.395833
+11	1188357	.	C	T	42.50	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=synonymous_variant;ExVarHgvs=11:g.1188357C>T;ExVarScore=0.637757	GT:AD:DP:GQ:PL:VAF	0/1:18,12:31:42:42,0,60:0.387097	0/0	0/1:15,19:34:39:39,0,49:0.558824
+11	1182851	.	C	T	19.20	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1182851C>T;ExVarScore=0.8345754	GT:AD:DP:GQ:PL:VAF	0/1:21,11:32:19:19,0,45:0.34375	0/0	0/1:19,9:28:17:17,0,48:0.321429
+11	1184723	.	G	A	23.50	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1184723G>A;ExVarScore=0.96603745	GT:AD:DP:GQ:PL:VAF	0/1:17,11:28:23:23,0,35:0.392857	0/0	0/1:25,16:41:12:12,0,34:0.390244
+11	1190666	.	C	T	29.50	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1190666C>T;ExVarScore=0.79816335	GT:AD:DP:GQ:PL:VAF	0/1:38,20:58:29:29,0,45:0.344828	0/0	0/1:25,17:44:28:28,0,43:0.386364
+11	1191424	.	C	T	20.90	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1191424C>T;ExVarScore=0.3792739	GT:AD:DP:GQ:PL:VAF	0/1:16,14:30:21:20,0,32:0.466667	0/0	0/1:11,8:19:10:9,0,28:0.421053
+11	1187320	.	A	G	42.90	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1187320A>G;ExVarScore=0.9421904	GT:AD:DP:GQ:PL:VAF	0/1:19,15:37:43:42,0,55:0.405405	0/0	0/1:25,16:41:10:9,0,40:0.390244
+11	1188726	.	C	A	10.70	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=synonymous_variant;ExVarHgvs=11:g.1188726C>A;ExVarScore=2.3025274E-4	GT:AD:DP:GQ:PL:VAF	0/1:19,8:27:8:6,0,41:0.296296	0/0	0/1:27,14:41:11:10,0,40:0.341463
+11	1184516	.	C	A	21.60	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1184516C>A;ExVarScore=0.8315388	GT:AD:DP:GQ:PL:VAF	0/1:18,16:34:17:17,0,36:0.470588	0/0	0/1:26,15:41:22:21,0,43:0.365854
+11	1188729	.	A	G	10.30	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=synonymous_variant;ExVarHgvs=11:g.1188729A>G;ExVarScore=0.59045655	GT:AD:DP:GQ:PL:VAF	0/1:19,7:26:10:9,0,39:0.269231	0/0	0/1:28,13:41:6:5,0,39:0.317073
+11	1183901	.	C	T	17.30	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1183901C>T;ExVarScore=0.9400209	GT:AD:DP:GQ:PL:VAF	0/1:14,27:41:4:14,0,1:0.658537	0/0	0/1:24,33:57:5:4,0,11:0.578947
+11	1188993	.	T	C	27.70	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=synonymous_variant;ExVarHgvs=11:g.1188993T>C;ExVarScore=0.57469547	GT:AD:DP:GQ:PL:VAF	0/1:17,13:30:11:10,0,32:0.433333	0/0	0/1:11,18:29:25:27,0,28:0.62069
+11	1188859	.	A	G	16.70	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1188859A>G;ExVarScore=0.8777075	GT:AD:DP:GQ:PL:VAF	0/1:22,13:35:12:11,0,32:0.371429	0/0	0/1:29,14:43:17:16,0,35:0.325581
+11	1182814	.	G	A	15.50	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1182814G>A;ExVarScore=0.9659592	GT:AD:DP:GQ:PL:VAF	0/1:17,8:25:9:7,0,36:0.32	0/0	0/1:17,6:23:16:15,0,41:0.26087
+11	1189815	.	C	A	32.60	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=synonymous_variant;ExVarHgvs=11:g.1189815C>A;ExVarScore=0.003906727	GT:AD:DP:GQ:PL:VAF	0/1:31,18:49:23:23,0,43:0.367347	0/0	0/1:28,21:50:32:32,0,42:0.42
+11	1183369	.	A	G	25.90	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1183369A>G;ExVarScore=0.22731942	GT:AD:DP:GQ:PL:VAF	0/1:12,10:22:15:14,0,40:0.454545	0/0	0/1:12,21:33:26:25,0,39:0.636364
+11	1189033	.	T	C	36.60	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1189033T>C;ExVarScore=0.77828246	GT:AD:DP:GQ:PL:VAF	0/1:21,8:29:15:14,0,46:0.275862	0/0	0/1:9,16:25:36:36,0,45:0.64
+11	1183604	.	G	A	13.30	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1183604G>A;ExVarScore=0.96335626	GT:AD:DP:GQ:PL:VAF	0/1:25,8:33:9:8,0,36:0.242424	0/0	0/1:32,16:49:13:13,0,37:0.326531
+11	1183472	.	G	A	31.30	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1183472G>A;ExVarScore=0.75778556	GT:AD:DP:GQ:PL:VAF	0/1:18,27:45:24:27,0,26:0.6	0/0	0/1:9,22:32:23:31,0,24:0.6875
+11	1184488	.	A	G	27.80	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1184488A>G;ExVarScore=0.013266206	GT:AD:DP:GQ:PL:VAF	0/1:15,20:35:26:27,0,29:0.571429	0/0	0/1:21,23:44:21:21,0,30:0.522727
+11	1183358	.	T	C	26.60	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1183358T>C;ExVarScore=0.9110799	GT:AD:DP:GQ:PL:VAF	0/1:12,8:20:22:22,0,44:0.4	0/0	0/1:11,17:29:26:26,0,37:0.586207
+11	1184798	.	A	G	38.40	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1184798A>G;ExVarScore=0.09008676	GT:AD:DP:GQ:PL:VAF	0/1:9,13:23:38:38,0,46:0.565217	0/0	0/1:24,10:34:25:25,0,50:0.294118
+11	1190214	.	G	C	29.80	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=synonymous_variant;ExVarHgvs=11:g.1190214G>C;ExVarScore=4.6038628E-4	GT:AD:DP:GQ:PL:VAF	0/1:12,21:39:23:24,0,29:0.538462	0/0	0/1:24,24:54:30:29,0,48:0.444444
+11	1188446	.	C	T	40.80	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1188446C>T;ExVarScore=0.95860004	GT:AD:DP:GQ:PL:VAF	0/1:18,15:34:41:40,0,55:0.441176	0/0	0/1:20,17:37:39:39,0,53:0.459459
+11	1183837	.	C	A	6.40	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1183837C>A;ExVarScore=0.6162927	GT:AD:DP:GQ:PL:VAF	0/1:29,21:50:6:5,0,28:0.42	0/0	0/1:37,16:53:6:5,0,33:0.301887
+11	1183926	.	G	A	22.40	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=synonymous_variant;ExVarHgvs=11:g.1183926G>A;ExVarScore=0.100916564	GT:AD:DP:GQ:PL:VAF	0/1:21,19:41:22:22,0,34:0.463415	0/0	0/1:35,19:54:6:4,0,27:0.351852
+11	1186818	.	T	C	29.20	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=synonymous_variant;ExVarHgvs=11:g.1186818T>C;ExVarScore=0.55311066	GT:AD:DP:GQ:PL:VAF	0/1:12,22:34:29:29,0,44:0.647059	0/0	0/1:12,24:36:18:17,0,30:0.666667
+11	1188020	.	G	A	27.80	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1188020G>A;ExVarScore=0.5879025	GT:AD:DP:GQ:PL:VAF	0/1:23,12:35:28:27,0,58:0.342857	0/0	0/1:20,16:36:17:17,0,45:0.444444
+11	1190429	.	C	G	8.90	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1190429C>G;ExVarScore=0.59186864	GT:AD:DP:GQ:PL:VAF	0/1:34,16:50:3:0,0,40:0.32	0/0	0/1:42,17:59:9:8,0,42:0.288136
+11	1182855	.	G	T	25.20	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=synonymous_variant;ExVarHgvs=11:g.1182855G>T;ExVarScore=0.0048237443	GT:AD:DP:GQ:PL:VAF	0/1:22,12:34:25:25,0,44:0.352941	0/0	0/1:20,10:30:23:22,0,48:0.333333
+11	1191146	.	T	C	8.70	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1191146T>C;ExVarScore=0.3485216	GT:AD:DP:GQ:PL:VAF	0/1:19,30:50:9:8,0,30:0.6	0/0	0/1:18,16:34:4:2,0,26:0.470588
+11	1184544	.	C	T	21.30	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=synonymous_variant;ExVarHgvs=11:g.1184544C>T;ExVarScore=2.3025274E-4	GT:AD:DP:GQ:PL:VAF	0/1:22,9:32:21:21,0,44:0.28125	0/0	0/1:31,10:41:14:13,0,41:0.243902
+11	1185584	.	C	T	30.60	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1185584C>T;ExVarScore=0.81911606	GT:AD:DP:GQ:PL:VAF	0/1:24,10:34:31:30,0,51:0.294118	0/0	0/1:26,12:38:26:26,0,36:0.315789
+11	1190234	.	G	A	29.40	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1190234G>A;ExVarScore=0.9938341	GT:AD:DP:GQ:PL:VAF	0/1:20,21:41:17:17,0,29:0.512195	0/0	0/1:30,25:56:29:29,0,46:0.446429
+11	1183769	.	A	G	35.10	inheritance	ExGeneSCombi=3.448672E-5;ExGeneSPheno=0.2898865;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215182;ExGeneSymbol=MUC5AC;ExVarEff=missense_variant;ExVarHgvs=11:g.1183769A>G;ExVarScore=0.7007046	GT:AD:DP:GQ:PL:VAF	0/1:16,37:54:32:35,0,34:0.685185	0/0	0/1:17,35:52:28:32,0,30:0.673077
+2	107997929	.	G	C	48.10	inheritance	ExGeneSCombi=3.2296375E-5;ExGeneSPheno=0.28357342;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000115665;ExGeneSymbol=SLC5A7;ExVarEff=synonymous_variant;ExVarHgvs=2:g.107997929G>C;ExVarScore=0.622027	GT:AD:DP:GQ:PL:VAF	0/1:18,30:48:46:48,0,49:0.625	0/0	0/1:28,15:44:33:32,0,53:0.340909
+8	30837922	.	T	C	55.50	inheritance	ExGeneSCombi=2.8498314E-5;ExGeneSPheno=0.2715369;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000133863;ExGeneSymbol=TEX15;ExVarEff=missense_variant;ExVarHgvs=8:g.30837922T>C;ExVarScore=0.96374536	GT:AD:DP:GQ:PL:VAF	0/1:20,35:55:53:55,0,56:0.636364	0/0	0/1:27,14:41:32:31,0,61:0.341463
+7	122663470	.	C	T	53.20	inheritance	ExGeneSCombi=2.759405E-5;ExGeneSPheno=0.2684347;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000081803;ExGeneSymbol=CADPS2;ExVarEff=missense_variant;ExVarHgvs=7:g.122663470C>T;ExVarScore=0.9972702	GT:AD:DP:GQ:PL:VAF	0/1:26,28:54:52:53,0,59:0.518519	0/0	0/1:27,23:50:44:44,0,58:0.46
+22	22514885	.	G	C	54.50	inheritance	ExGeneSCombi=2.7396043E-5;ExGeneSPheno=0.26774186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169548;ExGeneSymbol=ZNF280A;ExVarEff=missense_variant;ExVarHgvs=22:g.22514885G>C;ExVarScore=0.8244504	GT:AD:DP:GQ:PL:VAF	0/1:16,17:33:54:54,0,71:0.515152	0/0	0/1:13,19:32:54:54,0,67:0.59375
+22	22514449	.	A	G	40.10	inheritance	ExGeneSCombi=2.7396043E-5;ExGeneSPheno=0.26774186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169548;ExGeneSymbol=ZNF280A;ExVarEff=synonymous_variant;ExVarHgvs=22:g.22514449A>G;ExVarScore=0.9187169	GT:AD:DP:GQ:PL:VAF	0/1:15,10:25:37:36,0,62:0.4	0/0	0/1:20,12:32:40:40,0,61:0.375
+22	22514173	.	C	G	52.90	inheritance	ExGeneSCombi=2.7396043E-5;ExGeneSPheno=0.26774186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169548;ExGeneSymbol=ZNF280A;ExVarEff=missense_variant;ExVarHgvs=22:g.22514173C>G;ExVarScore=0.9939744	GT:AD:DP:GQ:PL:VAF	0/1:11,19:30:52:52,0,57:0.633333	0/0	0/1:18,15:33:46:46,0,65:0.454545
+22	22514799	.	C	T	51	inheritance	ExGeneSCombi=2.7396043E-5;ExGeneSPheno=0.26774186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169548;ExGeneSymbol=ZNF280A;ExVarEff=missense_variant;ExVarHgvs=22:g.22514799C>T;ExVarScore=0.99354345	GT:AD:DP:GQ:PL:VAF	0/1:17,17:34:45:44,0,71:0.5	0/0	0/1:15,20:35:50:51,0,58:0.571429
+22	22515224	.	C	T	56.30	inheritance	ExGeneSCombi=2.7396043E-5;ExGeneSPheno=0.26774186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169548;ExGeneSymbol=ZNF280A;ExVarEff=missense_variant;ExVarHgvs=22:g.22515224C>T;ExVarScore=0.5326954	GT:AD:DP:GQ:PL:VAF	0/1:16,28:44:47:56,0,47:0.636364	0/0	0/1:17,12:31:46:46,0,60:0.387097
+22	22514169	.	T	G	53.90	inheritance	ExGeneSCombi=2.7396043E-5;ExGeneSPheno=0.26774186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169548;ExGeneSymbol=ZNF280A;ExVarEff=missense_variant;ExVarHgvs=22:g.22514169T>G;ExVarScore=0.9939744	GT:AD:DP:GQ:PL:VAF	0/1:12,17:29:53:53,0,61:0.586207	0/0	0/1:18,16:34:44:43,0,65:0.470588
+22	22515221	.	G	T	53.50	inheritance	ExGeneSCombi=2.7396043E-5;ExGeneSPheno=0.26774186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169548;ExGeneSymbol=ZNF280A;ExVarEff=missense_variant;ExVarHgvs=22:g.22515221G>T;ExVarScore=0.9379131	GT:AD:DP:GQ:PL:VAF	0/1:16,29:45:45:53,0,45:0.644444	0/0	0/1:17,14:31:48:48,0,61:0.451613
+22	22515214	.	G	A	60	inheritance	ExGeneSCombi=2.7396043E-5;ExGeneSPheno=0.26774186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169548;ExGeneSymbol=ZNF280A;ExVarEff=synonymous_variant;ExVarHgvs=22:g.22515214G>A;ExVarScore=0.030383468	GT:AD:DP:GQ:PL:VAF	0/1:16,28:44:50:60,0,50:0.636364	0/0	0/1:16,15:31:52:52,0,63:0.483871
+22	22515418	.	A	C	40	inheritance	ExGeneSCombi=2.7396043E-5;ExGeneSPheno=0.26774186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169548;ExGeneSymbol=ZNF280A;ExVarEff=missense_variant;ExVarHgvs=22:g.22515418A>C;ExVarScore=0.97168607	GT:AD:DP:GQ:PL:VAF	0/1:22,22:44:40:40,0,53:0.5	0/0	0/1:22,14:37:27:27,0,53:0.378378
+22	22514894	.	C	T	50.90	inheritance	ExGeneSCombi=2.7396043E-5;ExGeneSPheno=0.26774186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169548;ExGeneSymbol=ZNF280A;ExVarEff=missense_variant;ExVarHgvs=22:g.22514894C>T;ExVarScore=0.90493953	GT:AD:DP:GQ:PL:VAF	0/1:16,17:33:47:47,0,64:0.515152	0/0	0/1:14,22:36:51:50,0,61:0.611111
+22	22514452	.	A	G	42.90	inheritance	ExGeneSCombi=2.7396043E-5;ExGeneSPheno=0.26774186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169548;ExGeneSymbol=ZNF280A;ExVarEff=synonymous_variant;ExVarHgvs=22:g.22514452A>G;ExVarScore=0.9757897	GT:AD:DP:GQ:PL:VAF	0/1:15,10:25:43:42,0,66:0.4	0/0	0/1:20,13:33:40:40,0,63:0.393939
+10	50189586	.	G	T	13.60	inheritance	ExGeneSCombi=2.6386675E-5;ExGeneSPheno=0.2641303;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000188611;ExGeneSymbol=ASAH2;ExVarEff=missense_variant;ExVarHgvs=10:g.50189586G>T;ExVarScore=0.996965	GT:AD:DP:GQ:PL:VAF	0/1:5,2:7:5:2,0,18:0.285714	0/0	0/1:3,5:8:11:13,0,13:0.625
+9	83908476	.	G	A	53.70	inheritance	ExGeneSCombi=2.5865718E-5;ExGeneSPheno=0.26221186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000165115;ExGeneSymbol=KIF27;ExVarEff=stop_gained;ExVarHgvs=9:g.83908476G>A;ExVarScore=0.9959191	GT:AD:DP:GQ:PL:VAF	0/1:16,24:42:50:52,0,53:0.571429	0/0	0/1:18,23:41:51:53,0,54:0.560976
+21	26966192	.	C	A	45.60	inheritance	ExGeneSCombi=2.525676E-5;ExGeneSPheno=0.25991976;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000154736;ExGeneSymbol=ADAMTS5;ExVarEff=missense_variant;ExVarHgvs=21:g.26966192C>A;ExVarScore=0.9919146	GT:AD:DP:GQ:PL:VAF	0/1:16,17:35:42:42,0,57:0.485714	0/0	0/1:13,25:38:44:45,0,49:0.657895
+7	116699164	.	A	G	49.80	inheritance	ExGeneSCombi=2.5103473E-5;ExGeneSPheno=0.2593341;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000105976;ExGeneSymbol=MET;ExVarEff=missense_variant;ExVarHgvs=7:g.116699164A>G;ExVarScore=0.97204626	GT:AD:DP:GQ:PL:VAF	0/1:16,19:36:50:49,0,65:0.527778	0/0	0/1:23,15:38:47:47,0,58:0.394737
+2	222908823	.	C	T	53.40	inheritance	ExGeneSCombi=2.5073623E-5;ExGeneSPheno=0.25921962;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000123983;ExGeneSymbol=ACSL3;ExVarEff=synonymous_variant;ExVarHgvs=2:g.222908823C>T;ExVarScore=0.9676347	GT:AD:DP:GQ:PL:VAF	0/1:19,19:38:45:45,0,53:0.5	0/0	0/1:22,30:52:53:53,0,60:0.576923
+17	17819684	.	G	A	46.90	inheritance	ExGeneSCombi=2.5046173E-5;ExGeneSPheno=0.25911424;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000072310;ExGeneSymbol=SREBF1;ExVarEff=missense_variant;ExVarHgvs=17:g.17819684G>A;ExVarScore=0.9972702	GT:AD:DP:GQ:PL:VAF	0/1:18,20:38:45:45,0,53:0.526316	0/0	0/1:17,23:40:46:46,0,56:0.575
+19	38517416	.	G	A	42.70	inheritance	ExGeneSCombi=2.479201E-5;ExGeneSPheno=0.25813296;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000196218;ExGeneSymbol=RYR1;ExVarEff=missense_variant;ExVarHgvs=19:g.38517416G>A;ExVarScore=0.9916622	GT:AD:DP:GQ:PL:VAF	0/1:17,17:34:42:42,0,54:0.5	0/0	0/1:23,15:38:38:38,0,61:0.394737
+2	216482811	.	T	C	40.50	inheritance	ExGeneSCombi=2.4464623E-5;ExGeneSPheno=0.25685406;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000138375;ExGeneSymbol=SMARCAL1;ExVarEff=missense_variant;ExVarHgvs=2:g.216482811T>C;ExVarScore=0.9972702	GT:AD:DP:GQ:PL:VAF	0/1:21,11:32:40:40,0,62:0.34375	0/0	0/1:35,20:55:40:40,0,60:0.363636
+3	160425019	.	G	GGTGTGTGTGTGTGTGTGT	37.40	inheritance	ExGeneSCombi=2.4357767E-5;ExGeneSPheno=0.25643292;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000113810;ExGeneSymbol=SMC4;ExVarEff=splice_donor_variant;ExVarHgvs=3:g.160425019G>GGTGTGTGTGTGTGTGTGT;ExVarScore=1.0	GT:AD:DP:GQ:PL:VAF	0/1:16,19:39:35:34,0,46:0.487179	0/0	0/1:25,17:48:37:37,0,60:0.354167
+11	35432738	.	G	A	41.50	inheritance	ExGeneSCombi=2.4316145E-5;ExGeneSPheno=0.25626838;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000149090;ExGeneSymbol=PAMR1;ExVarEff=missense_variant;ExVarHgvs=11:g.35432738G>A;ExVarScore=0.98574066	GT:AD:DP:GQ:PL:VAF	0/1:31,22:53:37:36,0,53:0.415094	0/0	0/1:15,18:33:41:41,0,53:0.545455
+15	67827107	.	A	AGCG	25.30	inheritance	ExGeneSCombi=2.4263189E-5;ExGeneSPheno=0.25605863;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000188779;ExGeneSymbol=SKOR1;ExVarEff=disruptive_inframe_insertion;ExVarHgvs=15:g.67827107A>AGCG;ExVarScore=0.94751924	GT:AD:DP:GQ:PL:VAF	0/1:11,18:35:25:25,0,45:0.514286	0/0	0/1:10,13:26:23:22,0,47:0.5
+17	42854704	.	C	T	49.70	inheritance	ExGeneSCombi=2.4226792E-5;ExGeneSPheno=0.2559142;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000131471;ExGeneSymbol=AOC3;ExVarEff=synonymous_variant;ExVarHgvs=17:g.42854704C>T;ExVarScore=0.9640951	GT:AD:DP:GQ:PL:VAF	0/1:22,17:39:41:41,0,63:0.435897	0/0	0/1:13,17:30:49:49,0,59:0.566667
+17	11763608	.	A	G	48.40	inheritance	ExGeneSCombi=2.4036486E-5;ExGeneSPheno=0.2551555;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000007174;ExGeneSymbol=DNAH9;ExVarEff=synonymous_variant;ExVarHgvs=17:g.11763608A>G;ExVarScore=0.88690996	GT:AD:DP:GQ:PL:VAF	0/1:17,17:34:47:48,0,54:0.5	0/0	0/1:18,18:36:47:47,0,56:0.5
+5	95591471	.	T	C	41.90	inheritance	ExGeneSCombi=2.3921346E-5;ExGeneSPheno=0.25469354;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000164291;ExGeneSymbol=ARSK;ExVarEff=synonymous_variant;ExVarHgvs=5:g.95591471T>C;ExVarScore=0.8126357	GT:AD:DP:GQ:PL:VAF	0/1:30,15:47:26:26,0,55:0.319149	0/0	0/1:21,19:40:42:41,0,64:0.475
+16	30067000	.	C	G	47.70	inheritance	ExGeneSCombi=2.3898881E-5;ExGeneSPheno=0.25460315;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000149925;ExGeneSymbol=ALDOA;ExVarEff=missense_variant;ExVarHgvs=16:g.30067000C>G;ExVarScore=0.9972702	GT:AD:DP:GQ:PL:VAF	0/1:11,11:22:47:47,0,53:0.5	0/0	0/1:23,16:39:37:37,0,59:0.410256
+1	150945147	.	TG	T	44.80	inheritance	ExGeneSCombi=2.388903E-5;ExGeneSPheno=0.25456348;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000143379;ExGeneSymbol=SETDB1;ExVarEff=frameshift_variant;ExVarHgvs=1:g.150945147TG>T;ExVarScore=0.98919153	GT:AD:DP:GQ:PL:VAF	0/1:12,18:30:43:44,0,48:0.6	0/0	0/1:24,19:43:30:30,0,52:0.44186
+1	160123263	.	C	T	49.40	inheritance	ExGeneSCombi=2.3782755E-5;ExGeneSPheno=0.25413454;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000018625;ExGeneSymbol=ATP1A2;ExVarEff=synonymous_variant;ExVarHgvs=1:g.160123263C>T;ExVarScore=0.016351271	GT:AD:DP:GQ:PL:VAF	0/1:16,20:36:39:39,0,46:0.555556	0/0	0/1:15,25:40:48:49,0,54:0.625
+5	96695891	.	C	G	44.90	inheritance	ExGeneSCombi=2.3698256E-5;ExGeneSPheno=0.2537921;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000153113;ExGeneSymbol=CAST;ExVarEff=missense_variant;ExVarHgvs=5:g.96695891C>G;ExVarScore=0.98330843	GT:AD:DP:GQ:PL:VAF	0/1:20,21:41:45:44,0,56:0.512195	0/0	0/1:25,16:41:39:38,0,62:0.390244
+14	20404728	.	G	C	53.10	inheritance	ExGeneSCombi=2.3666893E-5;ExGeneSPheno=0.2536647;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000129566;ExGeneSymbol=TEP1;ExVarEff=synonymous_variant;ExVarHgvs=14:g.20404728G>C;ExVarScore=0.93671405	GT:AD:DP:GQ:PL:VAF	0/1:14,22:36:50:53,0,52:0.611111	0/0	0/1:24,18:42:38:37,0,54:0.428571
+11	67666115	.	C	T	43	inheritance	ExGeneSCombi=2.3612529E-5;ExGeneSPheno=0.25344345;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000132746;ExGeneSymbol=ALDH3B2;ExVarEff=splice_region_variant;ExVarHgvs=11:g.67666115C>T;ExVarScore=0.7978162	GT:AD:DP:GQ:PL:VAF	0/1:18,16:35:43:43,0,54:0.457143	0/0	0/1:18,19:38:42:41,0,56:0.5
+12	109216914	.	G	A	46.10	inheritance	ExGeneSCombi=2.3561995E-5;ExGeneSPheno=0.25323734;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000076555;ExGeneSymbol=ACACB;ExVarEff=missense_variant;ExVarHgvs=12:g.109216914G>A;ExVarScore=0.9972702	GT:AD:DP:GQ:PL:VAF	0/1:19,25:44:45:45,0,57:0.568182	0/0	0/1:12,19:31:46:46,0,57:0.612903
+2	47167693	.	CAAAAAAAAAAA	C	19.70	inheritance	ExGeneSCombi=2.3494315E-5;ExGeneSPheno=0.2529606;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000143933;ExGeneSymbol=CALM2;ExVarEff=splice_region_variant;ExVarHgvs=2:g.47167693CAAAAAAAAAAA>C;ExVarScore=0.8	GT:AD:DP:GQ:PL:VAF	0/1:11,6:24:19:19,0,26:0.25	0/0	0/1:21,4:40:8:7,0,14:0.1
+12	107704646	.	T	C	52.50	inheritance	ExGeneSCombi=2.3444543E-5;ExGeneSPheno=0.25275657;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000136045;ExGeneSymbol=PWP1;ExVarEff=synonymous_variant;ExVarHgvs=12:g.107704646T>C;ExVarScore=0.9261795	GT:AD:DP:GQ:PL:VAF	0/1:19,22:41:52:52,0,63:0.536585	0/0	0/1:19,20:39:48:47,0,64:0.512821
+11	105924663	.	G	A	42.80	inheritance	ExGeneSCombi=2.3393644E-5;ExGeneSPheno=0.25254747;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000152578;ExGeneSymbol=GRIA4;ExVarEff=missense_variant;ExVarHgvs=11:g.105924663G>A;ExVarScore=0.99667954	GT:AD:DP:GQ:PL:VAF	0/1:21,19:40:43:42,0,62:0.475	0/0	0/1:24,16:40:35:34,0,56:0.4
+1	107057251	.	A	G	47.30	inheritance	ExGeneSCombi=2.3391738E-5;ExGeneSPheno=0.25253963;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000198890;ExGeneSymbol=PRMT6;ExVarEff=missense_variant;ExVarHgvs=1:g.107057251A>G;ExVarScore=0.9972702	GT:AD:DP:GQ:PL:VAF	0/1:18,21:39:45:45,0,55:0.538462	0/0	0/1:16,16:32:47:47,0,64:0.5
+15	45402633	.	G	A	45.10	inheritance	ExGeneSCombi=2.3361854E-5;ExGeneSPheno=0.25241664;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000171763;ExGeneSymbol=SPATA5L1;ExVarEff=synonymous_variant;ExVarHgvs=15:g.45402633G>A;ExVarScore=0.96452165	GT:AD:DP:GQ:PL:VAF	0/1:15,20:35:45:45,0,54:0.571429	0/0	0/1:20,17:38:44:44,0,59:0.447368
+20	35374234	.	C	T	44.90	inheritance	ExGeneSCombi=2.334687E-5;ExGeneSPheno=0.25235492;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000101019;ExGeneSymbol=UQCC1;ExVarEff=missense_variant;ExVarHgvs=20:g.35374234C>T;ExVarScore=0.991646	GT:AD:DP:GQ:PL:VAF	0/1:22,9:31:23:22,0,54:0.290323	0/0	0/1:19,17:36:45:44,0,65:0.472222
+2	180989882	.	G	C	42.90	inheritance	ExGeneSCombi=2.333387E-5;ExGeneSPheno=0.25230134;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000170035;ExGeneSymbol=UBE2E3;ExVarEff=missense_variant;ExVarHgvs=2:g.180989882G>C;ExVarScore=0.9972702	GT:AD:DP:GQ:PL:VAF	0/1:22,19:41:43:42,0,63:0.463415	0/0	0/1:21,17:38:40:39,0,66:0.447368
+12	98533631	.	T	G	38.40	inheritance	ExGeneSCombi=2.3320683E-5;ExGeneSPheno=0.25224695;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000120802;ExGeneSymbol=TMPO;ExVarEff=synonymous_variant;ExVarHgvs=12:g.98533631T>G;ExVarScore=0.9676347	GT:AD:DP:GQ:PL:VAF	0/1:25,27:52:38:37,0,62:0.519231	0/0	0/1:19,20:39:38:38,0,59:0.512821
+4	75805212	.	G	T	45.70	inheritance	ExGeneSCombi=2.3291226E-5;ExGeneSPheno=0.25212535;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000138768;ExGeneSymbol=USO1;ExVarEff=missense_variant;ExVarHgvs=4:g.75805212G>T;ExVarScore=0.9844229	GT:AD:DP:GQ:PL:VAF	0/1:23,27:50:45:45,0,58:0.54	0/0	0/1:19,24:43:44:44,0,63:0.55814
+4	151760854	.	G	C	52.80	inheritance	ExGeneSCombi=2.3274488E-5;ExGeneSPheno=0.25205618;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000059691;ExGeneSymbol=GATB;ExVarEff=missense_variant;ExVarHgvs=4:g.151760854G>C;ExVarScore=0.98196596	GT:AD:DP:GQ:PL:VAF	0/1:18,15:33:43:43,0,63:0.454545	0/0	0/1:10,17:27:51:52,0,55:0.62963
+9	116931	.	G	A	45.30	inheritance	ExGeneSCombi=2.3271805E-5;ExGeneSPheno=0.2520451;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000170122;ExGeneSymbol=FOXD4;ExVarEff=missense_variant;ExVarHgvs=9:g.116931G>A;ExVarScore=0.9919146	GT:AD:DP:GQ:PL:VAF	0/1:22,18:40:42:42,0,57:0.45	0/0	0/1:15,20:35:44:45,0,50:0.571429
+10	16937678	.	G	T	50.50	inheritance	ExGeneSCombi=2.3253062E-5;ExGeneSPheno=0.25196758;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000107611;ExGeneSymbol=CUBN;ExVarEff=missense_variant;ExVarHgvs=10:g.16937678G>T;ExVarScore=0.99156916	GT:AD:DP:GQ:PL:VAF	0/1:22,25:48:37:38,0,42:0.520833	0/0	0/1:22,20:43:50:50,0,64:0.465116
+12	120641293	.	C	T	45.50	inheritance	ExGeneSCombi=2.3226597E-5;ExGeneSPheno=0.25185803;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000157782;ExGeneSymbol=CABP1;ExVarEff=missense_variant;ExVarHgvs=12:g.120641293C>T;ExVarScore=0.9987845	GT:AD:DP:GQ:PL:VAF	0/1:19,17:36:37:37,0,55:0.472222	0/0	0/1:15,23:38:45:45,0,52:0.605263
+16	30483943	.	T	C	50.40	inheritance	ExGeneSCombi=2.3220231E-5;ExGeneSPheno=0.25183165;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000005844;ExGeneSymbol=ITGAL;ExVarEff=missense_variant;ExVarHgvs=16:g.30483943T>C;ExVarScore=0.9972702	GT:AD:DP:GQ:PL:VAF	0/1:10,14:24:50:50,0,63:0.583333	0/0	0/1:22,25:47:49:50,0,55:0.531915
+2	107872584	.	AAAC	A	25.40	inheritance	ExGeneSCombi=2.3179757E-5;ExGeneSPheno=0.2516638;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000196862;ExGeneSymbol=RGPD4;ExVarEff=disruptive_inframe_deletion;ExVarHgvs=2:g.107872584AAAC>A;ExVarScore=0.9844761	GT:AD:DP:GQ:PL:VAF	0/1:16,10:26:19:18,0,37:0.384615	0/0	0/1:11,15:26:25:25,0,34:0.576923
+16	15753412	.	C	T	48.20	inheritance	ExGeneSCombi=2.3172326E-5;ExGeneSPheno=0.25163296;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000133392;ExGeneSymbol=MYH11;ExVarEff=missense_variant;ExVarHgvs=16:g.15753412C>T;ExVarScore=0.99458605	GT:AD:DP:GQ:PL:VAF	0/1:15,14:29:45:45,0,56:0.482759	0/0	0/1:21,23:44:48:48,0,60:0.522727
+12	323210	.	C	CA	8.70	inheritance	ExGeneSCombi=2.3127863E-5;ExGeneSPheno=0.25144818;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000073614;ExGeneSymbol=KDM5A;ExVarEff=splice_region_variant;ExVarHgvs=12:g.323210C>CA;ExVarScore=0.8871764	GT:AD:DP:GQ:PL:VAF	0/1:14,5:28:6:7,0,7:0.178571	0/0	0/1:17,3:27:5:5,0,6:0.111111
+1	36466434	.	C	T	40.90	inheritance	ExGeneSCombi=2.3122333E-5;ExGeneSPheno=0.25142518;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000119535;ExGeneSymbol=CSF3R;ExVarEff=missense_variant;ExVarHgvs=1:g.36466434C>T;ExVarScore=0.9916591	GT:AD:DP:GQ:PL:VAF	0/1:18,11:29:31:30,0,56:0.37931	0/0	0/1:18,16:36:41:40,0,58:0.444444
+20	391492	.	TG	T	46.80	inheritance	ExGeneSCombi=2.3089602E-5;ExGeneSPheno=0.2512889;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000101255;ExGeneSymbol=TRIB3;ExVarEff=frameshift_variant;ExVarHgvs=20:g.391492TG>T;ExVarScore=0.999794	GT:AD:DP:GQ:PL:VAF	0/1:16,18:34:47:46,0,65:0.529412	0/0	0/1:20,20:40:45:45,0,58:0.5
+17	7323939	.	G	A	46.60	inheritance	ExGeneSCombi=2.305131E-5;ExGeneSPheno=0.2511292;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215041;ExGeneSymbol=NEURL4;ExVarEff=synonymous_variant;ExVarHgvs=17:g.7323939G>A;ExVarScore=0.66767323	GT:AD:DP:GQ:PL:VAF	0/1:22,21:44:46:46,0,59:0.477273	0/0	0/1:22,17:40:41:41,0,57:0.425
+5	178986674	.	C	T	45.40	inheritance	ExGeneSCombi=2.302541E-5;ExGeneSPheno=0.25102106;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000113262;ExGeneSymbol=GRM6;ExVarEff=missense_variant;ExVarHgvs=5:g.178986674C>T;ExVarScore=0.9885609	GT:AD:DP:GQ:PL:VAF	0/1:11,15:26:44:45,0,48:0.576923	0/0	0/1:25,15:40:34:34,0,56:0.375
+17	16353172	.	G	A	29.70	inheritance	ExGeneSCombi=2.2982398E-5;ExGeneSPheno=0.25084117;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000166582;ExGeneSymbol=CENPV;ExVarEff=missense_variant;ExVarHgvs=17:g.16353172G>A;ExVarScore=0.9902623	GT:AD:DP:GQ:PL:VAF	0/1:16,17:33:30:29,0,48:0.515152	0/0	0/1:21,11:32:22:21,0,51:0.34375
+9	123381763	.	G	A	42.50	inheritance	ExGeneSCombi=2.29681E-5;ExGeneSPheno=0.2507813;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000119522;ExGeneSymbol=DENND1A;ExVarEff=missense_variant;ExVarHgvs=9:g.123381763G>A;ExVarScore=0.9965146	GT:AD:DP:GQ:PL:VAF	0/1:13,13:27:40:40,0,55:0.481481	0/0	0/1:16,21:37:42:42,0,56:0.567568
+4	38827201	.	C	T	49.50	inheritance	ExGeneSCombi=2.2949665E-5;ExGeneSPheno=0.25070405;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000174130;ExGeneSymbol=TLR6;ExVarEff=missense_variant;ExVarHgvs=4:g.38827201C>T;ExVarScore=0.9560437	GT:AD:DP:GQ:PL:VAF	0/1:16,15:31:41:41,0,52:0.483871	0/0	0/1:14,20:34:47:49,0,51:0.588235
+1	41484166	.	C	T	46.90	inheritance	ExGeneSCombi=2.2932461E-5;ExGeneSPheno=0.2506319;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000127129;ExGeneSymbol=EDN2;ExVarEff=synonymous_variant;ExVarHgvs=1:g.41484166C>T;ExVarScore=0.026726862	GT:AD:DP:GQ:PL:VAF	0/1:9,19:28:43:46,0,45:0.678571	0/0	0/1:26,15:41:34:34,0,56:0.365854
+12	56717076	.	G	A	40.80	inheritance	ExGeneSCombi=2.2920693E-5;ExGeneSPheno=0.25058252;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000196531;ExGeneSymbol=NACA;ExVarEff=missense_variant;ExVarHgvs=12:g.56717076G>A;ExVarScore=0.9922839	GT:AD:DP:GQ:PL:VAF	0/1:10,5:16:33:32,0,46:0.3125	0/0	0/1:12,12:24:41:40,0,56:0.5
+2	87783164	.	C	A	10.50	inheritance	ExGeneSCombi=2.2912485E-5;ExGeneSPheno=0.25054806;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000185304;ExGeneSymbol=RGPD2;ExVarEff=missense_variant;ExVarHgvs=2:g.87783164C>A;ExVarScore=0.9926409	GT:AD:DP:GQ:PL:VAF	0/1:3,2:5:10:10,0,18:0.4	0/0	0/1:1,2:3:4:3,0,5:0.666667
+7	141764543	.	G	T	47.70	inheritance	ExGeneSCombi=2.29071E-5;ExGeneSPheno=0.25052544;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000127362;ExGeneSymbol=TAS2R3;ExVarEff=missense_variant;ExVarHgvs=7:g.141764543G>T;ExVarScore=0.9949715	GT:AD:DP:GQ:PL:VAF	0/1:26,22:48:46:45,0,64:0.458333	0/0	0/1:12,24:36:44:47,0,47:0.666667
+17	4545709	.	C	A	47.70	inheritance	ExGeneSCombi=2.2894508E-5;ExGeneSPheno=0.25047255;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000132382;ExGeneSymbol=MYBBP1A;ExVarEff=synonymous_variant;ExVarHgvs=17:g.4545709C>A;ExVarScore=0.85962087	GT:AD:DP:GQ:PL:VAF	0/1:18,16:34:38:38,0,46:0.470588	0/0	0/1:15,21:37:47:47,0,58:0.567568
+4	154544463	.	T	C	43.60	inheritance	ExGeneSCombi=2.289265E-5;ExGeneSPheno=0.25046474;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000171566;ExGeneSymbol=PLRG1;ExVarEff=synonymous_variant;ExVarHgvs=4:g.154544463T>C;ExVarScore=0.9776902	GT:AD:DP:GQ:PL:VAF	0/1:18,17:35:44:43,0,61:0.485714	0/0	0/1:17,13:30:44:43,0,62:0.433333
+3	125055776	.	G	C	37	inheritance	ExGeneSCombi=2.2873106E-5;ExGeneSPheno=0.25038257;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000173706;ExGeneSymbol=HEG1;ExVarEff=missense_variant;ExVarHgvs=3:g.125055776G>C;ExVarScore=0.9842602	GT:AD:DP:GQ:PL:VAF	0/1:14,15:29:36:35,0,58:0.517241	0/0	0/1:16,19:35:37:36,0,56:0.542857
+12	882055	.	A	C	47.20	inheritance	ExGeneSCombi=2.2870223E-5;ExGeneSPheno=0.25037044;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000060237;ExGeneSymbol=WNK1;ExVarEff=synonymous_variant;ExVarHgvs=12:g.882055A>C;ExVarScore=0.90203166	GT:AD:DP:GQ:PL:VAF	0/1:13,27:40:42:47,0,44:0.675	0/0	0/1:23,14:37:30:30,0,48:0.378378
+19	54743789	.	C	CT	39.80	inheritance	ExGeneSCombi=2.2853084E-5;ExGeneSPheno=0.25029832;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000243772;ExGeneSymbol=KIR2DL3;ExVarEff=splice_region_variant;ExVarHgvs=19:g.54743789C>CT;ExVarScore=0.782782	GT:AD:DP:GQ:PL:VAF	1/1:2,16:19:35:39,37,0:0.842105	0/1:22,20:43:29:29,0,44:0.465116	1/1:2,33:35:33:34,38,0:0.942857
+19	54773534	.	C	A	30.70	inheritance	ExGeneSCombi=2.284755E-5;ExGeneSPheno=0.25027502;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000125498;ExGeneSymbol=KIR2DL1;ExVarEff=missense_variant;ExVarHgvs=19:g.54773534C>A;ExVarScore=0.91505533	GT:AD:DP:GQ:PL:VAF	0/1:34,14:48:31:30,0,56:0.291667	0/0	0/1:55,31:106:31:30,0,46:0.292453
+19	54773593	.	G	T	17.30	inheritance	ExGeneSCombi=2.284755E-5;ExGeneSPheno=0.25027502;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000125498;ExGeneSymbol=KIR2DL1;ExVarEff=missense_variant;ExVarHgvs=19:g.54773593G>T;ExVarScore=0.7077662	GT:AD:DP:GQ:PL:VAF	0/1:27,24:51:17:17,0,42:0.470588	0/0	0/1:40,59:99:16:15,0,41:0.59596
+19	54775370	.	C	T	36.40	inheritance	ExGeneSCombi=2.284755E-5;ExGeneSPheno=0.25027502;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000125498;ExGeneSymbol=KIR2DL1;ExVarEff=synonymous_variant;ExVarHgvs=19:g.54775370C>T;ExVarScore=0.0034196097	GT:AD:DP:GQ:PL:VAF	0/1:39,16:55:6:4,0,38:0.290909	0/0	0/1:50,70:126:30:36,0,31:0.555556
+19	54775344	.	G	A	22.40	inheritance	ExGeneSCombi=2.284755E-5;ExGeneSPheno=0.25027502;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000125498;ExGeneSymbol=KIR2DL1;ExVarEff=missense_variant;ExVarHgvs=19:g.54775344G>A;ExVarScore=0.8731583	GT:AD:DP:GQ:PL:VAF	0/1:42,17:59:14:13,0,37:0.288136	0/0	0/1:54,62:117:22:22,0,29:0.529915
+19	54775329	.	G	A	17.90	inheritance	ExGeneSCombi=2.284755E-5;ExGeneSPheno=0.25027502;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000125498;ExGeneSymbol=KIR2DL1;ExVarEff=missense_variant;ExVarHgvs=19:g.54775329G>A;ExVarScore=0.977905	GT:AD:DP:GQ:PL:VAF	0/1:35,27:62:18:17,0,28:0.435484	0/0	0/1:97,21:118:18:17,0,35:0.177966
+3	169828833	.	G	A	48.50	inheritance	ExGeneSCombi=2.2803315E-5;ExGeneSPheno=0.25008857;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000188306;ExGeneSymbol=LRRIQ4;ExVarEff=synonymous_variant;ExVarHgvs=3:g.169828833G>A;ExVarScore=0.7671535	GT:AD:DP:GQ:PL:VAF	0/1:10,18:28:42:42,0,56:0.642857	0/0	0/1:23,25:48:48:48,0,65:0.520833
+17	36166065	.	C	T	40.20	inheritance	ExGeneSCombi=2.2798074E-5;ExGeneSPheno=0.25006646;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000274808;ExGeneSymbol=TBC1D3B;ExVarEff=missense_variant;ExVarHgvs=17:g.36166065C>T;ExVarScore=0.98825103	GT:AD:DP:GQ:PL:VAF	1/1:0,12:12:33:40,33,0:1	0/1:9,8:17:18:17,0,33:0.470588	1/1:0,19:20:36:37,41,0:0.95
+17	36435803	.	G	T	19.30	inheritance	ExGeneSCombi=2.2797538E-5;ExGeneSPheno=0.2500642;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000275954;ExGeneSymbol=TBC1D3F;ExVarEff=missense_variant;ExVarHgvs=17:g.36435803G>T;ExVarScore=1.0	GT:AD:DP:GQ:PL:VAF	0/1:16,12:28:19:19,0,27:0.428571	0/0	0/1:5,9:14:4:16,0,1:0.642857
+11	117228294	.	A	G	51.20	inheritance	ExGeneSCombi=2.2797163E-5;ExGeneSPheno=0.2500626;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000160613;ExGeneSymbol=PCSK7;ExVarEff=synonymous_variant;ExVarHgvs=11:g.117228294A>G;ExVarScore=0.9885844	GT:AD:DP:GQ:PL:VAF	0/1:7,13:20:48:51,0,51:0.65	0/0	0/1:26,17:43:41:41,0,68:0.395349
+15	54012972	.	A	G	45.40	inheritance	ExGeneSCombi=2.279289E-5;ExGeneSPheno=0.25004458;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000137766;ExGeneSymbol=UNC13C;ExVarEff=synonymous_variant;ExVarHgvs=15:g.54012972A>G;ExVarScore=0.9470576	GT:AD:DP:GQ:PL:VAF	0/1:38,21:59:41:41,0,58:0.355932	0/0	0/1:21,20:42:45:45,0,64:0.47619
+19	49740189	.	G	A	51.10	inheritance	ExGeneSCombi=2.2791452E-5;ExGeneSPheno=0.2500385;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000126467;ExGeneSymbol=TSKS;ExVarEff=splice_region_variant;ExVarHgvs=19:g.49740189G>A;ExVarScore=0.96702033	GT:AD:DP:GQ:PL:VAF	0/1:27,19:46:50:51,0,58:0.413043	0/0	0/1:20,17:37:48:48,0,55:0.459459
+2	102009638	.	G	C	51.70	inheritance	ExGeneSCombi=2.2791197E-5;ExGeneSPheno=0.25003743;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000115590;ExGeneSymbol=IL1R2;ExVarEff=synonymous_variant;ExVarHgvs=2:g.102009638G>C;ExVarScore=0.8622456	GT:AD:DP:GQ:PL:VAF	0/1:18,24:42:50:51,0,56:0.571429	0/0	0/1:18,14:32:41:40,0,62:0.4375
+12	111756411	.	G	A	51.60	inheritance	ExGeneSCombi=2.2790999E-5;ExGeneSPheno=0.2500366;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000111271;ExGeneSymbol=ACAD10;ExVarEff=missense_variant;ExVarHgvs=12:g.111756411G>A;ExVarScore=0.9887478	GT:AD:DP:GQ:PL:VAF	0/1:20,14:34:41:41,0,61:0.411765	0/0	0/1:19,23:42:50:51,0,56:0.547619
+18	32204318	.	C	T	48	inheritance	ExGeneSCombi=2.2790851E-5;ExGeneSPheno=0.25003597;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000141434;ExGeneSymbol=MEP1B;ExVarEff=missense_variant;ExVarHgvs=18:g.32204318C>T;ExVarScore=0.99679893	GT:AD:DP:GQ:PL:VAF	0/1:12,15:27:48:48,0,60:0.555556	0/0	0/1:15,17:33:45:45,0,50:0.515152
+16	20419282	.	G	A	44.50	inheritance	ExGeneSCombi=2.2786488E-5;ExGeneSPheno=0.25001755;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000183549;ExGeneSymbol=ACSM5;ExVarEff=missense_variant;ExVarHgvs=16:g.20419282G>A;ExVarScore=0.9972702	GT:AD:DP:GQ:PL:VAF	0/1:21,24:45:44:44,0,64:0.533333	0/0	0/1:16,17:33:41:41,0,53:0.515152
+3	133945240	.	G	A	47.30	inheritance	ExGeneSCombi=2.278514E-5;ExGeneSPheno=0.25001186;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000174640;ExGeneSymbol=SLCO2A1;ExVarEff=missense_variant;ExVarHgvs=3:g.133945240G>A;ExVarScore=0.9536657	GT:AD:DP:GQ:PL:VAF	0/1:20,22:42:46:46,0,67:0.52381	0/0	0/1:22,22:44:47:47,0,58:0.5
+10	46462341	.	C	A	8.80	inheritance	ExGeneSCombi=2.2783637E-5;ExGeneSPheno=0.2500055;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000204174;ExGeneSymbol=NPY4R;ExVarEff=missense_variant;ExVarHgvs=10:g.46462341C>A;ExVarScore=0.984623	GT:AD:DP:GQ:PL:VAF	0/1:13,8:23:5:3,0,25:0.347826	0/0	0/1:19,12:31:9:8,0,27:0.387097
+16	21233821	.	G	A	47.60	inheritance	ExGeneSCombi=2.2783206E-5;ExGeneSPheno=0.2500037;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000175311;ExGeneSymbol=ANKS4B;ExVarEff=synonymous_variant;ExVarHgvs=16:g.21233821G>A;ExVarScore=0.903985	GT:AD:DP:GQ:PL:VAF	0/1:20,15:35:39:39,0,58:0.428571	0/0	0/1:23,22:45:48:47,0,65:0.488889
+12	94248366	.	G	T	43.10	inheritance	ExGeneSCombi=2.2782824E-5;ExGeneSPheno=0.2500021;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000136040;ExGeneSymbol=PLXNC1;ExVarEff=missense_variant;ExVarHgvs=12:g.94248366G>T;ExVarScore=0.9409307	GT:AD:DP:GQ:PL:VAF	0/1:27,17:44:35:34,0,57:0.386364	0/0	0/1:17,21:38:43:43,0,53:0.552632
+4	75521783	.	C	T	45.30	inheritance	ExGeneSCombi=2.2782331E-5;ExGeneSPheno=0.25;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000174796;ExGeneSymbol=THAP6;ExVarEff=synonymous_variant;ExVarHgvs=4:g.75521783C>T;ExVarScore=0.80397874	GT:AD:DP:GQ:PL:VAF	0/1:17,20:37:45:45,0,54:0.540541	0/0	0/1:24,22:47:44:43,0,59:0.468085
+3	56619843	.	T	C	53	inheritance	ExGeneSCombi=1.6565391E-5;ExGeneSPheno=0.2193419;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000180376;ExGeneSymbol=CCDC66;ExVarEff=missense_variant;ExVarHgvs=3:g.56619843T>C;ExVarScore=0.98919207	GT:AD:DP:GQ:PL:VAF	0/1:14,19:33:53:52,0,66:0.575758	0/0	0/1:19,25:44:51:50,0,66:0.568182
+19	39886355	.	C	T	8.10	inheritance	ExGeneSCombi=1.3285288E-5;ExGeneSPheno=0.19811323;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000275395;ExGeneSymbol=FCGBP;ExVarEff=synonymous_variant;ExVarHgvs=19:g.39886355C>T;ExVarScore=0.052602082	GT:AD:DP:GQ:PL:VAF	0/1:53,36:89:8:7,0,31:0.404494	0/0	0/1:56,24:80:4:1,0,27:0.3
+19	39886439	.	A	G	24	inheritance	ExGeneSCombi=1.3285288E-5;ExGeneSPheno=0.19811323;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000275395;ExGeneSymbol=FCGBP;ExVarEff=synonymous_variant;ExVarHgvs=19:g.39886439A>G;ExVarScore=0.7371188	GT:AD:DP:GQ:PL:VAF	0/1:45,21:66:9:7,0,34:0.318182	0/0	0/1:36,24:60:24:24,0,39:0.4
+16	58543423	.	A	C	41.20	inheritance	ExGeneSCombi=1.1239479E-5;ExGeneSPheno=0.18202524;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000125107;ExGeneSymbol=CNOT1;ExVarEff=missense_variant;ExVarHgvs=16:g.58543423A>C;ExVarScore=0.987412	GT:AD:DP:GQ:PL:VAF	0/1:23,16:39:38:38,0,52:0.410256	0/0	0/1:16,17:33:41:41,0,58:0.515152
+17	80363278	.	A	C	41	inheritance	ExGeneSCombi=1.0795554E-5;ExGeneSPheno=0.17814833;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000173821;ExGeneSymbol=RNF213;ExVarEff=missense_variant;ExVarHgvs=17:g.80363278A>C;ExVarScore=0.965295	GT:AD:DP:GQ:PL:VAF	0/1:14,15:29:41:40,0,57:0.517241	0/0	0/1:15,12:27:41:40,0,62:0.444444
+7	73434381	.	T	G	38.70	inheritance	ExGeneSCombi=1.05860545E-5;ExGeneSPheno=0.176263;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000188763;ExGeneSymbol=FZD9;ExVarEff=missense_variant;ExVarHgvs=7:g.73434381T>G;ExVarScore=0.999978	GT:AD:DP:GQ:PL:VAF	0/1:16,10:26:33:33,0,63:0.384615	0/0	0/1:21,22:43:39:38,0,53:0.511628
+1	19643329	.	G	A	48.10	inheritance	ExGeneSCombi=9.14375E-6;ExGeneSPheno=0.16217206;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000158747;ExGeneSymbol=NBL1;ExVarEff=missense_variant;ExVarHgvs=1:g.19643329G>A;ExVarScore=0.91199696	GT:AD:DP:GQ:PL:VAF	0/1:16,13:29:39:39,0,63:0.448276	0/0	0/1:20,28:48:48:48,0,57:0.583333
+7	100960786	.	C	A	12.40	inheritance	ExGeneSCombi=8.895056E-6;ExGeneSPheno=0.15951921;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169894;ExGeneSymbol=MUC3A;ExVarEff=synonymous_variant;ExVarHgvs=7:g.100960786C>A;ExVarScore=0.6018928	GT:AD:DP:GQ:PL:VAF	0/1:54,30:84:12:12,0,33:0.357143	0/0	0/1:55,18:73:10:9,0,29:0.246575
+7	100965345	.	C	A	16.20	inheritance	ExGeneSCombi=8.895056E-6;ExGeneSPheno=0.15951921;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169894;ExGeneSymbol=MUC3A;ExVarEff=missense_variant;ExVarHgvs=7:g.100965345C>A;ExVarScore=0.9745903	GT:AD:DP:GQ:PL:VAF	0/1:31,39:70:16:16,0,42:0.557143	0/0	0/1:36,38:74:12:12,0,43:0.513514
+7	100965350	.	A	G	24.10	inheritance	ExGeneSCombi=8.895056E-6;ExGeneSPheno=0.15951921;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000169894;ExGeneSymbol=MUC3A;ExVarEff=splice_region_variant;ExVarHgvs=7:g.100965350A>G;ExVarScore=0.9644369	GT:AD:DP:GQ:PL:VAF	0/1:31,37:68:13:13,0,48:0.544118	0/0	0/1:37,39:78:24:24,0,53:0.5
+20	25342103	.	CA	C	32.90	inheritance	ExGeneSCombi=8.23964E-6;ExGeneSPheno=0.15215574;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000100997;ExGeneSymbol=ABHD12;ExVarEff=splice_region_variant;ExVarHgvs=20:g.25342103CA>C;ExVarScore=0.8	GT:AD:DP:GQ:PL:VAF	1/1:2,30:36:27:32,28,0:0.833333	0/1:20,9:35:20:20,0,38:0.257143	1/1:8,22:34:22:30,22,0:0.647059
+10	122837549	.	G	C	50.80	inheritance	ExGeneSCombi=5.8166142E-6;ExGeneSPheno=0.118653364;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000138161;ExGeneSymbol=CUZD1;ExVarEff=missense_variant;ExVarHgvs=10:g.122837549G>C;ExVarScore=0.9675664	GT:AD:DP:GQ:PL:VAF	0/1:14,20:34:49:50,0,54:0.588235	0/0	0/1:18,18:36:44:44,0,56:0.5
+1	12894694	.	C	T	9.40	inheritance	ExGeneSCombi=5.1615502E-6;ExGeneSPheno=0.10715864;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000187545;ExGeneSymbol=PRAMEF10;ExVarEff=stop_gained;ExVarHgvs=1:g.12894694C>T;ExVarScore=0.9952072	GT:AD:DP:GQ:PL:VAF	0/1:16,10:26:9:8,0,30:0.384615	0/0	0/1:7,9:16:9:8,0,22:0.5625
+1	13281806	.	C	T	22.90	inheritance	ExGeneSCombi=5.1615502E-6;ExGeneSPheno=0.10715864;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000182330;ExGeneSymbol=PRAMEF8;ExVarEff=synonymous_variant;ExVarHgvs=1:g.13281806C>T;ExVarScore=0.6254585	GT:AD:DP:GQ:PL:VAF	0/1:17,19:36:22:22,0,28:0.527778	0/0	0/1:25,17:42:20:19,0,33:0.404762
+8	143866876	.	C	T	46.80	inheritance	ExGeneSCombi=4.2455363E-6;ExGeneSPheno=0.08836317;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000261150;ExGeneSymbol=EPPK1;ExVarEff=synonymous_variant;ExVarHgvs=8:g.143866876C>T;ExVarScore=0.18609838	GT:AD:DP:GQ:PL:VAF	0/1:17,19:36:44:43,0,61:0.527778	0/0	0/1:16,18:34:47:46,0,59:0.529412
+15	22774667	.	G	A	21.30	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000259425;ExGeneSymbol=AC011767.1;ExVarEff=splice_region_variant;ExVarHgvs=15:g.22774667G>A;ExVarScore=0.8	GT:AD:DP:GQ:PL:VAF	0/1:22,6:28:8:7,0,43:0.214286	0/0	0/1:29,24:53:21:21,0,30:0.45283
+8	84163656	.	CT	CTT,C	25.10	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000253362;ExGeneSymbol=AC012400.1;ExVarEff=splice_region_variant;ExVarHgvs=8:g.84163656C>CT;ExVarScore=0.8	GT:AD:DP:GQ:PL:VAF	0/1:.:31:19:.:0.258065,.	0/0	2/1:23,7,5:42:10:24,12,25,12,0,27:0.166667,0.119048
+10	48025898	.	T	C	11	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000265018;ExGeneSymbol=AGAP12P;ExVarEff=splice_region_variant;ExVarHgvs=10:g.48025898T>C;ExVarScore=0.9609159	GT:AD:DP:GQ:PL:VAF	0/1:2,2:4:7:8,0,9:0.5	0/0	0/1:6,12:18:7:10,0,9:0.666667
+11	65025779	.	CT	C	12.60	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000270775;ExGeneSymbol=AP000436.1;ExVarEff=splice_region_variant;ExVarHgvs=11:g.65025779CT>C;ExVarScore=0.82372123	GT:AD:DP:GQ:PL:VAF	0/1:21,15:39:12:11,0,35:0.384615	0/0	0/1:18,18:38:12:12,0,28:0.473684
+9	26887352	.	T	C	47.90	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000120159;ExGeneSymbol=CAAP1;ExVarEff=synonymous_variant;ExVarHgvs=9:g.26887352T>C;ExVarScore=0.9414473	GT:AD:DP:GQ:PL:VAF	0/1:15,29:45:46:47,0,49:0.644444	0/0	0/1:21,27:48:47:47,0,70:0.5625
+1	200852612	.	AAAGGAAACT	A	45.70	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000118200;ExGeneSymbol=CAMSAP2;ExVarEff=inframe_deletion;ExVarHgvs=1:g.200852612AAAGGAAACT>A;ExVarScore=0.9942269	GT:AD:DP:GQ:PL:VAF	0/1:18,19:38:46:45,0,65:0.5	0/0	0/1:24,20:44:44:44,0,64:0.454545
+7	75017680	.	C	T	46.60	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000274070;ExGeneSymbol=CASTOR2;ExVarEff=synonymous_variant;ExVarHgvs=7:g.75017680C>T;ExVarScore=0.94353443	GT:AD:DP:GQ:PL:VAF	0/1:22,13:35:33:33,0,57:0.371429	0/0	0/1:18,23:41:46:46,0,54:0.560976
+9	68256920	.	G	C	17.20	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000196873;ExGeneSymbol=CBWD3;ExVarEff=splice_acceptor_variant;ExVarHgvs=9:g.68256920G>C;ExVarScore=1.0	GT:AD:DP:GQ:PL:VAF	0/1:18,16:34:17:17,0,27:0.470588	0/0	0/1:15,9:24:3:0,0,22:0.375
+9	65682859	.	T	C	17.70	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000147996;ExGeneSymbol=CBWD5;ExVarEff=splice_donor_variant;ExVarHgvs=9:g.65682859T>C;ExVarScore=1.0	GT:AD:DP:GQ:PL:VAF	0/1:15,9:24:18:17,0,31:0.375	0/0	0/1:14,8:22:13:12,0,32:0.363636
+4	76334169	.	T	C	48	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000163749;ExGeneSymbol=CCDC158;ExVarEff=splice_acceptor_variant;ExVarHgvs=4:g.76334169T>C;ExVarScore=0.9972702	GT:AD:DP:GQ:PL:VAF	0/1:21,12:33:41:40,0,64:0.363636	0/0	0/1:16,23:40:47:47,0,53:0.575
+9	136292176	.	G	A	48	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000260220;ExGeneSymbol=CCDC187;ExVarEff=missense_variant;ExVarHgvs=9:g.136292176G>A;ExVarScore=0.9814647	GT:AD:DP:GQ:PL:VAF	0/1:16,21:37:47:48,0,56:0.567568	0/0	0/1:19,20:39:40:40,0,47:0.512821
+17	36212342	.	C	G	55	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000276070;ExGeneSymbol=CCL4L2;ExVarEff=missense_variant;ExVarHgvs=17:g.36212342C>G;ExVarScore=0.470946	GT:AD:DP:GQ:PL:VAF	1/1:0,41:41:54:54,60,0:1	0/1:15,23:38:53:54,0,57:0.605263	1/1:0,33:33:51:53,55,0:1
+19	3286015	.	G	A	46.70	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000161082;ExGeneSymbol=CELF5;ExVarEff=synonymous_variant;ExVarHgvs=19:g.3286015G>A;ExVarScore=0.98794144	GT:AD:DP:GQ:PL:VAF	0/1:8,14:22:46:46,0,52:0.636364	0/0	0/1:7,15:22:35:43,0,35:0.681818
+2	55519825	.	G	C	49.10	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000163001;ExGeneSymbol=CFAP36;ExVarEff=missense_variant;ExVarHgvs=2:g.55519825G>C;ExVarScore=0.98611677	GT:AD:DP:GQ:PL:VAF	0/1:13,17:30:49:49,0,62:0.566667	0/0	0/1:29,22:51:44:43,0,60:0.431373
+15	20282975	.	G	GTGAA	25.40	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000259156;ExGeneSymbol=CHEK2P2;ExVarEff=splice_donor_variant;ExVarHgvs=15:g.20282975G>GTGAA;ExVarScore=1.0	GT:AD:DP:GQ:PL:VAF	0/1:34,22:57:25:25,0,51:0.385965	0/0	0/1:72,37:111:23:23,0,46:0.333333
+19	7731666	.	G	A	49.80	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000182566;ExGeneSymbol=CLEC4G;ExVarEff=missense_variant;ExVarHgvs=19:g.7731666G>A;ExVarScore=0.9962633	GT:AD:DP:GQ:PL:VAF	0/1:12,19:31:49:49,0,57:0.612903	0/0	0/1:18,15:33:41:41,0,62:0.454545
+19	1278863	.	T	C	47	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000228300;ExGeneSymbol=FAM174C;ExVarEff=missense_variant;ExVarHgvs=19:g.1278863T>C;ExVarScore=0.22429447	GT:AD:DP:GQ:PL:VAF	0/1:23,21:44:47:47,0,64:0.477273	0/0	0/1:17,17:34:46:45,0,58:0.5
+10	47762988	.	G	A	23.10	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000277758;ExGeneSymbol=FO681492.1;ExVarEff=missense_variant;ExVarHgvs=10:g.47762988G>A;ExVarScore=0.78772444	GT:AD:DP:GQ:PL:VAF	0/1:17,8:25:17:17,0,36:0.32	0/0	0/1:14,14:28:23:23,0,32:0.5
+9	63842823	.	CCTT	C	21.90	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000215548;ExGeneSymbol=FRG1JP;ExVarEff=splice_region_variant;ExVarHgvs=9:g.63842823CCTT>C;ExVarScore=0.9765037	GT:AD:DP:GQ:PL:VAF	0/1:28,20:48:22:21,0,45:0.416667	0/0	0/1:39,12:51:3:0,0,31:0.235294
+3	75665865	.	T	C	6.80	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000172969;ExGeneSymbol=FRG2C;ExVarEff=synonymous_variant;ExVarHgvs=3:g.75665865T>C;ExVarScore=0.8184902	GT:AD:DP:GQ:PL:VAF	0/1:62,16:78:7:5,0,28:0.205128	0/0	0/1:71,12:84:6:4,0,25:0.142857
+3	75665948	.	T	A	22.50	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000172969;ExGeneSymbol=FRG2C;ExVarEff=missense_variant;ExVarHgvs=3:g.75665948T>A;ExVarScore=0.9214764	GT:AD:DP:GQ:PL:VAF	0/1:29,38:67:22:22,0,40:0.567164	0/0	0/1:34,41:75:13:12,0,40:0.546667
+15	82431921	.	C	T	52.20	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000197978;ExGeneSymbol=GOLGA6L9;ExVarEff=missense_variant;ExVarHgvs=15:g.82431921C>T;ExVarScore=0.9850721	GT:AD:DP:GQ:PL:VAF	1/1:0,10:10:27:41,27,0:1	0/1:15,29:45:44:47,0,47:0.644444	1/1:0,25:25:51:52,56,0:1
+15	82434369	.	G	A	26.90	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000197978;ExGeneSymbol=GOLGA6L9;ExVarEff=missense_variant;ExVarHgvs=15:g.82434369G>A;ExVarScore=0.92056715	GT:AD:DP:GQ:PL:VAF	0/1:22,15:38:27:26,0,37:0.394737	0/0	0/1:32,12:44:11:10,0,40:0.272727
+10	46549695	.	C	A	33.30	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000204175;ExGeneSymbol=GPRIN2;ExVarEff=missense_variant;ExVarHgvs=10:g.46549695C>A;ExVarScore=0.99465317	GT:AD:DP:GQ:PL:VAF	0/1:39,19:58:11:10,0,33:0.327586	0/0	0/1:34,46:80:33:33,0,44:0.575
+10	46554580	.	G	A	52.70	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000204175;ExGeneSymbol=GPRIN2;ExVarEff=splice_region_variant;ExVarHgvs=10:g.46554580G>A;ExVarScore=0.8	GT:AD:DP:GQ:PL:VAF	0/1:45,45:91:46:46,0,58:0.494505	0/0	0/1:34,61:95:45:52,0,45:0.642105
+22	23998678	.	T	C	11	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000276950;ExGeneSymbol=GSTT4;ExVarEff=missense_variant;ExVarHgvs=22:g.23998678T>C;ExVarScore=0.9830956	GT:AD:DP:GQ:PL:VAF	0/1:38,32:70:6:4,0,33:0.457143	0/0	0/1:36,27:63:11:10,0,45:0.428571
+7	73179276	.	ACT	A	9.80	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000233369;ExGeneSymbol=GTF2IP4;ExVarEff=splice_region_variant;ExVarHgvs=7:g.73179276ACT>A;ExVarScore=0.9009168	GT:AD:DP:GQ:PL:VAF	0/1:16,6:22:4:1,0,32:0.272727	0/0	0/1:10,7:17:10:9,0,32:0.411765
+7	74798013	.	G	A	5	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000196275;ExGeneSymbol=GTF2IRD2;ExVarEff=missense_variant;ExVarHgvs=7:g.74798013G>A;ExVarScore=0.98923534	GT:AD:DP:GQ:PL:VAF	0/1:17,4:23:4:1,0,30:0.173913	0/0	0/1:17,4:21:5:3,0,37:0.190476
+14	106762382	.	C	G	24.10	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000280411;ExGeneSymbol=IGHV1-69D;ExVarEff=synonymous_variant;ExVarHgvs=14:g.106762382C>G;ExVarScore=0.115088165	GT:AD:DP:GQ:PL:VAF	0/1:7,10:17:20:24,0,21:0.588235	0/0	0/1:9,6:15:17:17,0,33:0.4
+22	22201974	.	T	C	55.10	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000211641;ExGeneSymbol=IGLV11-55;ExVarEff=missense_variant;ExVarHgvs=22:g.22201974T>C;ExVarScore=0.916054	GT:AD:DP:GQ:PL:VAF	0/1:13,10:23:43:43,0,63:0.434783	0/0	0/1:15,18:34:55:55,0,69:0.529412
+22	22353209	.	G	C	30	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000211647;ExGeneSymbol=IGLV5-48;ExVarEff=missense_variant;ExVarHgvs=22:g.22353209G>C;ExVarScore=0.9370494	GT:AD:DP:GQ:PL:VAF	1/1:11,35:47:3:22,0,0:0.744681	0/1:12,20:33:14:29,0,14:0.606061	1/1:9,41:50:6:19,4,0:0.82
+22	22353228	.	A	T	31.80	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000211647;ExGeneSymbol=IGLV5-48;ExVarEff=missense_variant;ExVarHgvs=22:g.22353228A>T;ExVarScore=2.3025274E-4	GT:AD:DP:GQ:PL:VAF	1/1:8,37:46:17:30,16,0:0.804348	0/1:9,21:30:8:30,0,7:0.7	1/1:7,40:47:14:28,13,0:0.851064
+19	54835079	.	G	C	22.20	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000221957;ExGeneSymbol=KIR2DS4;ExVarEff=missense_variant;ExVarHgvs=19:g.54835079G>C;ExVarScore=0.9898375	GT:AD:DP:GQ:PL:VAF	0/1:14,2:16:8:6,0,36:0.125	0/0	0/1:10,4:14:22:22,0,32:0.285714
+19	54847788	.	AAC	A	16.20	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000221957;ExGeneSymbol=KIR2DS4;ExVarEff=frameshift_truncation;ExVarHgvs=19:g.54847788AAC>A;ExVarScore=1.0	GT:AD:DP:GQ:PL:VAF	0/1:64,16:80:12:12,0,41:0.2	0/0	0/1:121,29:150:16:16,0,43:0.193333
+19	54631632	.	C	T	44	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000104972;ExGeneSymbol=LILRB1;ExVarEff=missense_variant;ExVarHgvs=19:g.54631632C>T;ExVarScore=0.009624243	GT:AD:DP:GQ:PL:VAF	1/1:0,48:48:43:44,50,0:1	0/1:16,31:47:24:24,0,31:0.659574	1/1:0,74:75:43:43,50,0:0.986667
+19	54631288	.	C	A	44.10	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000104972;ExGeneSymbol=LILRB1;ExVarEff=synonymous_variant;ExVarHgvs=19:g.54631288C>A;ExVarScore=0.6609217	GT:AD:DP:GQ:PL:VAF	1/1:1,30:31:38:38,53,0:0.967742	0/1:13,23:36:43:44,0,48:0.638889	1/1:0,40:40:39:38,51,0:1
+19	54222365	.	G	C	23.80	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000204577;ExGeneSymbol=LILRB3;ExVarEff=missense_variant;ExVarHgvs=19:g.54222365G>C;ExVarScore=0.013720512	GT:AD:DP:GQ:PL:VAF	0/1:33,25:58:24:23,0,49:0.431034	0/0	0/1:35,29:64:19:19,0,49:0.453125
+19	54222457	.	T	C	15	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000204577;ExGeneSymbol=LILRB3;ExVarEff=missense_variant;ExVarHgvs=19:g.54222457T>C;ExVarScore=2.3025274E-4	GT:AD:DP:GQ:PL:VAF	0/1:30,30:60:12:11,0,32:0.5	0/0	0/1:32,32:64:15:14,0,37:0.5
+5	191754	.	C	T	43.20	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000185028;ExGeneSymbol=LRRC14B;ExVarEff=synonymous_variant;ExVarHgvs=5:g.191754C>T;ExVarScore=0.8416332	GT:AD:DP:GQ:PL:VAF	0/1:13,18:31:42:43,0,50:0.580645	0/0	0/1:18,13:31:38:38,0,57:0.419355
+7	78168010	.	G	A	42.30	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000187391;ExGeneSymbol=MAGI2;ExVarEff=synonymous_variant;ExVarHgvs=7:g.78168010G>A;ExVarScore=0.87104535	GT:AD:DP:GQ:PL:VAF	0/1:23,13:36:32:32,0,57:0.361111	0/0	0/1:18,15:33:42:42,0,55:0.454545
+9	136856983	.	G	A	44.40	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000177943;ExGeneSymbol=MAMDC4;ExVarEff=synonymous_variant;ExVarHgvs=9:g.136856983G>A;ExVarScore=0.034521736	GT:AD:DP:GQ:PL:VAF	0/1:11,20:32:43:44,0,49:0.625	0/0	0/1:16,9:26:26:25,0,50:0.346154
+1	24075462	.	G	A	48.90	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000142661;ExGeneSymbol=MYOM3;ExVarEff=synonymous_variant;ExVarHgvs=1:g.24075462G>A;ExVarScore=0.9371649	GT:AD:DP:GQ:PL:VAF	0/1:26,23:49:48:47,0,67:0.469388	0/0	0/1:22,20:42:49:48,0,59:0.47619
+1	148126846	.	T	C	37.30	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000263956;ExGeneSymbol=NBPF11;ExVarEff=missense_variant;ExVarHgvs=1:g.148126846T>C;ExVarScore=0.96673405	GT:AD:DP:GQ:PL:VAF	0/1:19,13:32:37:37,0,53:0.40625	0/0	0/1:15,11:26:35:35,0,50:0.423077
+1	148120602	.	C	T	36.30	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000263956;ExGeneSymbol=NBPF11;ExVarEff=missense_variant;ExVarHgvs=1:g.148120602C>T;ExVarScore=0.85724217	GT:AD:DP:GQ:PL:VAF	0/1:13,16:29:36:36,0,52:0.551724	0/0	0/1:23,16:39:34:34,0,61:0.410256
+1	148120603	.	A	G	38.30	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000263956;ExGeneSymbol=NBPF11;ExVarEff=missense_variant;ExVarHgvs=1:g.148120603A>G;ExVarScore=0.70351684	GT:AD:DP:GQ:PL:VAF	0/1:12,17:30:38:38,0,48:0.566667	0/0	0/1:23,15:39:35:35,0,60:0.384615
+1	146988091	.	A	G	17.40	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000268043;ExGeneSymbol=NBPF12;ExVarEff=missense_variant;ExVarHgvs=1:g.146988091A>G;ExVarScore=0.9803664	GT:AD:DP:GQ:PL:VAF	0/1:17,20:37:17:17,0,35:0.540541	0/0	0/1:42,14:58:4:2,0,26:0.241379
+1	148559961	.	T	C	34.70	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000270629;ExGeneSymbol=NBPF14;ExVarEff=missense_variant;ExVarHgvs=1:g.148559961T>C;ExVarScore=0.946173	GT:AD:DP:GQ:PL:VAF	0/1:24,17:41:32:31,0,46:0.414634	0/0	0/1:32,14:46:35:34,0,54:0.304348
+1	148593602	.	G	A	34.90	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000270629;ExGeneSymbol=NBPF14;ExVarEff=missense_variant;ExVarHgvs=1:g.148593602G>A;ExVarScore=0.9838935	GT:AD:DP:GQ:PL:VAF	0/1:15,18:33:34:34,0,43:0.545455	0/0	0/1:16,21:37:33:34,0,38:0.567568
+1	148559962	.	G	T	34.70	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000270629;ExGeneSymbol=NBPF14;ExVarEff=synonymous_variant;ExVarHgvs=1:g.148559962G>T;ExVarScore=0.22034943	GT:AD:DP:GQ:PL:VAF	0/1:24,18:42:29:28,0,44:0.428571	0/0	0/1:31,14:46:35:34,0,53:0.304348
+8	22315022	.	A	G	49.60	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000197181;ExGeneSymbol=PIWIL2;ExVarEff=splice_region_variant;ExVarHgvs=8:g.22315022A>G;ExVarScore=0.80619127	GT:AD:DP:GQ:PL:VAF	0/1:17,18:35:47:47,0,60:0.514286	0/0	0/1:21,25:47:49:49,0,58:0.531915
+1	146344411	.	T	A	44.10	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000270339;ExGeneSymbol=PPIAL4H;ExVarEff=missense_variant;ExVarHgvs=1:g.146344411T>A;ExVarScore=0.9942456	GT:AD:DP:GQ:PL:VAF	0/1:21,17:38:43:43,0,58:0.447368	0/0	0/1:23,23:46:44:44,0,60:0.5
+19	7869534	.	C	G	43.70	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000183248;ExGeneSymbol=PRR36;ExVarEff=synonymous_variant;ExVarHgvs=19:g.7869534C>G;ExVarScore=0.9568301	GT:AD:DP:GQ:PL:VAF	0/1:12,20:32:42:43,0,48:0.625	0/0	0/1:21,23:44:43:43,0,58:0.522727
+13	20747462	.	C	CTT,CTTT	35.70	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000233524;ExGeneSymbol=RANP8;ExVarEff=splice_region_variant;ExVarHgvs=13:g.20747462C>CTT;ExVarScore=0.8892612	GT:DP:GQ:VAF	1/1:35:8:0.142857,.	0/2:38:7:.,0.0789474	1/1:32:17:0.28125,.
+17	137637	.	G	A	18.90	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000268320;ExGeneSymbol=SCGB1C2;ExVarEff=missense_variant;ExVarHgvs=17:g.137637G>A;ExVarScore=0.99339306	GT:AD:DP:GQ:PL:VAF	0/1:11,5:16:17:18,0,20:0.3125	0/0	0/1:10,9:19:9:17,0,8:0.473684
+11	124649635	.	C	T	46.50	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000110013;ExGeneSymbol=SIAE;ExVarEff=missense_variant;ExVarHgvs=11:g.124649635C>T;ExVarScore=0.9972453	GT:AD:DP:GQ:PL:VAF	0/1:20,19:39:46:46,0,57:0.487179	0/0	0/1:25,15:40:34:33,0,57:0.375
+X	141241609	.	C	G	28.50	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000198573;ExGeneSymbol=SPANXC;ExVarEff=missense_variant;ExVarHgvs=23:g.141241609C>G;ExVarScore=0.76611626	GT:AD:DP:GQ:PL:VAF	1/1:1,9:10:16:28,16,0:0.9	0/1:18,5:23:14:14,0,35:0.217391	1/1:0,4:4:12:25,12,0:1
+9	66987715	.	G	A	30.20	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000275969;ExGeneSymbol=SPATA31A3;ExVarEff=missense_variant;ExVarHgvs=9:g.66987715G>A;ExVarScore=0.97289807	GT:AD:DP:GQ:PL:VAF	0/1:13,8:21:15:15,0,25:0.380952	0/0	0/1:5,17:22:10:29,0,10:0.772727
+9	66989082	.	C	A	18.80	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000275969;ExGeneSymbol=SPATA31A3;ExVarEff=synonymous_variant;ExVarHgvs=9:g.66989082C>A;ExVarScore=0.8338119	GT:AD:DP:GQ:PL:VAF	0/1:3,2:5:8:9,0,11:0.4	0/0	0/1:2,4:6:17:18,0,22:0.666667
+7	117129833	.	T	C	48.30	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000004866;ExGeneSymbol=ST7;ExVarEff=synonymous_variant;ExVarHgvs=7:g.117129833T>C;ExVarScore=0.9792063	GT:AD:DP:GQ:PL:VAF	0/1:25,23:48:44:43,0,59:0.479167	0/0	0/1:19,22:41:48:48,0,55:0.536585
+16	1228996	.	G	A	21.50	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000197253;ExGeneSymbol=TPSB2;ExVarEff=synonymous_variant;ExVarHgvs=16:g.1228996G>A;ExVarScore=0.34129474	GT:AD:DP:GQ:PL:VAF	0/1:3,5:9:9:18,0,8:0.555556	0/0	0/1:7,7:14:12:21,0,12:0.5
+7	142353283	.	G	A	46.60	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000282939;ExGeneSymbol=TRBV7-2;ExVarEff=missense_variant;ExVarHgvs=7:g.142353283G>A;ExVarScore=0.8908309	GT:AD:DP:GQ:PL:VAF	0/1:31,17:48:43:44,0,48:0.354167	0/0	0/1:39,23:62:45:46,0,49:0.370968
+6	112087425	.	A	C	48.40	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000074935;ExGeneSymbol=TUBE1;ExVarEff=missense_variant;ExVarHgvs=6:g.112087425A>C;ExVarScore=0.9906486	GT:AD:DP:GQ:PL:VAF	0/1:23,16:39:31:31,0,51:0.410256	0/0	0/1:15,22:37:48:48,0,55:0.594595
+2	218474816	.	C	T	46.20	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000135913;ExGeneSymbol=USP37;ExVarEff=missense_variant;ExVarHgvs=2:g.218474816C>T;ExVarScore=0.99726325	GT:AD:DP:GQ:PL:VAF	0/1:16,14:30:42:41,0,64:0.466667	0/0	0/1:29,24:53:46:46,0,55:0.45283
+20	298046	.	C	CCGG	31	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000247315;ExGeneSymbol=ZCCHC3;ExVarEff=disruptive_inframe_insertion;ExVarHgvs=20:g.298046C>CCGG;ExVarScore=0.967566	GT:AD:DP:GQ:PL:VAF	0/1:18,14:36:29:29,0,56:0.388889	0/0	0/1:13,19:34:31:30,0,53:0.558824
+3	28413268	.	G	C	46.40	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000206559;ExGeneSymbol=ZCWPW2;ExVarEff=missense_variant;ExVarHgvs=3:g.28413268G>C;ExVarScore=0.983172	GT:AD:DP:GQ:PL:VAF	0/1:18,16:34:45:45,0,82:0.470588	0/0	0/1:22,23:45:46:46,0,61:0.511111
+4	131416	.	G	C	42.60	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000250312;ExGeneSymbol=ZNF718;ExVarEff=missense_variant;ExVarHgvs=4:g.131416G>C;ExVarScore=0.8861849	GT:AD:DP:GQ:PL:VAF	0/1:26,23:50:42:41,0,63:0.46	0/0	0/1:23,31:54:42:42,0,50:0.574074
+4	130852	.	C	T	45.90	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000250312;ExGeneSymbol=ZNF718;ExVarEff=missense_variant;ExVarHgvs=4:g.130852C>T;ExVarScore=0.8544206	GT:AD:DP:GQ:PL:VAF	0/1:22,18:41:46:45,0,69:0.439024	0/0	0/1:32,18:50:39:38,0,54:0.36
+19	11977364	.	A	G	52.40	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000197054;ExGeneSymbol=ZNF763;ExVarEff=splice_region_variant;ExVarHgvs=19:g.11977364A>G;ExVarScore=0.7978162	GT:AD:DP:GQ:PL:VAF	0/1:11,15:26:48:48,0,60:0.576923	0/0	0/1:14,21:36:50:52,0,54:0.583333
+19	52956082	.	C	T	49.20	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000180257;ExGeneSymbol=ZNF816;ExVarEff=missense_variant;ExVarHgvs=19:g.52956082C>T;ExVarScore=0.9960685	GT:AD:DP:GQ:PL:VAF	0/1:17,19:36:49:49,0,60:0.527778	0/0	0/1:14,19:34:43:43,0,57:0.558824
+19	12075835	.	T	A	46.70	inheritance	ExGeneSCombi=0.0;ExGeneSPheno=0.0;ExGeneSVar=0.0;ExGeneSymbId=ENSG00000223547;ExGeneSymbol=ZNF844;ExVarEff=missense_variant;ExVarHgvs=19:g.12075835T>A;ExVarScore=0.7020782	GT:AD:DP:GQ:PL:VAF	0/1:25,14:40:29:28,0,53:0.35	0/0	0/1:25,30:55:46:46,0,54:0.545455

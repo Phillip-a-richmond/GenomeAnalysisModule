@@ -11,7 +11,7 @@
 #SBATCH --mem=350G
 
 ## Using 16 CPUs
-#SBATCH --cpus-per-task=80
+#SBATCH --cpus-per-task=40
 
 ## Running for a max time of 48 hours
 #SBATCH --time=48:00:00
@@ -48,21 +48,22 @@ source $BAMSURGEON/opt/miniconda3/etc/profile.d/conda.sh
 conda activate $BAMSURGEON/opt/BamsurgeonEnvironment
 
 # Define variables
-OUTBAM=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/Case1_mother.bam
-OUTBAM_SORTED=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/Case1_mother.sorted.bam
-OUTFQ1=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/Case1_mother_R1.fastq
-OUTFQ2=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/Case1_mother_R2.fastq
-INBAM=/mnt/common/OPEN_DATA/POLARIS_PROCESS/ERR1955443_GRCh38.sorted.bam
-invcfgz=${GENEBREAKER}/TrainingScenarios/WAS_GRCh38_XLinkedRecessiveHemizygous_Male/mother_PathoVar.vcf.gz
-invcf=${GENEBREAKER}/TrainingScenarios/WAS_GRCh38_XLinkedRecessiveHemizygous_Male/mother_PathoVar.vcf
-gunzip -c $invcfgz > $invcf
-
-# Create varfile from VCF
-python $VCF2BAMSURGEON \
-	-I $invcf \
-	-O Case1_mother_bamsurgeon_varfile.tsv
-
-## Mutate bam file
+#OUTBAM=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/Case1_mother.bam
+#OUTBAM_SORTED=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/Case1_mother.sorted.bam
+#OUTFQ1=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/Case1_mother_R1.fastq
+#OUTFQ2=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/Case1_mother_R2.fastq
+#INBAM=/mnt/common/OPEN_DATA/POLARIS_PROCESS/ERR1955443_GRCh38.sorted.bam
+#INVCFGZ=${GENEBREAKER}/TrainingScenarios/WAS_GRCh38_XLinkedRecessiveHemizygous_Male/mother_PathoVar.vcf.gz
+#INVCF=${GENEBREAKER}/TrainingScenarios/WAS_GRCh38_XLinkedRecessiveHemizygous_Male/mother_PathoVar.vcf
+#VARFILE=Case1_mother_bamsurgeon_varfile.tsv
+#gunzip -c $INVCF > $INVCFGZ
+#
+## Create varfile from VCF
+#python $VCF2BAMSURGEON \
+#	-I $INVCF \
+#	-O $VARFILE 
+#
+### Mutate bam file
 #addsnv.py \
 #	-v $VARFILE \
 #	-f $INBAM \
@@ -71,21 +72,19 @@ python $VCF2BAMSURGEON \
 #	--picardjar $PICARDJAR \
 #	--force \
 #	--mindepth 5 \
-#	-p 80
-
-# Samtools sort and index
-samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
-#samtools index $OUTBAM_SORTED
-
-# Convert to fastq
-samtools fastq \
-	-@ 78 \
-	-1 $OUTFQ1 -2 $OUTFQ2 \
-	-0 /dev/null \
-	-s /dev/null \
-	-n $OUTBAM_SORTED
-
-
+#	-p 40
+#
+## Samtools sort and index
+#samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
+#
+## Convert to fastq
+#samtools fastq \
+#	-@ 40 \
+#	-1 $OUTFQ1 -2 $OUTFQ2 \
+#	-0 /dev/null \
+#	-s /dev/null \
+#	-n $OUTBAM_SORTED
+#
 # Proband
 # Activate BamSurgeon
 BAMSURGEON=/mnt/common/WASSERMAN_SOFTWARE/bamsurgeon/
@@ -103,30 +102,29 @@ INVCF=${GENEBREAKER}/TrainingScenarios/WAS_GRCh38_XLinkedRecessiveHemizygous_Mal
 VARFILE=Case1_proband_bamsurgeon_varfile.tsv
 
 # Create varfile
-gunzip -c $invcfgz > $invcf
+gunzip -c $INVCFGZ > $INVCF
 
 python $VCF2BAMSURGEON \
-	-I $invcf \
+	-I $INVCF \
 	-O $VARFILE
 
 ## Mutate Bam
-#addsnv.py \
-#	-v $VARFILE \
-#	-f $INBAM \
-#	-r $REFGENOME \
-#	-o $OUTBAM \
-#	--picardjar $PICARDJAR \
-#	--force \
-#	--mindepth 5 \
-#	-p 80
+addsnv.py \
+	-v $VARFILE \
+	-f $INBAM \
+	-r $REFGENOME \
+	-o $OUTBAM \
+	--picardjar $PICARDJAR \
+	--force \
+	--mindepth 5 \
+	-p 40
 
 # Samtools sort & index
 samtools sort -n $OUTBAM -@ $NSLOTS -o $OUTBAM_SORTED
-#samtools index $OUTBAM_SORTED
 
 # Convert to fastq
 samtools fastq \
-	-@ 78 \
+	-@ 40 \
 	-1 $OUTFQ1 -2 $OUTFQ2 \
 	-0 /dev/null \
 	-s /dev/null \
