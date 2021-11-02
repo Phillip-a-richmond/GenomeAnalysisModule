@@ -8,6 +8,9 @@ For help with file formats, use...the Internet!
 
 /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/<YourDirName>/ProblemSet1/
 
+e.g.
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/Rosie/ProblemSet1/
+
 2) Copy this Session1 Problem set into your Problemset directory:
 /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Assignments/ProblemSet1/ProblemSet1.txt
 
@@ -16,44 +19,46 @@ For help with file formats, use...the Internet!
 
 3) Rename the file to be called: hg38_genes.gff3
 
-4) Extract all lines that correspond to the gene "GRN", and save them in a file called GRN.gff3 
+4) What date was this annotation produced (hint: more command, look at header). 
 
-5) Double check your GRN.gff3 to make sure it only has lines corresponding to GRN in it.  
-If it doesn't, redo your command in #4 using the whole-word option from the grep command.
+5) Extract all lines that correspond to the gene "GRN", and save them in a file called GRN.gff3 
 
-6) Extract all lines that correspond to the gene "TTN", and save them in a file called TTN.gff3 
+6) Double check your GRN.gff3 to make sure it only has lines corresponding to GRN in it.  
+If it doesn't, redo your command in #5 using the whole-word option from the grep command.
 
-7) Delete the smaller of the two gff3 files: GRN.gff3 and TTN.gff3
+7) Extract all lines that correspond to the gene "TTN", and save them in a file called TTN.gff3 
 
-8) Make a BED file (chromosome,start,stop tab separated) of the CDS entries for TTN called TTN.bed
-(hint cut -f)
+8) Delete the smaller of the two gff3 files: GRN.gff3 and TTN.gff3
 
-9) Download the clinvar vcf file into your Problemset Directory:
+9) Make a BED file (chromosome,start,stop tab separated) of the CDS entries for TTN called TTN.bed
+(hint cut -f. e.g: cut -f1,3,15  file.tsv  >  newfile.tsv )
+
+10) Download the clinvar vcf file into your Problemset Directory:
 ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz
 
-10) Unzip the clinvar.vcf.gz file
+11) Unzip the clinvar.vcf.gz file
 
-11) Extract all variant lines corresponding to the gene GLS from the clinvar file into a file called:
+12) Extract all variant lines corresponding to the gene GLS from the clinvar file into a file called:
 GLS_clinvar.vcf
 
-12) Check the number of lines in the GLS_clinvar.vcf file.
+13) Check the number of lines in the GLS_clinvar.vcf file.
 
-13) Extract all variant lines corresponding to the gene SLC6A8 from the clinvar.vcf file into a file called:
+14) Extract all variant lines corresponding to the gene SLC6A8 from the clinvar.vcf file into a file called:
 SLC6A8_clinvar.vcf
 
-14) Concatenate the GLS_clinvar.vcf and SLC6A8_clinvar.vcf files into a single file called combined_clinvar.vcf
+15) Concatenate the GLS_clinvar.vcf and SLC6A8_clinvar.vcf files into a single file called combined_clinvar.vcf
 
-15) Extract the header lines (starting with "#") from the file clinvar.vcf and add them to the top of combined_clinvar.vcf to make a new file called:
+16) Extract the header lines (starting with "#") from the file clinvar.vcf and add them to the top of combined_clinvar.vcf to make a new file called:
 GLS_SLC6A8_clinvar.vcf
 
-16) Compress the file GLS_SLC6A8_clinvar.vcf using gzip
+17) Compress the file GLS_SLC6A8_clinvar.vcf using gzip
 
-17) Change the permissions on your Problemset directory to be read, write, and execute for user, group, and world.
+18) Change the permissions on your Problemset directory to be read, write, and execute for user, group, and world.
 
-18) Edit this file, and put your name at the top, with the date.
+19) Edit this file, and put your name at the top, with the date.
 
-19) Tell Phil on slack you have finished and point to this completed problem set file.
+20) Tell Phil on slack you have finished and point to this completed problem set file.
 
-20) Pat yourself on the back. You are amazing!
+21) Pat yourself on the back. You are amazing!
 
 

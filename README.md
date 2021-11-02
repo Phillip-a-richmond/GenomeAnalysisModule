@@ -73,7 +73,7 @@ Setting up the working environment
 
 ### Wednesday November 3rd, 2021 (1:00-3:00) - Intro to linux command line & file handling
 - Introduction to command line and HPC (Work-along, 45 min - 1:00-1:45)
-    - [Link](https://docs.google.com/presentation/d/1TAIXbS3cJwEYpUXrhjig1e1JcVNYUvr8ZE0qWApuCA4/edit#slide=id.p)
+    - [Link](https://docs.google.com/presentation/d/1ioJcyJSkMkvI9nmxba1ZuE2wQocwB6vKuZ9E7JpAdjY/edit?usp=sharing)
     - Key commands for navigating
     	- ls, mkdir, cd, pwd
     - Key commands for file handling (& exposure to genomics file formats)
