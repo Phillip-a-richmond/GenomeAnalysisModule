@@ -1,0 +1,18 @@
+# Problem Set 4
+
+## Overview
+We will be calling variants on our samples!
+
+1. Create a ProblemSet4 directory in your student space.
+
+2. Copy this script to that directory:
+
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Scripts/RunDeepTrio_CaseTemplate.sh
+
+3. Change the script to be relevant to your paths, your email, and your case number
+
+4. Submit the script to the scheduler.
+
+
+
+

@@ -89,7 +89,7 @@ Setting up the working environment
 ### Friday November 5th, 2021 (8:30-10:30) - Short read mapping & visualization (Command line/bash)
 - *Problem Set 1 Review (20 min: 8:30-8:50)*
 - Short read mapping & Visualization (Work-along, 60 min - 8:50-9:50)
-    - [Link](https://docs.google.com/presentation/d/1dDV7rpvDun7or578Pmm4fp9GRKRzMHKYpMs7AAlXZ0E/edit#slide=id.p)
+    - [Link](https://docs.google.com/presentation/d/1hpV6Yb5QCBzb57OB24keq7Oe-2mMh8cKcD2tziEKCKw/edit#slide=id.p)
     - Pipeline Overview
     - Exploring command line tools and how to use them
     - Map short reads to reference genome with BWA mem

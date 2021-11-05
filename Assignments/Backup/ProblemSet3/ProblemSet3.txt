@@ -1,0 +1,20 @@
+#Problem Set 3
+
+## Overview
+In this problem set, you will copy a script to map your case data, edit it to be relevant to your case, and then submit to the scheduler.
+
+1. Create a ProblemSet3 directory in your Student workshop directory:
+
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/<YourDir>/ProblemSet3/
+
+2. Copy this template script to that directory:
+
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Scripts/MapAndConvert_CaseTemplate.sh
+
+3. Edit the template to match your case, and your email address. Double check that all your fastq files are present in your case directory:
+
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Scripts/CaseInformation/CaseFiles/<CaseN>/
+
+4. Submit to the scheduler. 
+
+5. Done!

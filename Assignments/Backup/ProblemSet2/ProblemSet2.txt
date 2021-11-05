@@ -1,0 +1,48 @@
+# Problem Set 2
+
+## Overview
+In this problem set, you will create a shell script to map and convert raw read data.
+Then, you will download the mapped reads to your computer, and visualize the data in IGV.
+Then send the image to prichmond@bcchr.ca.
+
+1) Make a ProblemSet2 directory within your workshop directory.
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/<YourDir>/ProblemSet2
+
+2) Choose your sample from this directory, and copy it to your ProblemSet2 directory.
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Files/
+
+Sample Assignments are:
+Alex - HG01583.chr19.subregion_R*fastq
+Areesha - HG03006.chr19.subregion_R*fastq
+Darlene - HG03052.chr19.subregion_R*fastq
+LC - NA19648.chr19.subregion_R*fastq
+Jones - NA20502.chr19.subregion_R*fastq
+
+3) Create a shell script in your ProbelmSet2 directory called: MapAndConvert_ProblemSet2.sh
+
+4) Add the commands to it for mapping the reads with BWA mem against the GRCh38 genome.
+
+GRCh38 Genome is here:
+
+/mnt/common/DATABASES/REFERENCES/GRCh38/GENOME/GRCh38-lite.fa
+
+5) Add the command to the shell script to convert the sam file into a bam.
+
+6) Add the command to the shell script to sort the bam file.
+
+7) Add the command to the shell script to index the sorted bam file.
+
+8) Run the entire shell script using:
+
+sh MapAndConvert_ProblemSet2.sh
+
+9) Download the output sorted bam (.sorted.bam) and sorted bam index (.sorted.bam.bai) onto your computer using FileZilla
+
+10) Open the files in IGV on your computer.
+
+11) Zoom to the region with reads mapped and take a snapshot called ProblemSet2.png.
+
+12) Upload your snapshot to your ProblemSet2 Directory.
+
+13) Send Phil a message on slack when you are done!
+

@@ -24,3 +24,6 @@ Exomiser/*
 *out
 
 *DS_Store
+
+# big files
+*gff3
