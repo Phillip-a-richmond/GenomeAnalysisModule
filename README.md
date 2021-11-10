@@ -100,6 +100,7 @@ Setting up the working environment
 ### Monday November 8th, 2021 (1:00-3:00) - Process cases through pipeline using cluster
 - *Problem Set 2 Review (30 min: 1:00-1:30)*
 - Interacting with the cluster scheduler (Work-along, 45 min - 1:30-2:15)
+    - [Link](https://docs.google.com/presentation/d/1jC_xSF4Xb-iSFhawZGlfrRcXkGAVXR8F3VirfEtMAZc/edit?usp=sharing)
     - Concept of job scheduler on cluster
     - Basic job scripts
     -  Mapping and visualization through cluster
@@ -108,7 +109,7 @@ Setting up the working environment
 ### Wednesday November 10th, 2021 (1:00-3:00) - Variant calling and visualization
 - *Problem Set 3 Review (30 min - 1:00-1:30)*
 - Call variants with DeepTrio (Work-along, 45 min - 1:30-2:15) 
-    - [Link](https://docs.google.com/presentation/d/1mLunTcJn1UIHSoHkBycS_6lWzvi_DGF9nNDSoo9tQ_g/edit#slide=id.p)
+    - [Link](https://docs.google.com/presentation/d/1XAeQ8iv90-jUwDdO2nQJ_3-WmgqvEweGDdUdMZQo2B0/edit?usp=sharing)
     - Call variants using pre-built DeepTrio scripts on pre-processed small BAM files
     - Visualize variants in IGV
     - Load GRCh38 genome

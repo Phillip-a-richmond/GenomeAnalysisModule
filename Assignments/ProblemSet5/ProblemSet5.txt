@@ -1,7 +1,7 @@
 # Problem Set 5
 
 ## Overview
-Here, you will take a single case (Case 6), and run Exomiser on the VCF and PED file, and then interpret the results.
+Here, you will take a single case (Case 3), and run Exomiser on the VCF and PED file, and then interpret the results.
 
 1. Make a ProblemSet5 directory inside your workshop directory.
 
@@ -11,11 +11,11 @@ Here, you will take a single case (Case 6), and run Exomiser on the VCF and PED 
 /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Scripts/RunExomiser_case4.sh
 /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Scripts/Case4_Exomiser.yml
 
-4. Edit the scripts to process the Case6 data.
+4. Edit the scripts to process the Case3 data.
 
-5. Run the Exomiser analysis for Case 6.
+5. Run the Exomiser analysis for Case 3.
 
-6. Download the HTML to your computer, and examine the results. Which is the gene you believe to be responsible for the phenotype (answer below)?
+3. Download the HTML to your computer, and examine the results. Which is the gene you believe to be responsible for the phenotype (answer below)?
 
 7. What is the clinvar ID for the pathogenic variant(s) responsible for the phenotype (answer below)?
 

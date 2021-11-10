@@ -1,7 +1,9 @@
 # Load Conda
-source  /mnt/common/WASSERMAN_SOFTWARE/AnnotateVariants/opt/miniconda3/etc/profile.d/conda.sh
-conda  activate /mnt/common/WASSERMAN_SOFTWARE/AnnotateVariants/opt/AnnotateVariantsEnvironment
+source  /mnt/common/Precision/Miniconda3/opt/miniconda3/etc/profile.d/conda.sh
+conda  activate  GenomeAnalysis
 
+
+### Version 1, same as we did in class #3
 # Arrange your data
 cp /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Files/Sample1*fastq /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/Sherlock/
 
@@ -20,7 +22,7 @@ samtools sort Sample1.bam  -o  Sample1.sorted.bam
 samtools   index   Sample1.sorted.bam
 
 
-## Redone with variables instead
+### Version 2, Redone with variables instead
 # Variables are first defined (no spaces allowed!)
 WORKING_DIR=/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/Sherlock/
 SAMPLE=Sample1
@@ -37,8 +39,10 @@ samtools sort ${SAMPLE}.bam -o ${SAMPLE}.sorted.bam
 
 samtools index ${SAMPLE}.sorted.bam
 
-# Variables and line-continuations
-# For BWA mem, I'm adding a read group tag. this will help us later
+
+
+### Version 3, Variables and line-continuations, adding a couple parameters to bwa mem
+# Note, the variable definitions from above are still fine
 
 bwa mem $GENOME_INDEX \
 	$FASTQR1 \

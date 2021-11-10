@@ -1,12 +1,13 @@
 #!/bin/bash
 
+#SBATCH --partition=training_q
 #SBATCH --mail-user=prichmond@bcchr.ca
 #SBATCH --mail-type=ALL
 
 ## CPU Usage
-#SBATCH --mem=350G
-#SBATCH --cpus-per-task=40
-#SBATCH --time=48:00:00
+#SBATCH --mem=80G
+#SBATCH --cpus-per-task=10
+#SBATCH --time=72:00:00
 #SBATCH --nodes=1
 
 ## Output and Stderr
@@ -28,6 +29,7 @@ source $ANNOTATEVARIANTS_INSTALL/opt/miniconda3/etc/profile.d/conda.sh
 conda activate $ANNOTATEVARIANTS_INSTALL/opt/AnnotateVariantsEnvironment
 
 # Pull latest version, if you already have it, this will be skipped
+export SINGULARITY_CACHEDIR=$PWD
 singularity pull docker://google/deepvariant:deeptrio-"${BIN_VERSION}"
 
 # Number of threads

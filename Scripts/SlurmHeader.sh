@@ -1,17 +1,17 @@
 #!/bin/bash
 
-#SBATCH --partition=defq
+#SBATCH --partition=training_q
 
 ## Change to be your email address
 #SBATCH --mail-user=yourEmailHere@bcchr.ca
 #SBATCH --mail-type=ALL
 
 ## CPU Usage
-## 60 Gb of RAM for the whole job
-#SBATCH --mem=60G
+## 80 Gb of RAM for the whole job
+#SBATCH --mem=80G
 
-## Using 8 CPUs
-#SBATCH --cpus-per-task=8
+## Using 10 CPUs
+#SBATCH --cpus-per-task=10
 
 ## Running for a max time of 48 hours
 #SBATCH --time=48:00:00
@@ -27,8 +27,8 @@
 # Set up #
 ##########
 
-## Get the tools we need, from a conda environment within WASSERMAN_SOFTWARE
-ANNOTATEVARIANTS_INSTALL=/mnt/common/WASSERMAN_SOFTWARE/AnnotateVariants/
-source $ANNOTATEVARIANTS_INSTALL/opt/miniconda3/etc/profile.d/conda.sh
-conda activate $ANNOTATEVARIANTS_INSTALL/opt/AnnotateVariantsEnvironment
+## Get the tools we need, from a conda environment 
+source  /mnt/common/Precision/Miniconda3/opt/miniconda3/etc/profile.d/conda.sh
+conda  activate  GenomeAnalysis
+
 

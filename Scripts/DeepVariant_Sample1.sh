@@ -1,11 +1,11 @@
 #!/bin/bash
-
+#SBATCH --partition=training_q
 #SBATCH --mail-user=prichmond@bcchr.ca
 #SBATCH --mail-type=ALL
 
 ## CPU Usage
-#SBATCH --mem=160G
-#SBATCH --cpus-per-task=40
+#SBATCH --mem=80G
+#SBATCH --cpus-per-task=10
 #SBATCH --time=48:00:00
 #SBATCH --nodes=1
 

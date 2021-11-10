@@ -13,10 +13,12 @@ Then send the image to prichmond@bcchr.ca.
 
 Sample Assignments are:
 Alex - HG01583.chr19.subregion_R*fastq
-Areesha - HG03006.chr19.subregion_R*fastq
-Darlene - HG03052.chr19.subregion_R*fastq
-LC - NA19648.chr19.subregion_R*fastq
-Jones - NA20502.chr19.subregion_R*fastq
+Becca - HG03006.chr19.subregion_R*fastq
+Lauren - HG03052.chr19.subregion_R*fastq
+Ege - NA19648.chr19.subregion_R*fastq
+Daniel - NA20502.chr19.subregion_R*fastq
+Patricia - NA20845.chr19.subregion_R*fastq
+Jared - HG01583.chr19.subregion_R*fastq
 
 3) Create a shell script in your ProbelmSet2 directory called: MapAndConvert_ProblemSet2.sh
 
