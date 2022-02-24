@@ -119,18 +119,20 @@ Setting up the working environment
 - *Problem Set 4 (45 min - 2:15-3:00) - Call variants on samples*
 
 ### Friday November 12th, 2021 (8:30-10:30) - Variant annotation and interpretation
+- [Link](https://docs.google.com/presentation/d/134p2P0ybgCz6B-QdQb3BQMEMvkYfraiJgzGH-9tivak/edit?usp=sharing)
+    - What is Exomiser?
+    - Run exomiser using pre-built configs and scripts on Case 4
+- Interpreting Exomiser output in excel/html (Work-along, 45 min - 1:45-2:30)
+    - Download exomiser output in TSV format, open and explore tabs in excel
+    - Visualize output HTML file
+- *Problem Set 5 (30 min - 2:30-3:00) - Run Exomiser on case 3*
 - *Extra time for Problem Set 4 (60 min - 8:30-9:30)*
 - Open discussion/review of sessions 1-5
 - Ensure that everyone has mapped, called variants, and visualized their case data
 
-### Monday November 15th, 2021 (1:00-3:00) - Variant prioritization with Exomiser
-- Running Exomiser on a VCF (Work-along, 45 min - 1:00-1:45)
-    - [Link](https://docs.google.com/presentation/d/11LTBnsUh-gKxIMTfmSvuCX6R9YWsctNNMvLtUcu2Jhk/edit#slide=id.p)
-    - Run exomiser using pre-built configs and scripts on Case 6
-- Interpreting Exomiser output in excel/html (Work-along, 45 min - 1:45-2:30)
-    - Download exomiser output in TSV format, open and explore tabs in excel
-    - Visualize output HTML file
-- *Problem Set 5 (30 min - 2:30-3:00) - Run Exomiser on your case data*
+### Monday November 15th, 2021 (1:00-3:00) - Catch up and explain final activity
+- Review Problem set 5
+
 
 ### Wednesday November 17th, 2021 (1:00-3:00) - Catch-up & open help session
 - *Review Problem Set 5, address any issues, make sure everyone has their case exomiser output. (60 min - 1:00-2:00)*
