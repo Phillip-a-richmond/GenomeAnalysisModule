@@ -17,7 +17,7 @@ Setting up the working environment.
   + Installing necessary software (see below) 
   + Connecting to the cluster 
   + Making a workspace 
-+ Slides: [Link](https://docs.google.com/presentation/d/1tNzW21k7WnjfU-gDvL_gJB5R32GMlCrH0P1lHpH1jCY/edit#slide=id.g9d2975bcf0_0_5)
++ Slides: [Link](https://docs.google.com/presentation/d/10Nm2C2FyGBADgm2T_iKzF3sIB-wYWD1QMvgjLRCGXZQ/edit)
 
 #### Software Installs  
 + For mac/linux users, only need native terminal which comes with the operating system.  You can access it in the Applications section for Mac users.  You also need to have X windows installed [Link](https://www.xquartz.org/)
