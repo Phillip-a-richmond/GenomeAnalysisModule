@@ -61,7 +61,7 @@ Setting up the working environment
     - [Link](https://docs.google.com/presentation/d/1JC4JiORk7zqOYeM-hK0vA-fmC2GdPNhY_UGbrOjMQFM/edit#slide=id.p)
     - Goals of the course
     - Format of the course
-    - Genome Analysis for Rare Disease Diagnosis
+    - Genome Analysis for Rare Disease Diagnosis: [Link](https://docs.google.com/presentation/d/1nOmByd5QzS228ZbiuELQGQbiHnrAkSvkw4o9GNUEEfE/edit#slide=id.gdd01464b97_0_2279)
     - OMIM, ClinVar, HPO
     - Limitations of whole exome sequencing, short reads, gene discovery, where the field is going
 - Distribute cases & link to resources (Work-along, 15 min - 2:25-2:40)
