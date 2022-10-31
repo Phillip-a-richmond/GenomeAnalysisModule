@@ -1,7 +1,7 @@
 # Genome Analysis Module
 > This course is intended for trainees in the Genetic Counselling MSc Program at the University of British Columbia, and summer students within the Summer Student Research Program at BC Children's Hospital Research Institute. The computing resources are hosted at BC Children's Hospital Research Institute.  
 > For more information contact Dr. Phillip Richmond (prichmond@bcchr.ca). If you are looking for content related to the manuscript, please see Release 1. 
-> This version: November 2021
+> This version: November 2022
 
 
 ---
