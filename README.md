@@ -55,10 +55,10 @@ Setting up the working environment
 - Making a workspace
 - [Link](https://docs.google.com/presentation/d/1tNzW21k7WnjfU-gDvL_gJB5R32GMlCrH0P1lHpH1jCY/edit#slide=id.g9d2975bcf0_0_5)
  
-### Monday November 1st, 2021 (1:00-3:00) - Intro to course, Intro to Genome Analysis for Rare Disease, Case Distribution 
+### Monday October 31st, 2022 (1:00-3:00) - Intro to course, Intro to Genome Analysis for Rare Disease, Case Distribution 
 - Soft-start (15 min: 1:00-1:10)
 - Course Introduction (Lecture, 75 min: 1:10-2:25)
-    - [Link](https://docs.google.com/presentation/d/1Y91AOq2NzXDLOLq-osX_fY_ZliySM21oD_Z0CL1Ie_g/edit#slide=id.p)
+    - [Link]()
     - Goals of the course
     - Format of the course
     - Genome Analysis for Rare Disease Diagnosis
@@ -71,9 +71,9 @@ Setting up the working environment
     - Login to cluster
     - Install SSHFS
 
-### Wednesday November 3rd, 2021 (1:00-3:00) - Intro to linux command line & file handling
+### Wednesday November 2nd, 2022 (1:00-3:00) - Intro to linux command line & file handling
 - Introduction to command line and HPC (Work-along, 45 min - 1:00-1:45)
-    - [Link](https://docs.google.com/presentation/d/1ioJcyJSkMkvI9nmxba1ZuE2wQocwB6vKuZ9E7JpAdjY/edit?usp=sharing)
+    - [Link]()
     - Key commands for navigating
     	- ls, mkdir, cd, pwd
     - Key commands for file handling (& exposure to genomics file formats)
@@ -86,10 +86,10 @@ Setting up the working environment
 - *Problem Set 1 (45 min - 2:15-3:00) - basic linux navigation + file handling*
 
 
-### Friday November 5th, 2021 (8:30-10:30) - Short read mapping & visualization (Command line/bash)
+### Friday November 4th, 2022 (8:30-10:30) - Short read mapping & visualization (Command line/bash)
 - *Problem Set 1 Review (20 min: 8:30-8:50)*
 - Short read mapping & Visualization (Work-along, 60 min - 8:50-9:50)
-    - [Link](https://docs.google.com/presentation/d/1hpV6Yb5QCBzb57OB24keq7Oe-2mMh8cKcD2tziEKCKw/edit#slide=id.p)
+    - [Link]()
     - Pipeline Overview
     - Exploring command line tools and how to use them
     - Map short reads to reference genome with BWA mem
@@ -97,19 +97,19 @@ Setting up the working environment
 - *Problem Set 2 (40 min: 9:50-10:30) - short read mapping with bash scripts*
 
 
-### Monday November 8th, 2021 (1:00-3:00) - Process cases through pipeline using cluster
+### Monday November 7th, 2022 (1:00-3:00) - Process cases through pipeline using cluster
 - *Problem Set 2 Review (30 min: 1:00-1:30)*
 - Interacting with the cluster scheduler (Work-along, 45 min - 1:30-2:15)
-    - [Link](https://docs.google.com/presentation/d/1jC_xSF4Xb-iSFhawZGlfrRcXkGAVXR8F3VirfEtMAZc/edit?usp=sharing)
+    - [Link]()
     - Concept of job scheduler on cluster
     - Basic job scripts
     -  Mapping and visualization through cluster
 - *Problem Set 3 (45 min - 2:15-3:00) -  Case processing fastq-->BAM + Visualize*
 
-### Wednesday November 10th, 2021 (1:00-3:00) - Variant calling and visualization
+### Wednesday November 9th, 2022 (1:00-3:00) - Variant calling and visualization
 - *Problem Set 3 Review (30 min - 1:00-1:30)*
 - Call variants with DeepTrio (Work-along, 45 min - 1:30-2:15) 
-    - [Link](https://docs.google.com/presentation/d/1XAeQ8iv90-jUwDdO2nQJ_3-WmgqvEweGDdUdMZQo2B0/edit?usp=sharing)
+    - [Link]()
     - Call variants using pre-built DeepTrio scripts on pre-processed small BAM files
     - Visualize variants in IGV
     - Load GRCh38 genome
@@ -118,8 +118,8 @@ Setting up the working environment
     - Take snapshot of variant
 - *Problem Set 4 (45 min - 2:15-3:00) - Call variants on samples*
 
-### Friday November 12th, 2021 (8:30-10:30) - Variant annotation and interpretation
-- [Link](https://docs.google.com/presentation/d/134p2P0ybgCz6B-QdQb3BQMEMvkYfraiJgzGH-9tivak/edit?usp=sharing)
+### Thursday November 10th, 2022 (8:30-10:30) - Variant annotation and interpretation
+- [Link]()
     - What is Exomiser?
     - Run exomiser using pre-built configs and scripts on Case 4
 - Interpreting Exomiser output in excel/html (Work-along, 45 min - 1:45-2:30)
@@ -130,16 +130,16 @@ Setting up the working environment
 - Open discussion/review of sessions 1-5
 - Ensure that everyone has mapped, called variants, and visualized their case data
 
-### Monday November 15th, 2021 (1:00-3:00) - Catch up and explain final activity
+### Monday November 14th, 2022 (1:00-3:00) - Catch up and explain final activity
 - Review Problem set 5
 
 
-### Wednesday November 17th, 2021 (1:00-3:00) - Catch-up & open help session
+### Wednesday November 16th, 2021 (1:00-3:00) - Catch-up & open help session
 - *Review Problem Set 5, address any issues, make sure everyone has their case exomiser output. (60 min - 1:00-2:00)*
 - Open help session, working on Practical (60 min - 2:00-3:00)
 
 
-### Friday November 19th, 2021 (8:30-10:30) - Practical
+### Friday November 18th, 2021 (8:30-10:30) - Practical
 - Practical (120 min - 8:30-10:30)
     - Each student presents their case to the group, 8 students ~15 minutes / presentation (10 min present, 5 min questions). 
 
