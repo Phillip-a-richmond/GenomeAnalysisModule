@@ -58,7 +58,7 @@ Setting up the working environment
 ### Monday October 31st, 2022 (1:00-3:00) - Intro to course, Intro to Genome Analysis for Rare Disease, Case Distribution 
 - Soft-start (15 min: 1:00-1:10)
 - Course Introduction (Lecture, 75 min: 1:10-2:25)
-    - [Link]()
+    - [Link](https://docs.google.com/presentation/d/1JC4JiORk7zqOYeM-hK0vA-fmC2GdPNhY_UGbrOjMQFM/edit#slide=id.p)
     - Goals of the course
     - Format of the course
     - Genome Analysis for Rare Disease Diagnosis
