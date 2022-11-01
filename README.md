@@ -119,6 +119,12 @@ Setting up the working environment
 - *Problem Set 4 (45 min - 2:15-3:00) - Call variants on samples*
 
 ### Thursday November 10th, 2022 (8:30-10:30) - Variant annotation and interpretation
+- - *Extra time for Problem Set 4 (60 min - 8:30-9:30)*
+- Open discussion/review of sessions 1-5
+- Ensure that everyone has mapped, called variants, and visualized their case data
+
+
+### Monday November 14th, 2022 (1:00-3:00) - Catch up and explain final activity
 - [Link]()
     - What is Exomiser?
     - Run exomiser using pre-built configs and scripts on Case 4
@@ -126,20 +132,14 @@ Setting up the working environment
     - Download exomiser output in TSV format, open and explore tabs in excel
     - Visualize output HTML file
 - *Problem Set 5 (30 min - 2:30-3:00) - Run Exomiser on case 3*
-- *Extra time for Problem Set 4 (60 min - 8:30-9:30)*
-- Open discussion/review of sessions 1-5
-- Ensure that everyone has mapped, called variants, and visualized their case data
-
-### Monday November 14th, 2022 (1:00-3:00) - Catch up and explain final activity
-- Review Problem set 5
 
 
-### Wednesday November 16th, 2021 (1:00-3:00) - Catch-up & open help session
+### Wednesday November 16th, 2022 (1:00-3:00) - Catch-up & open help session
 - *Review Problem Set 5, address any issues, make sure everyone has their case exomiser output. (60 min - 1:00-2:00)*
 - Open help session, working on Practical (60 min - 2:00-3:00)
 
 
-### Friday November 18th, 2021 (8:30-10:30) - Practical
+### Friday November 18th, 2022 (8:30-10:30) - Practical
 - Practical (120 min - 8:30-10:30)
     - Each student presents their case to the group, 8 students ~15 minutes / presentation (10 min present, 5 min questions). 
 
