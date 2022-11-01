@@ -1,3 +1,9 @@
+Problem Set 1
+
+Name:  
+Date:  
+
+
 This problem set will review the basic commands from the lecture, and add some new commands I didn't teach you (GASP!!!)
 
 The examples in this problem set will also guide you through exploring different file formats commonly used in genomics.  
@@ -30,33 +36,33 @@ If it doesn't, redo your command in #5 using the whole-word option from the grep
 
 9) Delete the smaller of the two gff3 files: GRN.gff3 and TTN.gff3
 
-10) Make a BED file (chromosome,start,stop tab separated) of the CDS entries for TTN called TTN.bed
-(hint cut -f. e.g: cut -f1,3,15  file.tsv  >  newfile.tsv )
 
-11) Download the clinvar vcf file into your Problemset Directory:
+10) Download the clinvar vcf file into your Problemset Directory:
 ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz
 
-12) Unzip the clinvar.vcf.gz file
+11) Unzip the clinvar.vcf.gz file
 
-13) Extract all variant lines corresponding to the gene GLS from the clinvar file into a file called:
+12) Extract all variant lines corresponding to the gene GLS from the clinvar file into a file called:
 GLS_clinvar.vcf
 
-14) Check the number of lines in the GLS_clinvar.vcf file.
+13) Check the number of lines in the GLS_clinvar.vcf file, how many are there (fill it in below)?
 
-15) Extract all variant lines corresponding to the gene SLC6A8 from the clinvar.vcf file into a file called:
+Lines:
+
+14) Extract all variant lines corresponding to the gene SLC6A8 from the clinvar.vcf file into a file called:
 SLC6A8_clinvar.vcf
 
-16) Concatenate the GLS_clinvar.vcf and SLC6A8_clinvar.vcf files into a single file called combined_clinvar.vcf (cat command)
+15) Concatenate the GLS_clinvar.vcf and SLC6A8_clinvar.vcf files into a single file called combined_clinvar.vcf (cat command)
 
-17) Extract the header lines (starting with "#") from the file clinvar.vcf and add them to the top of combined_clinvar.vcf to make a new file called:
+16) Extract the header lines (starting with "#") from the file clinvar.vcf and add them to the top of combined_clinvar.vcf to make a new file called:
 GLS_SLC6A8_clinvar.vcf
 
-18) Compress the file GLS_SLC6A8_clinvar.vcf using gzip
+17) Compress the file GLS_SLC6A8_clinvar.vcf using gzip
 
-19) Edit this file, and put your name at the top, with the date.
+18) Edit this problem set file, and put your name at the top, with the date.
 
-20) Tell Phil on slack you have finished and point to this completed problem set file.
+19) Tell Phil on slack you have finished and point to this completed problem set file.
 
-21) Pat yourself on the back. You are amazing!
+20) Pat yourself on the back. You are amazing!
 
 
