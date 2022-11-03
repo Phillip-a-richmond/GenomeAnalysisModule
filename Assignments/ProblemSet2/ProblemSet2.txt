@@ -3,7 +3,7 @@
 ## Overview
 In this problem set, you will create a shell script to map and convert raw read data.
 Then, you will download the mapped reads to your computer, and visualize the data in IGV.
-Then send the image to prichmond@bcchr.ca.
+Then send the image to Phil via Slack.
 
 1) Make a ProblemSet2 directory within your workshop directory.
 /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/<YourDir>/ProblemSet2
@@ -12,13 +12,12 @@ Then send the image to prichmond@bcchr.ca.
 /mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Files/
 
 Sample Assignments are:
-Alex - HG01583.chr19.subregion_R*fastq
-Becca - HG03006.chr19.subregion_R*fastq
-Lauren - HG03052.chr19.subregion_R*fastq
-Ege - NA19648.chr19.subregion_R*fastq
-Daniel - NA20502.chr19.subregion_R*fastq
-Patricia - NA20845.chr19.subregion_R*fastq
-Jared - HG01583.chr19.subregion_R*fastq
+Kelvin - HG03006.chr19.subregion_R*fastq
+Mitch - HG01583.chr19.subregion_R*fastq
+Sophie - HG03052.chr19.subregion_R*fastq
+Sydney - NA19648.chr19.subregion_R*fastq
+Tessa - NA20845.chr19.subregion_R*fastq
+Yvette - NA20502.chr19.subregion_R*fastq
 
 3) Create a shell script in your ProbelmSet2 directory called: MapAndConvert_ProblemSet2.sh
 
