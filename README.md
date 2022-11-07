@@ -89,7 +89,7 @@ Setting up the working environment
 ### Friday November 4th, 2022 (8:30-10:30) - Short read mapping & visualization (Command line/bash)
 - *Problem Set 1 Review (20 min: 8:30-8:50)*
 - Short read mapping & Visualization (Work-along, 60 min - 8:50-9:50)
-    - [Link]()
+    - [Link](https://docs.google.com/presentation/d/1rdfC9FxQBya9EQpWPn1YhZ1XPvgNl-ek6Mrxauc-Kyc/edit)
     - Pipeline Overview
     - Exploring command line tools and how to use them
     - Map short reads to reference genome with BWA mem
@@ -100,7 +100,7 @@ Setting up the working environment
 ### Monday November 7th, 2022 (1:00-3:00) - Process cases through pipeline using cluster
 - *Problem Set 2 Review (30 min: 1:00-1:30)*
 - Interacting with the cluster scheduler (Work-along, 45 min - 1:30-2:15)
-    - [Link]()
+    - [Link](https://docs.google.com/presentation/d/1MQIV--4AwuI0Hl36HrzhR-buY_M8haX_zv5N78UJTNk/edit#slide=id.g165c9920962_0_132)
     - Concept of job scheduler on cluster
     - Basic job scripts
     -  Mapping and visualization through cluster
