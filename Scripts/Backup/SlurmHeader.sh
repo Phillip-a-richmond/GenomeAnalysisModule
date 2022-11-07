@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --partition=defq
+#SBATCH --partition=training_q
 
 ## Change to be your email address
 #SBATCH --mail-user=yourEmailHere@bcchr.ca

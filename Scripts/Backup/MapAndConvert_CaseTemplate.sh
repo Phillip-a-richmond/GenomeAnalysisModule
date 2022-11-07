@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --partition=defq
+#SBATCH --partition=training_q
 
 ## Change to be your email address
 #SBATCH --mail-user=YourEmailAddress@cw.bc.ca
@@ -8,10 +8,10 @@
 
 ## CPU Usage
 ## 80 Gb of RAM for the whole job
-#SBATCH --mem=160G
+#SBATCH --mem=80G
 
 ## Using 10 CPUs
-#SBATCH --cpus-per-task=20
+#SBATCH --cpus-per-task=10
 
 ## Running for a max time of 72 hours
 #SBATCH --time=72:00:00
@@ -34,7 +34,7 @@ conda  activate  GenomeAnalysis
 NSLOTS=$SLURM_CPUS_PER_TASK
 
 # Variables are first defined (no spaces allowed!)
-WORKING_DIR=/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/Sherlock/CaseAnalysis/
+WORKING_DIR=/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/Gaku/CaseAnalysis/
 # Make your case analysis directory
 mkdir -p $WORKING_DIR
 # Change to it

@@ -3,7 +3,7 @@
 #SBATCH --partition=defq
 
 ## Change to be your email address
-#SBATCH --mail-user=YourEmailAddress@cw.bc.ca
+#SBATCH --mail-user=prichmond@bcchr.ca
 #SBATCH --mail-type=ALL
 
 ## CPU Usage
@@ -34,14 +34,14 @@ conda  activate  GenomeAnalysis
 NSLOTS=$SLURM_CPUS_PER_TASK
 
 # Variables are first defined (no spaces allowed!)
-WORKING_DIR=/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/Sherlock/CaseAnalysis/
+WORKING_DIR=/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/Gaku/CaseAnalysis/
 # Make your case analysis directory
 mkdir -p $WORKING_DIR
 # Change to it
 cd $WORKING_DIR
 
 # Case ID
-Case_ID=Case10
+Case_ID=Case3
 # Case directory location
 CASE_DIRECTORY=/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/CaseInformation/CaseFiles/${Case_ID}/
 # Setting genome index variable
@@ -76,6 +76,8 @@ samtools view \
 	-@ $NSLOTS \
 	-b ${SAMPLE}.sam  \
 	-o ${SAMPLE}.bam
+
+rm ${SAMPLE}.sam
 
 samtools sort \
 	-@ $NSLOTS \
@@ -121,6 +123,8 @@ samtools view \
 	-b ${SAMPLE}.sam  \
 	-o ${SAMPLE}.bam
 
+rm ${SAMPLE}.sam
+
 samtools sort \
 	-@ $NSLOTS \
 	${SAMPLE}.bam \
@@ -164,6 +168,7 @@ samtools view \
 	-@ $NSLOTS \
 	-b ${SAMPLE}.sam  \
 	-o ${SAMPLE}.bam
+rm ${SAMPLE}.sam
 
 samtools sort \
 	-@ $NSLOTS \

@@ -24,41 +24,42 @@ samtools   index   Sample1.sorted.bam
 
 ### Version 2, Redone with variables instead
 # Variables are first defined (no spaces allowed!)
-Working_Directory=/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/Sherlock/
-Sample=Proband
-Genome_Index=/mnt/common/DATABASES/REFERENCES/GRCh38/GENOME/GRCh38-lite.fa
-Fastq_Directory=/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Files/
-Fastq_R1=${Fastq_Directory}/${Sample}_R1.fastq
-Fastq_R2=${Fastq_Directory}/${Sample}_R2.fastq
+WORKING_DIR=/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/StudentSpaces/Sherlock/
+SAMPLE=Sample1
+GENOME_INDEX=/mnt/common/DATABASES/REFERENCES/GRCh38/GENOME/GRCh38-lite.fa
+FASTQ_DIR=/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Files/
+FASTQR1=${FASTQ_DIR}/${SAMPLE}_R1.fastq
+FASTQR2=${FASTQ_DIR}/${SAMPLE}_R2.fastq
 
-bwa mem $Genome_Index $Fastq_R1 $Fastq_R2 > ${Sample}.sam
+bwa mem $GENOME_INDEX $FASTQR1 $FASTQR2 > ${SAMPLE}.sam
 
-samtools view -b ${Sample}.sam  -o ${Sample}.bam
+samtools view -b ${SAMPLE}.sam  -o ${SAMPLE}.bam
 
-samtools sort ${Sample}.bam -o ${Sample}.sorted.bam
+samtools sort ${SAMPLE}.bam -o ${SAMPLE}.sorted.bam
 
-samtools index ${Sample}.sorted.bam
+samtools index ${SAMPLE}.sorted.bam
+
 
 
 ### Version 3, Variables and line-continuations, adding a couple parameters to bwa mem
 # Note, the variable definitions from above are still fine
 
-bwa mem $Genome_Index \
-	$Fastq_R1 \
-	$Fastq_R2 \
-	-R "@RG\tID:$Sample\tSM:$Sample\tPL:illumina" \
-	> ${Sample}.sam
+bwa mem $GENOME_INDEX \
+	$FASTQR1 \
+	$FASTQR2 \
+	-R "@RG\tID:$SAMPLE_ID\tSM:$SAMPLE_ID\tPL:illumina" \
+	> ${SAMPLE}.sam
 
 samtools view \
-	-b ${Sample}.sam  \
-	-o ${Sample}.bam
+	-b ${SAMPLE}.sam  \
+	-o ${SAMPLE}.bam
 
 samtools sort \
-	${Sample}.bam \
-	-o ${Sample}.sorted.bam
+	${SAMPLE}.bam \
+	-o ${SAMPLE}.sorted.bam
 
 samtools index \
-	${Sample}.sorted.bam
+	${SAMPLE}.sorted.bam
 
 samtools flagstat \
-	${Sample}.sorted.bam 
+	${SAMPLE}.sorted.bam 
