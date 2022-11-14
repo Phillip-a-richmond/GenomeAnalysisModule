@@ -109,7 +109,7 @@ Setting up the working environment
 ### Wednesday November 9th, 2022 (1:00-3:00) - Variant calling and visualization
 - *Problem Set 3 Review (30 min - 1:00-1:30)*
 - Call variants with DeepTrio (Work-along, 45 min - 1:30-2:15) 
-    - [Link]()
+    - [Link](https://docs.google.com/presentation/d/11ou1MZ1WWrznPypNGyjB7SPKkw8mvNe9ny52IloWn7o/edit#slide=id.g10116e0bab2_0_35)
     - Call variants using pre-built DeepTrio scripts on pre-processed small BAM files
     - Visualize variants in IGV
     - Load GRCh38 genome
@@ -125,7 +125,7 @@ Setting up the working environment
 
 
 ### Monday November 14th, 2022 (1:00-3:00) - Catch up and explain final activity
-- [Link]()
+- [Link](https://docs.google.com/presentation/d/10KqxGE_l4lzCLmcHTNLpjEfUhPUXM5c3CtqUGPm5PgA/edit#slide=id.g165d2176f5a_0_132)
     - What is Exomiser?
     - Run exomiser using pre-built configs and scripts on Case 4
 - Interpreting Exomiser output in excel/html (Work-along, 45 min - 1:45-2:30)
