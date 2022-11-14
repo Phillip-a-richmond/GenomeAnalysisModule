@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --partition=defq
-#SBATCH --mail-user=prichmond@bcchr.ca
+#SBATCH --mail-user=YourEmailAddress@bcchr.ca
 #SBATCH --mail-type=ALL
 
 ## CPU Usage

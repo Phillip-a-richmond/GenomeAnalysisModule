@@ -86,6 +86,8 @@ singularity exec -e -c \
   --output_gvcf="/output/$PROBAND_GVCF" \
   --num_shards=$NSLOTS 
 
+
+# Mother
 singularity exec -e -c \
        -B "${BAM_DIR}":"/bamdir" \
        -B "${FASTA_DIR}":"/genomedir" \
@@ -101,6 +103,7 @@ singularity exec -e -c \
  --output_gvcf="/output/$MOTHER_GVCF" \
  --num_shards=$NSLOTS 
 
+# Father
 singularity exec -e -c \
        -B "${BAM_DIR}":"/bamdir" \
        -B "${FASTA_DIR}":"/genomedir" \

@@ -7,7 +7,7 @@ We will be calling variants on our samples!
 
 2. Copy this script to that directory:
 
-/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Scripts/RunDeepTrio_CaseTemplate.sh
+/mnt/scratch/Public/TRAINING/GenomeAnalysisModule/Scripts/DeepVariant_CaseTemplate.sh
 
 3. Change the script to be relevant to your paths, your email, and your case number
 
